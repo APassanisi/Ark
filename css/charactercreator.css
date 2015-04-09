@@ -147,12 +147,9 @@ form {
   margin-left: 20px;
 }
 
-.hp {
-  float: left;
-}
-
-.ac {
-  float: right;
+.hp-display,
+.ac-display {
+  display: inline;
 }
 
 /****** DETAIL INFO

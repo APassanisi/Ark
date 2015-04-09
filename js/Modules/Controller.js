@@ -127,36 +127,55 @@ ARK3.Controller = (function ($) {
 
         $('.stat-str').data('powertipjq', $([
             '<p><b>This is your Strength attribute.</b></p>',
-            '<p>It determines how strong you are in skill-checks.</p>',
             ].join('\n')
         ));
 
         $('.stat-sta').data('powertipjq', $([
-            '<p><b>This is your Strength attribute.</b></p>',
-            '<p>It determines how strong you are in skill-checks.</p>',
+            '<p><b>This is your Stamina attribute.</b></p>',
             ].join('\n')
         ));
 
         $('.stat-agi').data('powertipjq', $([
-            '<p><b>This is your Strength attribute.</b></p>',
-            '<p>It determines how strong you are in skill-checks.</p>',
+            '<p><b>This is your Agility attribute.</b></p>',
             ].join('\n')
         ));
 
         $('.stat-wit').data('powertipjq', $([
             '<p><b>This is your Strength attribute.</b></p>',
-            '<p>It determines how strong you are in skill-checks.</p>',
             ].join('\n')
         ));
 
         $('.stat-per').data('powertipjq', $([
-            '<p><b>This is your Strength attribute.</b></p>',
-            '<p>It determines how strong you are in skill-checks.</p>',
+            '<p><b>This is your Personality attribute.</b></p>',
             ].join('\n')
         ));
 
         $('.stat-lck').data('powertipjq', $([
-            '<p><b>This is your Strength attribute.</b></p>',
+            '<p><b>This is your Luck attribute.</b></p>',
+            ].join('\n')
+        ));
+
+        $('.head').data('powertipjq', $([
+            '<p class="head-name"></p>',
+            '<p class="head-ac"></p>',
+            '<p class="head-agimod"></p>',
+            ].join('\n')
+        ));
+
+        $('.chest').data('powertipjq', $([
+            '<p><b>This is your Luck attribute.</b></p>',
+            '<p>It determines how strong you are in skill-checks.</p>',
+            ].join('\n')
+        ));
+
+        $('.feet').data('powertipjq', $([
+            '<p><b>This is your Luck attribute.</b></p>',
+            '<p>It determines how strong you are in skill-checks.</p>',
+            ].join('\n')
+        ));
+
+        $('.weapon').data('powertipjq', $([
+            '<p><b>This is your Luck attribute.</b></p>',
             '<p>It determines how strong you are in skill-checks.</p>',
             ].join('\n')
         ));

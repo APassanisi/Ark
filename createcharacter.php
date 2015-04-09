@@ -232,10 +232,10 @@
 			</div>
 
 			<div class="inventory list-group">
-			    <a href="#" class="head head-name list-group-item active"></a>
-			    <a href="#" class="chest chest-name list-group-item"></a>
-			    <a href="#" class="feet feet-name list-group-item"></a>
-			    <a href="#" class="weapon weapon-name list-group-item"></a>
+			    <a class="head head-name list-group-item"></a>
+			    <a class="chest chest-name list-group-item"></a>
+			    <a class="feet feet-name list-group-item"></a>
+			    <a class="weapon weapon-name list-group-item"></a>
 			</div>
 
 		</section>
