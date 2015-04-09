@@ -196,7 +196,7 @@
 
 		<section class="detail-info alert alert-info col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
 
-			<div class="inventory well well-sm">
+<!-- 			<div class="inventory well well-sm">
 
 				<div class="inventory-head">
 					<p class="head-name"></p>
@@ -223,6 +223,19 @@
 					<p class="weapon-agimod"></p>
 				</div>
 
+			</div> -->
+
+			<div class="selected-item panel panel-default">
+			    <div class="panel-body">
+			        Click on an item to view details.
+			    </div>
+			</div>
+
+			<div class="inventory list-group">
+			    <a href="#" class="head head-name list-group-item active"></a>
+			    <a href="#" class="chest chest-name list-group-item"></a>
+			    <a href="#" class="feet feet-name list-group-item"></a>
+			    <a href="#" class="weapon weapon-name list-group-item"></a>
 			</div>
 
 		</section>
