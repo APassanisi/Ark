@@ -90,20 +90,7 @@ form {
 
 /******************* INFO
 ************************************************/
-.hp-display,
-.ac-display {
-  background: black;
-  color: white;
-  height: 45px;
-  width: 45px;
-  display: inline-block;
-  text-align: center;
-}
 
-.ac,
-.hp {
-  margin-top: -10px;
-}
 /******************* INFO
 ************************************************/
 
@@ -111,33 +98,57 @@ form {
 .detail-info,
 .finalize-info {
   overflow-y: scroll;
+  height: auto;
 }
 
 /****** BASIC INFO
 ***********************/
-.stat-container {
-  margin-top: -15px;
-}
-.stat-container div {
+.stat-container > div{
   text-align: center;
 }
 
-.stat-container p {
+.stat-table-small {
+  margin-left: 20px;
+}
+.stat-table-small div {
+  text-align: center;
   margin-top: 10px;
-  text-align: center;
 }
 
-.stat-container div > img {
+.stat-table-small div > img {
   height: 29px;
   width: auto;
 }
 
-.stat-value {
-  margin-top: 5px;
+.stat-table img {
+  height: 30px;
+  width: auto;
+  margin-bottom: 5px;
+  margin-left: 10px;
 }
 
-.raceDescription {
-  margin-top: 15px;
+.table>tbody>tr>td,
+.table>tbody>tr>th{
+  padding: 0;
+}
+
+.stat-table > table {
+  border: 0px;
+  margin-top: 60px;
+  margin-left: -5px;
+}
+
+.hp-display,
+.ac-display {
+  background: black;
+  color: white;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+}
+
+.hp-ac-container {
+  margin-left: 20px;
 }
 
 /****** DETAIL INFO
@@ -153,10 +164,6 @@ form {
 /******************* MEDIA QUERIES
 ************************************************/
 @media (min-width: 768px) {
-  .body {
-    background: red;
-  }
-
   .basic-options,
   .detail-options,
   .finalize-options,
@@ -173,6 +180,14 @@ form {
 
   .detail-options .button-container {
     margin-top: 35px;
+  }
+
+  .hp-ac-container { 
+    margin-top: 50px
+  }
+
+  .stat-table {
+    margin-top: 0px;
   }
 
 

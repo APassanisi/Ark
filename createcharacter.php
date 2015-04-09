@@ -231,75 +231,114 @@
 
 			<div class="stat-container">
 
-				<div class="hp-display">
 
-					<p>HP: </p>
-					<p class="hp"></p>
-					
-				</div>
+				<div class="hp-ac-container">
 
-				<div class="pull-right ac-display">
+					<div class="hp-display">
 
-					<p>AC: </p>
-					<p class="ac"></p>
+					</div>
 
-				</div>
+					<div class="ac-display">
 
-				<p>Stats</p>
-
-				<div class="stat-display">
-
-					<img class="stat-str" src="img/gameicon/stats/str.jpg">
-
-					<img class="stat-sta" src="img/gameicon/stats/sta.jpg">
-
-					<img class="stat-agi" src="img/gameicon/stats/agi.jpg">
-
-					<img class="stat-wit" src="img/gameicon/stats/wit.jpg">
-
-					<img class="stat-per" src="img/gameicon/stats/per.jpg">
-
-					<img class="stat-lck" src="img/gameicon/stats/lck.jpg">
+					</div>
 
 				</div>
 
-				<div class="stat-value">
+				<div class="stat-table-small hidden-sm hidden-md hidden-lg">
 
-					<img class="value-str" src="img/gameicon/stats/str.jpg">
+					<div class="stat-display">
 
-					<img class="value-sta" src="img/gameicon/stats/sta.jpg">
+						<img class="stat-str" src="img/gameicon/stats/str.jpg">
 
-					<img class="value-agi" src="img/gameicon/stats/agi.jpg">
+						<img class="stat-sta" src="img/gameicon/stats/sta.jpg">
 
-					<img class="value-wit" src="img/gameicon/stats/wit.jpg">
+						<img class="stat-agi" src="img/gameicon/stats/agi.jpg">
 
-					<img class="value-per" src="img/gameicon/stats/per.jpg">
+						<img class="stat-wit" src="img/gameicon/stats/wit.jpg">
 
-					<img class="value-lck" src="img/gameicon/stats/lck.jpg">
+						<img class="stat-per" src="img/gameicon/stats/per.jpg">
+
+						<img class="stat-lck" src="img/gameicon/stats/lck.jpg">
+
+					</div>
+
+					<div class="stat-value">
+
+						<img class="value-str" src="img/gameicon/stats/str.jpg">
+
+						<img class="value-sta" src="img/gameicon/stats/sta.jpg">
+
+						<img class="value-agi" src="img/gameicon/stats/agi.jpg">
+
+						<img class="value-wit" src="img/gameicon/stats/wit.jpg">
+
+						<img class="value-per" src="img/gameicon/stats/per.jpg">
+
+						<img class="value-lck" src="img/gameicon/stats/lck.jpg">
+
+					</div>
+
+					<div class="statmod-value">
+
+						<img class="value-strmod" src="img/gameicon/stats/str.jpg">
+
+						<img class="value-stamod" src="img/gameicon/stats/sta.jpg">
+
+						<img class="value-agimod" src="img/gameicon/stats/agi.jpg">
+
+						<img class="value-witmod" src="img/gameicon/stats/wit.jpg">
+
+						<img class="value-permod" src="img/gameicon/stats/per.jpg">
+
+						<img class="value-lckmod" src="img/gameicon/stats/lck.jpg">
+
+					</div>
 
 				</div>
 
-				<p>Modifiers</p>
-
-				<div class="statmod-value">
-
-					<img class="value-strmod" src="img/gameicon/stats/str.jpg">
-
-					<img class="value-stamod" src="img/gameicon/stats/sta.jpg">
-
-					<img class="value-agimod" src="img/gameicon/stats/agi.jpg">
-
-					<img class="value-witmod" src="img/gameicon/stats/wit.jpg">
-
-					<img class="value-permod" src="img/gameicon/stats/per.jpg">
-
-					<img class="value-lckmod" src="img/gameicon/stats/lck.jpg">
-
+				<div class="stat-table position-center hidden-xs">
+				    <table>
+				        <tbody>
+				        	<thead>
+				        		<td></td>
+				        		<td></td>
+				        		<td></td>
+				        	</thead>
+				            <tr>
+				                <td><img src="img/gameicon/stats/str.jpg"></td>
+				                <td><img class="value-str" src="img/gameicon/stats/str.jpg"></td>
+				                <td><img class="value-strmod" src="img/gameicon/stats/str.jpg"></td>
+				            </tr>
+				            <tr>
+				                <td><img src="img/gameicon/stats/sta.jpg"></td>
+				                <td><img class="value-sta" src="img/gameicon/stats/sta.jpg"></td>
+				                <td><img class="value-stamod" src="img/gameicon/stats/sta.jpg"></td>
+				            </tr>
+				            <tr>
+				                <td><img src="img/gameicon/stats/agi.jpg"></td>
+				                <td><img class="value-agi" src="img/gameicon/stats/agi.jpg"></td>
+				                <td><img class="value-agimod" src="img/gameicon/stats/agi.jpg"></td>
+				            </tr>
+				            <tr>
+				                <td><img src="img/gameicon/stats/wit.jpg"></td>
+				                <td><img class="value-wit" src="img/gameicon/stats/wit.jpg"></td>
+				                <td><img class="value-witmod" src="img/gameicon/stats/wit.jpg"></td>
+				            </tr>
+				            <tr>
+				                <td><img src="img/gameicon/stats/per.jpg"></td>
+				                <td><img class="value-per" src="img/gameicon/stats/per.jpg"></td>
+				                <td><img class="value-permod" src="img/gameicon/stats/per.jpg"></td>
+				            </tr>
+				            <tr>
+				                <td><img src="img/gameicon/stats/lck.jpg"></td>
+				                <td><img class="value-lck" src="img/gameicon/stats/lck.jpg"></td>
+				                <td><img class="value-lckmod" src="img/gameicon/stats/lck.jpg"></td>
+				            </tr>
+				        </tbody>
+				    </table>
 				</div>
 
 			</div>
-
-			
 
 		</section>
 
@@ -307,7 +346,7 @@
 
 </div>
 
-<form method="post" id="createcharacter" name="createcharacter" action="createcharacter2.php">
+<form class="hidden" method="post" id="createcharacter" name="createcharacter" action="createcharacter2.php">
 
 	<label class="radio-inline gender-buttons">
 	  <input type="radio" name="gender" id="button-male" value="male" checked="checked"> Male
