@@ -248,11 +248,11 @@
 				<div class="hp-ac-container">
 
 					<div class="hp-display">
-
+						<img class="hp-img" src="img/gameicon/stats/hp.svg">
 					</div>
 
 					<div class="ac-display">
-
+						<img class="ac-img" src="img/gameicon/stats/ac.svg">
 					</div>
 
 				</div>
@@ -318,32 +318,32 @@
 				        		<td></td>
 				        	</thead>
 				            <tr>
-				                <td><img src="img/gameicon/stats/str.jpg"></td>
+				                <td><img class="stat-str" src="img/gameicon/stats/str.jpg"></td>
 				                <td><img class="value-str" src="img/gameicon/stats/str.jpg"></td>
 				                <td><img class="value-strmod" src="img/gameicon/stats/str.jpg"></td>
 				            </tr>
 				            <tr>
-				                <td><img src="img/gameicon/stats/sta.jpg"></td>
+				                <td><img class="stat-sta" src="img/gameicon/stats/sta.jpg"></td>
 				                <td><img class="value-sta" src="img/gameicon/stats/sta.jpg"></td>
 				                <td><img class="value-stamod" src="img/gameicon/stats/sta.jpg"></td>
 				            </tr>
 				            <tr>
-				                <td><img src="img/gameicon/stats/agi.jpg"></td>
+				                <td><img class="stat-agi" src="img/gameicon/stats/agi.jpg"></td>
 				                <td><img class="value-agi" src="img/gameicon/stats/agi.jpg"></td>
 				                <td><img class="value-agimod" src="img/gameicon/stats/agi.jpg"></td>
 				            </tr>
 				            <tr>
-				                <td><img src="img/gameicon/stats/wit.jpg"></td>
+				                <td><img class="stat-wit" src="img/gameicon/stats/wit.jpg"></td>
 				                <td><img class="value-wit" src="img/gameicon/stats/wit.jpg"></td>
 				                <td><img class="value-witmod" src="img/gameicon/stats/wit.jpg"></td>
 				            </tr>
 				            <tr>
-				                <td><img src="img/gameicon/stats/per.jpg"></td>
+				                <td><img class="stat-per" src="img/gameicon/stats/per.jpg"></td>
 				                <td><img class="value-per" src="img/gameicon/stats/per.jpg"></td>
 				                <td><img class="value-permod" src="img/gameicon/stats/per.jpg"></td>
 				            </tr>
 				            <tr>
-				                <td><img src="img/gameicon/stats/lck.jpg"></td>
+				                <td><img class="stat-lck" src="img/gameicon/stats/lck.jpg"></td>
 				                <td><img class="value-lck" src="img/gameicon/stats/lck.jpg"></td>
 				                <td><img class="value-lckmod" src="img/gameicon/stats/lck.jpg"></td>
 				            </tr>
@@ -528,10 +528,12 @@ if(isset($_COOKIE['username'])) {
 </footer>
 
    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
     <script src="js/Modules/Model.js"></script>
     <script src="js/Modules/View.js"></script>
     <script src="js/Modules/Controller.js"></script>
+       <script src="js/jquery.powertip.min.js"></script>
 
 </body>
 </html>

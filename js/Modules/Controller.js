@@ -119,6 +119,48 @@ ARK3.Controller = (function ($) {
             ARK3.View.displayCharacter();
         });
 
+
+        //Tooltip stuff
+        $('img').powerTip({
+            followMouse: true
+        });
+
+        $('.stat-str').data('powertipjq', $([
+            '<p><b>This is your Strength attribute.</b></p>',
+            '<p>It determines how strong you are in skill-checks.</p>',
+            ].join('\n')
+        ));
+
+        $('.stat-sta').data('powertipjq', $([
+            '<p><b>This is your Strength attribute.</b></p>',
+            '<p>It determines how strong you are in skill-checks.</p>',
+            ].join('\n')
+        ));
+
+        $('.stat-agi').data('powertipjq', $([
+            '<p><b>This is your Strength attribute.</b></p>',
+            '<p>It determines how strong you are in skill-checks.</p>',
+            ].join('\n')
+        ));
+
+        $('.stat-wit').data('powertipjq', $([
+            '<p><b>This is your Strength attribute.</b></p>',
+            '<p>It determines how strong you are in skill-checks.</p>',
+            ].join('\n')
+        ));
+
+        $('.stat-per').data('powertipjq', $([
+            '<p><b>This is your Strength attribute.</b></p>',
+            '<p>It determines how strong you are in skill-checks.</p>',
+            ].join('\n')
+        ));
+
+        $('.stat-lck').data('powertipjq', $([
+            '<p><b>This is your Strength attribute.</b></p>',
+            '<p>It determines how strong you are in skill-checks.</p>',
+            ].join('\n')
+        ));
+
     };
 
     return {

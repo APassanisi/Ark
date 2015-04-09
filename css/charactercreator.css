@@ -138,17 +138,21 @@ form {
   margin-left: -5px;
 }
 
-.hp-display,
-.ac-display {
-  background: black;
-  color: white;
+.hp-ac-container img {
   height: 45px;
   width: 45px;
-  display: inline-block;
 }
 
 .hp-ac-container {
   margin-left: 20px;
+}
+
+.hp {
+  float: left;
+}
+
+.ac {
+  float: right;
 }
 
 /****** DETAIL INFO
