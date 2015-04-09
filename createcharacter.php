@@ -149,12 +149,14 @@
 
 			<div class="hp-display">
 
+				<p>HP: </p>
 				<p class="hp"></p>
-
+				
 			</div>
 
 			<div class="pull-right ac-display">
 
+				<p>AC: </p>
 				<p class="ac"></p>
 
 			</div>

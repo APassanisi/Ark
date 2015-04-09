@@ -88,7 +88,22 @@ form {
   width: auto;
 }
 
+/******************* INFO
+************************************************/
+.hp-display,
+.ac-display {
+  background: black;
+  color: white;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+}
 
+.ac,
+.hp {
+  margin-top: -10px;
+}
 /******************* INFO
 ************************************************/
 

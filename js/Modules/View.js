@@ -222,8 +222,8 @@ ARK3.View = (function ($) {
         displayCharacter: function displayCharacter() {
             this.displayStats();
             this.displayMods();
-            $('.hp').text('HP: ' + ARK3.Model.character.hp);
-            $('.ac').text('AC: ' + ARK3.Model.character.ac);
+            $('.hp').text(ARK3.Model.character.hp);
+            $('.ac').text(ARK3.Model.character.ac);
             $('.raceDescription').text(ARK3.Model.character.raceDescription);
             $('.professionDescription').text(ARK3.Model.character.professionDescription);
             $('.head-name').text('Head: ' + ARK3.Model.character.head.itemName);
