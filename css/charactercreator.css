@@ -1,7 +1,7 @@
 /******************* HIDE FORM
 ************************************************/
 form {
-  display: none;
+/*  display: none;*/
 }
 
 /******************* PROGRESSION BAR
@@ -132,6 +132,10 @@ form {
   width: auto;
 }
 
+.stat-value {
+  margin-top: 5px;
+}
+
 .raceDescription {
   margin-top: 15px;
 }
@@ -142,10 +146,17 @@ form {
 /****** FINALIZE INFO
 ***********************/
 
+/******************* ITEM AJAX STYLEs
+************************************************/
+
 
 /******************* MEDIA QUERIES
 ************************************************/
 @media (min-width: 768px) {
+  .body {
+    background: red;
+  }
+
   .basic-options,
   .detail-options,
   .finalize-options,

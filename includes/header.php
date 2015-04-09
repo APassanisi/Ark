@@ -59,7 +59,7 @@ if(isset($_COOKIE['username'])) {
   <link href="favicon.ico" rel="icon">
 
   <title>Ark3 Project</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
   <!-- CSS for main site -->
   <link href="css/main.css" rel="stylesheet">
   <!-- CSS for character creator -->

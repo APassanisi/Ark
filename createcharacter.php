@@ -7,7 +7,7 @@
 
 	<div class="row">
 
-		<nav class="progression alert alert-info col-xs-12">
+		<section class="progression alert alert-info col-xs-12">
 
 			<img class="button-basic" src="img/gameicon/progress/progress-icons-basic.svg">
 
@@ -15,7 +15,7 @@
 
 			<img class="button-finalize" src="img/gameicon/progress/progress-icons-finalize.svg">
 
-		</nav>
+		</section>
 
 		<section class="basic-options alert alert-info col-xs-6 col-sm-4 col-lg-3">
 
@@ -147,20 +147,6 @@
 
 		<section class="character alert alert-info col-xs-6 col-sm-4 col-lg-offset-1">
 
-			<div class="hp-display">
-
-				<p>HP: </p>
-				<p class="hp"></p>
-				
-			</div>
-
-			<div class="pull-right ac-display">
-
-				<p>AC: </p>
-				<p class="ac"></p>
-
-			</div>
-
 			<div class="svg-container hidden">
 
 				<!-- Race (Body SVG) -->
@@ -200,7 +186,64 @@
 
 		<section class="basic-info alert alert-info col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
 
+			<p class="raceDescription well well-sm"></p>
+
+			<br>
+
+			<p class="professionDescription well well-sm"></p>
+
+		</section>
+
+		<section class="detail-info alert alert-info col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
+
+			<div class="inventory well well-sm">
+
+				<div class="inventory-head">
+					<p class="head-name"></p>
+					<p class="head-ac"></p>
+					<p class="head-agimod"></p>
+				</div>
+
+				<div class="inventory-chest">
+					<p class="chest-name"></p>
+					<p class="chest-ac"></p>
+					<p class="chest-agimod"></p>
+				</div>
+
+				<div class="inventory-feet">
+					<p class="feet-name"></p>
+					<p class="feet-ac"></p>
+					<p class="feet-agimod"></p>
+				</div>
+
+				<div class="inventory-weapon">
+					<p class="weapon-name"></p>
+					<p class="weapon-dmg"></p>
+					<p class="weapon-ac"></p>
+					<p class="weapon-agimod"></p>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="finalize-info alert alert-info col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
+
 			<div class="stat-container">
+
+				<div class="hp-display">
+
+					<p>HP: </p>
+					<p class="hp"></p>
+					
+				</div>
+
+				<div class="pull-right ac-display">
+
+					<p>AC: </p>
+					<p class="ac"></p>
+
+				</div>
 
 				<p>Stats</p>
 
@@ -219,8 +262,6 @@
 					<img class="stat-lck" src="img/gameicon/stats/lck.jpg">
 
 				</div>
-
-				<p>Values</p>
 
 				<div class="stat-value">
 
@@ -258,50 +299,7 @@
 
 			</div>
 
-			<p class="raceDescription well well-sm"></p>
-
-			<br>
-
-			<p class="professionDescription well well-sm"></p>
-
-		</section>
-
-		<section class="detail-info alert alert-info col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
-
-			<p>Detail Info</p>
-
-		</section>
-
-		<section class="finalize-info alert alert-info col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
-
-			<div class="inventory well well-sm">
-
-				<div class="inventory-head">
-					<p class="head-name"></p>
-					<p class="head-ac"></p>
-					<p class="head-agimod"></p>
-				</div>
-
-				<div class="inventory-chest">
-					<p class="chest-name"></p>
-					<p class="chest-ac"></p>
-					<p class="chest-agimod"></p>
-				</div>
-
-				<div class="inventory-feet">
-					<p class="feet-name"></p>
-					<p class="feet-ac"></p>
-					<p class="feet-agimod"></p>
-				</div>
-
-				<div class="inventory-weapon">
-					<p class="weapon-name"></p>
-					<p class="weapon-dmg"></p>
-					<p class="weapon-ac"></p>
-					<p class="weapon-agimod"></p>
-				</div>
-
-			</div>
+			
 
 		</section>
 

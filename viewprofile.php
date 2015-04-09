@@ -18,9 +18,9 @@
 	        </thead>
 	        <tbody>
 	            <tr>
-	                <td><?php echo $_SESSION['username']; ?></td>
-	                <td><?php echo $_SESSION['email']; ?></td>
-	                <td><?php echo '<img style=" margin: auto 25%; max-width: 32px; max-height: 32px;" src=' . ARK3_UPLOADPATH . $_SESSION['avatar'] . '>'; ?></td>
+	                <td><?php echo $_COOKIE['username']; ?></td>
+	                <td><?php echo $_COOKIE['email']; ?></td>
+	                <td><?php echo '<img style=" margin: auto 25%; max-width: 32px; max-height: 32px;" src=' . ARK3_UPLOADPATH . $_COOKIE['avatar'] . '>'; ?></td>
 	            </tr>
 	        </tbody>
 	    </table>
