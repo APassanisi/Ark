@@ -222,6 +222,8 @@ ARK3.View = (function ($) {
         displayCharacter: function displayCharacter() {
             this.displayStats();
             this.displayMods();
+            $('.panel-body').text('Click on an item to view details.');
+            $('.inventory div').removeClass('active');
             $('.hp').text(ARK3.Model.character.hp);
             $('.ac').text(ARK3.Model.character.ac);
             $('.raceDescription').text(ARK3.Model.character.raceDescription);
@@ -242,16 +244,29 @@ ARK3.View = (function ($) {
         },
 
         mobileDisplayInventoryItem: function mobileDisplayInventoryItem(item) {
+            var accessItem = ARK3.Model.character[item];
+            var displayItemDetails;
+            displayItemDetails = '<b>' + accessItem.itemName + '</b>';
+            displayItemDetails += '<br>';
+            if (item === 'weapon') {
+                displayItemDetails += '<b>DMG: </b>' + accessItem.damage;                
+                if (accessItem.ac !== 0) {
+                    displayItemDetails += '<br>';
+                    displayItemDetails += '<b>AC: </b>' + accessItem.ac;
+                }
+                if (accessItem.agiBonus !== 0) {
+                    displayItemDetails += '<br>';
+                    displayItemDetails += '<b>AGI bonus: </b>' + accessItem.agiBonus;
+                }  
+            } else {
+                displayItemDetails += '<b>AC: </b>' + accessItem.ac;
+                displayItemDetails += '<br>';
+                displayItemDetails += '<b>AGI bonus: </b>' + accessItem.agiBonus;
+            }      
             //Figure out better selector
             $('.head, .chest, .feet, .weapon').removeClass('active');
             $('.' + item).addClass('active');
-            $('.panel-body').html(
-                '<b>' + ARK3.Model.character. + item + .itemName + '</b>' + 
-                '<br>' + 
-                '<b>AC: </b>' + ARK3.Model.character. + item + .ac + 
-                '<br>' + 
-                '<b>AGI bonus: </b>' + ARK3.Model.character. + item + .agiBonus
-            );
+            $('.panel-body').html(displayItemDetails);
         },
 
         init: function init() {

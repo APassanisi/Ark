@@ -152,6 +152,11 @@ form {
   display: inline;
 }
 
+.hp-img,
+.ac-img {
+  z-index: 1000;
+}
+
 /****** DETAIL INFO
 ***********************/
 

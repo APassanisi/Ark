@@ -196,40 +196,11 @@
 
 		<section class="detail-info alert alert-info col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
 
-<!-- 			<div class="inventory well well-sm">
-
-				<div class="inventory-head">
-					<p class="head-name"></p>
-					<p class="head-ac"></p>
-					<p class="head-agimod"></p>
-				</div>
-
-				<div class="inventory-chest">
-					<p class="chest-name"></p>
-					<p class="chest-ac"></p>
-					<p class="chest-agimod"></p>
-				</div>
-
-				<div class="inventory-feet">
-					<p class="feet-name"></p>
-					<p class="feet-ac"></p>
-					<p class="feet-agimod"></p>
-				</div>
-
-				<div class="inventory-weapon">
-					<p class="weapon-name"></p>
-					<p class="weapon-dmg"></p>
-					<p class="weapon-ac"></p>
-					<p class="weapon-agimod"></p>
-				</div>
-
-			</div> -->
-
-			<div class="mobile-view-inventory hidden-sm hidden-md hidden-lg">
+			<div class="mobile-view-inventory">
 
 				<div class="selected-item panel panel-default">
 				    <div class="panel-body">
-				        Click on an item to view details.
+				        
 				    </div>
 				</div>
 
