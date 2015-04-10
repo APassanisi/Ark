@@ -219,16 +219,11 @@
 
 			<div class="stat-container">
 
-
 				<div class="hp-ac-container">
 
-					<div class="hp-display">
 						<img class="hp-img" src="img/gameicon/stats/hp.svg">
-					</div>
 
-					<div class="ac-display">
 						<img class="ac-img" src="img/gameicon/stats/ac.svg">
-					</div>
 
 				</div>
 

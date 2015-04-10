@@ -139,44 +139,45 @@ ARK3.Controller = (function ($) {
             followMouse: true
         });
 
-        $('.hp-display').data('powertipjq', $([
-            '<p><b>This is how many hit points you have.</b></p>',
-            '<p>Your Stamina modifier increases your hit points.</p>'
+        $('.hp-img').data('powertipjq', $([
+            '<b>This is how many hit points you have.</b>',
+            'Your Stamina modifier increases your hit points.'
             ].join('\n')
         ));
 
         $('.ac-img').data('powertipjq', $([
-            '<p><b>This is your Luck attribute.</b></p>',
+            '<b>This is your armor class.</b>',
+            'It is calculated based off your armor quality and AGI modifier.'
             ].join('\n')
         ));
 
         $('.stat-str').data('powertipjq', $([
-            '<p><b>This is your Strength attribute.</b></p>',
+            '<b>This is your Strength attribute.</b>',
             ].join('\n')
         ));
 
         $('.stat-sta').data('powertipjq', $([
-            '<p><b>This is your Stamina attribute.</b></p>',
+            '<b>This is your Stamina attribute.</b>',
             ].join('\n')
         ));
 
         $('.stat-agi').data('powertipjq', $([
-            '<p><b>This is your Agility attribute.</b></p>',
+            '<b>This is your Agility attribute.</b>',
             ].join('\n')
         ));
 
         $('.stat-wit').data('powertipjq', $([
-            '<p><b>This is your Strength attribute.</b></p>',
+            '<b>This is your Strength attribute.</b>',
             ].join('\n')
         ));
 
         $('.stat-per').data('powertipjq', $([
-            '<p><b>This is your Personality attribute.</b></p>',
+            '<b>This is your Personality attribute.</b>',
             ].join('\n')
         ));
 
         $('.stat-lck').data('powertipjq', $([
-            '<p><b>This is your Luck attribute.</b></p>',
+            '<b>This is your Luck attribute.</b>',
             ].join('\n')
         ));
 

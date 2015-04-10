@@ -109,6 +109,7 @@ form {
 
 .stat-table-small {
   margin-left: 20px;
+  top: 150px;
 }
 .stat-table-small div {
   text-align: center;
@@ -132,9 +133,12 @@ form {
   padding: 0;
 }
 
+.stat-table {
+    top: 125px;
+}
+
 .stat-table > table {
   border: 0px;
-  margin-top: 60px;
   margin-left: -5px;
 }
 
@@ -147,15 +151,11 @@ form {
   margin-left: 20px;
 }
 
-.hp-display,
-.ac-display {
+.hp-img,
+.ac-img {
   display: inline;
 }
 
-.hp-img,
-.ac-img {
-  z-index: 1000;
-}
 
 /****** DETAIL INFO
 ***********************/
