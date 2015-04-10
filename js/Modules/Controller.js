@@ -119,9 +119,23 @@ ARK3.Controller = (function ($) {
             ARK3.View.displayCharacter();
         });
 
+        //Inventory for mobile view click
+        $('.head').click(function () {
+            ARK3.View.mobileDisplayInventoryItem('head');
+        });
+        $('.chest').click(function () {
+            ARK3.View.mobileDisplayInventoryItem('chest');
+        });
+        $('.feet').click(function () {
+            ARK3.View.mobileDisplayInventoryItem('feet');
+        });
+        $('.weapon').click(function () {
+            ARK3.View.mobileDisplayInventoryItem('weapon');
+        });
+
 
         //Tooltip stuff
-        $('img').powerTip({
+        $('img, div').powerTip({
             followMouse: true
         });
 
@@ -155,30 +169,46 @@ ARK3.Controller = (function ($) {
             ].join('\n')
         ));
 
-        $('.head').data('powertipjq', $([
-            '<p class="head-name"></p>',
-            '<p class="head-ac"></p>',
-            '<p class="head-agimod"></p>',
-            ].join('\n')
-        ));
+        // var head = '<b>' + ARK3.Model.character.head.itemName + '</b>' + 
+        //            '<br>' + 
+        //            '<b>AC: </b>' + ARK3.Model.character.head.ac + 
+        //            '<br>' + 
+        //            '<b>AGI bonus: </b>' + ARK3.Model.character.head.agiBonus;
 
-        $('.chest').data('powertipjq', $([
-            '<p><b>This is your Luck attribute.</b></p>',
-            '<p>It determines how strong you are in skill-checks.</p>',
-            ].join('\n')
-        ));
+        // var chest = '<b>' + ARK3.Model.character.chest.itemName + '</b>' + 
+        //             '<br>' + 
+        //             '<b>AC: </b>' + ARK3.Model.character.chest.ac + 
+        //             '<br>' + 
+        //             '<b>AGI bonus: </b>' + ARK3.Model.character.chest.agiBonus;
 
-        $('.feet').data('powertipjq', $([
-            '<p><b>This is your Luck attribute.</b></p>',
-            '<p>It determines how strong you are in skill-checks.</p>',
-            ].join('\n')
-        ));
+        // var feet = '<b>' + ARK3.Model.character.feet.itemName + '</b>' + 
+        //            '<br>' + 
+        //            '<b>AC: </b>' + ARK3.Model.character.feet.ac + 
+        //            '<br>' + 
+        //            '<b>AGI bonus: </b>' + ARK3.Model.character.feet.agiBonus;
 
-        $('.weapon').data('powertipjq', $([
-            '<p><b>This is your Luck attribute.</b></p>',
-            '<p>It determines how strong you are in skill-checks.</p>',
-            ].join('\n')
-        ));
+        // $('.head').data('powertipjq', function() {
+        //     var head = '<b>' + ARK3.Model.character.head.itemName + '</b>' + 
+        //            '<br>' + 
+        //            '<b>AC: </b>' + ARK3.Model.character.head.ac + 
+        //            '<br>' + 
+        //            '<b>AGI bonus: </b>' + ARK3.Model.character.head.agiBonus;
+        //     return head;
+        // });
+
+        // $('.chest').data('powertipjq', $([
+        //     '<p>' + chest + '</p>',
+        //     ].join('\n')));
+
+        // $('.feet').data('powertipjq', $([
+        //     '<p>' + feet + '</p>',
+        //     ].join('\n')));
+
+        // $('.weapon').data('powertipjq', $([
+        //     '<p><b>This is your Luck attribute.</b></p>',
+        //     '<p>It determines how strong you are in skill-checks.</p>',
+        //     ].join('\n')
+        // ));
 
     };
 

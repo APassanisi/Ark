@@ -225,17 +225,21 @@
 
 			</div> -->
 
-			<div class="selected-item panel panel-default">
-			    <div class="panel-body">
-			        Click on an item to view details.
-			    </div>
-			</div>
+			<div class="mobile-view-inventory hidden-sm hidden-md hidden-lg">
 
-			<div class="inventory list-group">
-			    <a class="head head-name list-group-item"></a>
-			    <a class="chest chest-name list-group-item"></a>
-			    <a class="feet feet-name list-group-item"></a>
-			    <a class="weapon weapon-name list-group-item"></a>
+				<div class="selected-item panel panel-default">
+				    <div class="panel-body">
+				        Click on an item to view details.
+				    </div>
+				</div>
+
+				<div class="inventory list-group">
+				    <div class="head head-name list-group-item"></div>
+				    <div class="chest chest-name list-group-item"></div>
+				    <div class="feet feet-name list-group-item"></div>
+				    <div class="weapon weapon-name list-group-item"></div>
+				</div>
+
 			</div>
 
 		</section>

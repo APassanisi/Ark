@@ -241,6 +241,19 @@ ARK3.View = (function ($) {
             $('.weapon-agimod').text('AGI bonus: ' + ARK3.Model.character.weapon.agiBonus);
         },
 
+        mobileDisplayInventoryItem: function mobileDisplayInventoryItem(item) {
+            //Figure out better selector
+            $('.head, .chest, .feet, .weapon').removeClass('active');
+            $('.' + item).addClass('active');
+            $('.panel-body').html(
+                '<b>' + ARK3.Model.character. + item + .itemName + '</b>' + 
+                '<br>' + 
+                '<b>AC: </b>' + ARK3.Model.character. + item + .ac + 
+                '<br>' + 
+                '<b>AGI bonus: </b>' + ARK3.Model.character. + item + .agiBonus
+            );
+        },
+
         init: function init() {
             //Initial hide of elements
             $('.detail-options').hide();

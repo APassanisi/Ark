@@ -11,7 +11,7 @@ form {
 }
 .progression img {
   height: auto;
-  width: 100px;
+  width: 75px;
 }
 
 /******************* PANEL HEIGHT
@@ -80,7 +80,7 @@ form {
 }
 
 .detail-options .button-cycle {
-  width: 30px;
+  width: 28px;
   height: auto;
 }
 
