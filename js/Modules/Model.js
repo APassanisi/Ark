@@ -1,6 +1,6 @@
 var ARK3 = ARK3 || {};
 
-ARK3.Model = (function ($) {
+ARK3.Model = (function($) {
 
     var character = {};
 
@@ -22,20 +22,20 @@ ARK3.Model = (function ($) {
     };
 
     //Warrior weapons
-    var longsword = new Weapon("Longsword", "1D8", 0 , 0);
+    var longsword = new Weapon("Longsword", "1D8", 0, 0);
     var swordAndShield = new Weapon('Sword and Shield', '1D6', 1, -1);
     //Mage weapons
-    var fire = new Weapon("Fire", "4D3", 0 , 0);
-    var ice = new Weapon('Ice', '4D3', 0 , 0);
+    var fire = new Weapon("Fire", "4D3", 0, 0);
+    var ice = new Weapon('Ice', '4D3', 0, 0);
     //Thief weapons
-    var dagger = new Weapon("Dagger", "1D6", 0 , 0);
-    var dualDaggers = new Weapon("Dual Daggers", "2D3", 0 , 0);
+    var dagger = new Weapon("Dagger", "1D6", 0, 0);
+    var dualDaggers = new Weapon("Dual Daggers", "2D3", 0, 0);
     //Explorer weapons
-    var axe = new Weapon("Axe", "1D6", 0 , 0);
-    var shortSword = new Weapon("Short Sword", "1D6", 0 , 0);
+    var axe = new Weapon("Axe", "1D6", 0, 0);
+    var shortSword = new Weapon("Short Sword", "1D6", 0, 0);
     //Detective weapons
-    var pistols = new Weapon("Pistols", "2D4", 0 , 0);
-    var fists = new Weapon("Fists", "2D4", 0 , 0);
+    var pistols = new Weapon("Pistols", "2D4", 0, 0);
+    var fists = new Weapon("Fists", "2D4", 0, 0);
 
     //Armor
     var clothCap = new Armor("Cloth cap", 0, 1);
@@ -58,54 +58,52 @@ ARK3.Model = (function ($) {
             'female'
         ],
 
-        raceArray: [
-            {
-                race: 'human',
-                str: 11,
-                sta: 11,
-                agi: 11,
-                wit: 11,
-                per: 11,
-                lck: 11,
-                description: 'You are a Human.'
-            }, {
-                race: 'robot',
-                str: 11,
-                sta: 11,
-                agi: 11,
-                wit: 16,
-                per: 5,
-                lck: 11,
-                description: 'You are a Robot.'
-            }, {
-                race: 'barbarian',
-                str: 11,
-                sta: 16,
-                agi: 11,
-                wit: 11,
-                per: 5,
-                lck: 11,
-                description: 'You are a Barbarian.'
-            }, {
-                race: 'dwarf',
-                str: 13,
-                sta: 13,
-                agi: 11,
-                wit: 8,
-                per: 8,
-                lck: 11,
-                description: 'You are a Dwarf.'
-            }, {
-                race: 'elf',
-                str: 8,
-                sta: 8,
-                agi: 13,
-                wit: 13,
-                per: 11,
-                lck: 11,
-                description: 'You are an Elf.'
-            }
-        ],
+        raceArray: [{
+            race: 'human',
+            str: 11,
+            sta: 11,
+            agi: 11,
+            wit: 11,
+            per: 11,
+            lck: 11,
+            description: 'You are a Human.'
+        }, {
+            race: 'robot',
+            str: 11,
+            sta: 11,
+            agi: 11,
+            wit: 16,
+            per: 5,
+            lck: 11,
+            description: 'You are a Robot.'
+        }, {
+            race: 'barbarian',
+            str: 11,
+            sta: 16,
+            agi: 11,
+            wit: 11,
+            per: 5,
+            lck: 11,
+            description: 'You are a Barbarian.'
+        }, {
+            race: 'dwarf',
+            str: 13,
+            sta: 13,
+            agi: 11,
+            wit: 8,
+            per: 8,
+            lck: 11,
+            description: 'You are a Dwarf.'
+        }, {
+            race: 'elf',
+            str: 8,
+            sta: 8,
+            agi: 13,
+            wit: 13,
+            per: 11,
+            lck: 11,
+            description: 'You are an Elf.'
+        }],
 
         weaponsArray: [
             [longsword, swordAndShield],
@@ -115,74 +113,72 @@ ARK3.Model = (function ($) {
             [pistols, fists]
         ],
 
-        professionArray: [
-            {
-                profession: 'warrior',
-                strBonus: 2,
-                staBonus: 1,
-                agiBonus: 1,
-                witBonus: 0,
-                perBonus: 0,
-                lckBonus: 0,
-                head: chainHelm,
-                chest: chainShirt,
-                feet: chainBoots,
-                weapon: longsword,
-                description: 'You are a warrior.'
-            }, {
-                profession: 'mage',
-                strBonus: 0,
-                staBonus: 1,
-                agiBonus: 0,
-                witBonus: 2,
-                perBonus: 1,
-                lckBonus: 0,
-                head: clothCap,
-                chest: clothRobe,
-                feet: clothSlippers,
-                weapon: fire,
-                description: 'You are a mage.'
-            }, {
-                profession: 'thief',
-                strBonus: 0,
-                staBonus: 1,
-                agiBonus: 2,
-                witBonus: 0,
-                perBonus: 0,
-                lckBonus: 2,
-                head: clothCap,
-                chest: leatherJerkin,
-                feet: clothSlippers,
-                weapon: dagger,
-                description: 'You are a thief.'
-            }, {
-                profession: 'explorer',
-                strBonus: 2,
-                staBonus: 0,
-                agiBonus: 0,
-                witBonus: 0,
-                perBonus: 1,
-                lckBonus: 1,
-                head: leatherHood,
-                chest: leatherJerkin,
-                feet: leatherBoots,
-                weapon: axe,
-                description: 'You are a explorer.'
-            }, {
-                profession: 'detective',
-                strBonus: 0,
-                staBonus: 0,
-                agiBonus: 1,
-                witBonus: 0,
-                perBonus: 2,
-                lckBonus: 1,
-                head: leatherHood,
-                chest: leatherJerkin,
-                feet: leatherBoots,
-                weapon: pistols,
-                description: 'You are a detective.'
-            }
-        ],
+        professionArray: [{
+            profession: 'warrior',
+            strBonus: 2,
+            staBonus: 1,
+            agiBonus: 1,
+            witBonus: 0,
+            perBonus: 0,
+            lckBonus: 0,
+            head: chainHelm,
+            chest: chainShirt,
+            feet: chainBoots,
+            weapon: longsword,
+            description: 'You are a warrior.'
+        }, {
+            profession: 'mage',
+            strBonus: 0,
+            staBonus: 1,
+            agiBonus: 0,
+            witBonus: 2,
+            perBonus: 1,
+            lckBonus: 0,
+            head: clothCap,
+            chest: clothRobe,
+            feet: clothSlippers,
+            weapon: fire,
+            description: 'You are a mage.'
+        }, {
+            profession: 'thief',
+            strBonus: 0,
+            staBonus: 1,
+            agiBonus: 2,
+            witBonus: 0,
+            perBonus: 0,
+            lckBonus: 2,
+            head: clothCap,
+            chest: leatherJerkin,
+            feet: clothSlippers,
+            weapon: dagger,
+            description: 'You are a thief.'
+        }, {
+            profession: 'explorer',
+            strBonus: 2,
+            staBonus: 0,
+            agiBonus: 0,
+            witBonus: 0,
+            perBonus: 1,
+            lckBonus: 1,
+            head: leatherHood,
+            chest: leatherJerkin,
+            feet: leatherBoots,
+            weapon: axe,
+            description: 'You are a explorer.'
+        }, {
+            profession: 'detective',
+            strBonus: 0,
+            staBonus: 0,
+            agiBonus: 1,
+            witBonus: 0,
+            perBonus: 2,
+            lckBonus: 1,
+            head: leatherHood,
+            chest: leatherJerkin,
+            feet: leatherBoots,
+            weapon: pistols,
+            description: 'You are a detective.'
+        }],
 
         hairStyleArray: [
             'Normal',
@@ -228,6 +224,7 @@ ARK3.Model = (function ($) {
 
     var agiFromArmorSetter = function agiFromArmorsetter() {
         var agiFromArmor;
+
         function calcAgiFromArmor() {
             agiFromArmor = 0;
             agiFromArmor += character.head.agiBonus;
@@ -395,25 +392,25 @@ ARK3.Model = (function ($) {
         //TODO
         //Fill out function
         weaponSetter: function weaponSetter() {
-        	var weaponOptions;
+            var weaponOptions;
             var i;
-        	if (character.profession === 'warrior') {
-        		weaponOptions = characterOptions.weaponsArray[0];
-        	} else if (character.profession ==='mage') {
-        		weaponOptions = characterOptions.weaponsArray[1];
-        	} else if (character.profession === 'thief') {
-        		weaponOptions = characterOptions.weaponsArray[2];
-        	} else if (character.profession === 'explorer') {
-        		weaponOptions = characterOptions.weaponsArray[3];
-        	} else {
-        		weaponOptions = characterOptions.weaponsArray[4];
-        	};
+            if (character.profession === 'warrior') {
+                weaponOptions = characterOptions.weaponsArray[0];
+            } else if (character.profession === 'mage') {
+                weaponOptions = characterOptions.weaponsArray[1];
+            } else if (character.profession === 'thief') {
+                weaponOptions = characterOptions.weaponsArray[2];
+            } else if (character.profession === 'explorer') {
+                weaponOptions = characterOptions.weaponsArray[3];
+            } else {
+                weaponOptions = characterOptions.weaponsArray[4];
+            };
 
             for (i = 0; i < weaponOptions.length; i++) {
                 if ($('#button-weapon-1').is(':checked')) {
                     character.weapon = weaponOptions[0];
                 } else {
-                	character.weapon = weaponOptions[1];
+                    character.weapon = weaponOptions[1];
                 }
             }
 
@@ -441,6 +438,6 @@ ARK3.Model = (function ($) {
 
 }(jQuery));
 
-$(document).ready(function () {
+$(document).ready(function() {
     ARK3.Model.init();
 });

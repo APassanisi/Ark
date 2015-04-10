@@ -249,7 +249,7 @@ ARK3.View = (function ($) {
             displayItemDetails = '<b>' + accessItem.itemName + '</b>';
             displayItemDetails += '<br>';
             if (item === 'weapon') {
-                displayItemDetails += '<b>DMG: </b>' + accessItem.damage;                
+                displayItemDetails += '<b>DMG: </b>' + accessItem.damage;
                 if (accessItem.ac !== 0) {
                     displayItemDetails += '<br>';
                     displayItemDetails += '<b>AC: </b>' + accessItem.ac;
@@ -257,12 +257,12 @@ ARK3.View = (function ($) {
                 if (accessItem.agiBonus !== 0) {
                     displayItemDetails += '<br>';
                     displayItemDetails += '<b>AGI bonus: </b>' + accessItem.agiBonus;
-                }  
+                }
             } else {
                 displayItemDetails += '<b>AC: </b>' + accessItem.ac;
                 displayItemDetails += '<br>';
                 displayItemDetails += '<b>AGI bonus: </b>' + accessItem.agiBonus;
-            }      
+            }
             //Figure out better selector
             $('.head, .chest, .feet, .weapon').removeClass('active');
             $('.' + item).addClass('active');
