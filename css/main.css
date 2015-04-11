@@ -8,7 +8,6 @@ html {
 body {
     padding-top:50px;
     margin-bottom:60px;
-    background-color: pink;
 }
 
 .container {
@@ -37,10 +36,6 @@ table {
     min-width:250px
 }
 
-nav {
-    background: none;
-}
-
 .navbar {
     max-height:50px;
     background: none;
@@ -50,8 +45,12 @@ nav {
     padding:9px
 }
 
+.navbar-right > li {
+    padding-top: 5px;
+}
+
 .navbar-collapse {
-    background: none;
+    background: #eee;
 }
 
 .jumbotron {
@@ -81,4 +80,21 @@ nav {
 ********************************/
 .sign-up-header {
     margin-bottom:50px
+}
+
+@media (min-width: 768px) {
+
+    .navbar-collapse {
+        background: none;
+    }
+    
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+      }
+
+      .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
 }
