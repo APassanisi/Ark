@@ -13,10 +13,9 @@ if(isset($_COOKIE['username'])) {
       <a href="character.php">Character</a>
   </li>' . 
 
-  '<li class="dropdown">
-    <a style="padding-top: 4px;" class="dropdown-toggle" data-toggle="dropdown" href="#">' . $_COOKIE['username'] . 
-  '<img style="margin-left: 20px; max-width: 32px; max-height: 32px;" src="' . 
-  ARK3_UPLOADPATH . $_COOKIE['avatar'] . '" alt="Avatar image"><span class="caret"></span></a>
+  '<li style="margin-left: 4px;" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+    <span class="caret"></span></a>
 
   <ul class="dropdown-menu">
 
@@ -36,13 +35,15 @@ if(isset($_COOKIE['username'])) {
 </li>';
 } else {
   $log_display = 
-   '<li style="padding-top: 5px;">
-      <a href="loginpage.php">Log In</a>
-    </li>
 
-    <li style="padding-top: 5px;">
-      <a href="signup.php">Sign Up</a>
-    </li>'; 
+
+       '<li style="padding-top: 5px;">
+          <a href="loginpage.php">Log In</a>
+        </li>
+
+        <li style="padding-top: 5px;">
+          <a href="signup.php">Sign Up</a>
+        </li>'; 
 }
 
 ?>
@@ -87,15 +88,15 @@ if(isset($_COOKIE['username'])) {
 
         <ul class="nav navbar-nav navbar-right">
         <li>
-            <a href="admin.php">Admin</a>
+            <a href="About.php">About</a>
           </li>
 
           <li>
-            <a href="sandbox.php">Sandbox</a>
+            <a href="Guide.php">Guide</a>
           </li>
 
           <li>
-            <a href="userlist.php">User List</a>
+            <a href="index.php">Home</a>
           </li>
         <?php echo $log_display; ?>
         </ul>
