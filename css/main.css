@@ -7,7 +7,8 @@ html {
 
 body {
     padding-top:50px;
-    margin-bottom:60px
+    margin-bottom:60px;
+    background-color: pink;
 }
 
 .container {
@@ -36,8 +37,13 @@ table {
     min-width:250px
 }
 
+nav {
+    background: none;
+}
+
 .navbar {
-    max-height:50px
+    max-height:50px;
+    background: none;
 }
 
 .navbar-right > li > a {
@@ -45,7 +51,7 @@ table {
 }
 
 .navbar-collapse {
-    background:#eee
+    background: none;
 }
 
 .jumbotron {
