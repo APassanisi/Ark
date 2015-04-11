@@ -74,35 +74,40 @@ if(isset($_COOKIE['username'])) {
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-        <div class="navbar-header">
-            <button class="navbar-toggle collapsed" data-target="#navbar"
-            data-toggle="collapse" type="button"><span class="sr-only">Toggle
-            navigation</span> <span class="icon-bar"></span> <span class=
-            "icon-bar"></span> <span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="index.php">Home</a>
-        </div>
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" data-target="#navbar"
+        data-toggle="collapse" type="button"><span class="sr-only">Toggle
+        navigation</span> <span class="icon-bar"></span> <span class=
+        "icon-bar"></span> <span class="icon-bar"></span></button> <a class=
+        "navbar-brand" href="index.php">Ark 3 Project</a>
+      </div>
 
-        <div class="navbar-collapse collapse" id="navbar">
-            <ul class="nav navbar-nav left-nav">
-                <li>
-                    <a href="gameguide.php">Game Guide</a>
-                </li>
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="nav navbar-nav left-nav">
 
-                <li>
-                    <a href="forum.php">Forum</a>
-                </li>
+          <li>
+            <a href="admin.php">Admin</a>
+          </li>
 
-                <li>
-                    <a href="userlist.php">User List</a>
-                </li>
-            </ul>
+          <li>
+            <a href="sandbox.php">Sandbox</a>
+          </li>
 
-            <ul class="nav navbar-nav navbar-right">
-                <?php echo $log_display; ?>
-            </ul>
-        </div><!--/.nav-collapse -->
+          <li>
+            <a href="userlist.php">User List</a>
+          </li>
+
+
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+        <?php echo $log_display; ?>
+        </ul>
+      </div><!--/.nav-collapse -->
     </div>
-</nav>
+  </nav>
+  <body>
 

@@ -17,10 +17,7 @@ form {
 
 /******************* PANEL HEIGHT
 ************************************************/
-.basic-options,
-.detail-options,
-.finalize-options,
-.character {
+.basic-options,.detail-options,.finalize-options,.character {
     height:375px
 }
 
@@ -48,8 +45,7 @@ form {
     width:50px
 }
 
-.race-button-container img,
-.profession-button-container img {
+.race-button-container img,.profession-button-container img {
     margin:2px
 }
 
@@ -93,8 +89,7 @@ form {
 ************************************************/
 /******************* INFO
 ************************************************/
-.basic-info,.detail-info,
-.finalize-info {
+.basic-info,.detail-info,.finalize-info {
     overflow-y:scroll;
     height:auto
 }
@@ -127,8 +122,7 @@ form {
     margin-left:10px
 }
 
-.table>tbody>tr>td,
-.table>tbody>tr>th {
+.table>tbody>tr>td,.table>tbody>tr>th {
     padding:0
 }
 
@@ -167,29 +161,23 @@ form {
 /******************* MEDIA QUERIES
 ************************************************/
 @media (min-width: 768px) {
-    .basic-options,
-    .detail-options,
-    .finalize-options,
-    .character,
-    .basic-info,
-    .detail-info,
-    .finalize-info {
-        height:450px
-    }
+.basic-options,.detail-options,.finalize-options,.character,.basic-info,.detail-info,.finalize-info {
+    height:450px
+}
 
-    .basic-options .button-container {
-        margin-top:-15px
-    }
+.basic-options .button-container {
+    margin-top:-15px
+}
 
-    .detail-options .button-container {
-        margin-top:35px
-    }
+.detail-options .button-container {
+    margin-top:35px
+}
 
-    .hp-ac-container {
-        margin-top:50px
-    }
+.hp-ac-container {
+    margin-top:50px
+}
 
-    .stat-table {
-        margin-top:0
-    }
+.stat-table {
+    margin-top:0
+}
 }
