@@ -2,6 +2,11 @@ body {
 	padding-top: 0px;
 }
 
+.footer {
+    position: initial;
+    bottom: initial;
+}
+
 .tree {
 	position: absolute;
 	top: 0;

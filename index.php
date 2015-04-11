@@ -140,4 +140,5 @@ if(isset($_COOKIE['username'])) {
     </div>
 </div>
     <body>
-  <?php include 'includes/footer.php'; ?>
+    
+<?php include 'includes/footer.php'; ?>
