@@ -1,0 +1,25 @@
+body {
+	padding-top: 0px;
+}
+
+.tree {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.logo {
+	position: absolute;
+	top: 150px;
+	right: 75px;
+}
+
+.navbar {
+	top: 730px;
+}
+
+.about {
+	background-color: red;
+	height: 800px;
+	top: 850px;
+}
