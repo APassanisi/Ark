@@ -1,12 +1,15 @@
 <?php include 'includes/header.php'; ?>
-<?php require_once('includes/connectvars.php'); ?>
-<?php require_once('includes/appvars.php'); ?>
-<?php require_once('includes/database.php'); ?>
 
 <div class="container">
     <div class="row">
         <section class="splash alert alert-info">
+            <div class="tree">
+                <img src="img/arktree.jpg">
+            </div>
 
+            <div class="logo">
+                <img src="img/arklogo.jpg">
+            </div>
         </section>
     </div>
 </div>

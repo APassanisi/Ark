@@ -1,5 +1,6 @@
-<?php include('includes/appvars.php'); ?>
-
+<?php require_once('includes/connectvars.php'); ?>
+<?php require_once('includes/appvars.php'); ?>
+<?php require_once('includes/database.php'); ?>
 <?php
 
 if (!isset($_COOKIE)) {
@@ -103,5 +104,3 @@ if(isset($_COOKIE['username'])) {
       </div><!--/.nav-collapse -->
     </div>
   </nav>
-  <body>
-
