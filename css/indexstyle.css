@@ -1,6 +1,3 @@
-body {
-    padding-top:0px;
-}
 
 .splash {
 /*	margin-top: 75px;*/
@@ -18,10 +15,6 @@ body {
 	right: 75px;
 }
 
-.navbar {
-	top: 728px;
-	margin-left: 21px;
-}
 
 .about {
 	background-color: red;

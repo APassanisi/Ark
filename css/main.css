@@ -10,10 +10,6 @@ body {
     margin-bottom:60px;
 }
 
-.container {
-    margin-bottom:20px
-}
-
 .footer {
     position:absolute;
     bottom:0;
@@ -69,6 +65,8 @@ table {
 
 /**** INDEX
 ********************************/
+
+
 /**** USER LIST
 ********************************/
 .small-avatar {
@@ -89,6 +87,17 @@ table {
 }
 
 @media (min-width: 768px) {
+
+/**** INDEX
+********************************/
+    .tree {
+        width: auto;
+        height: 600px;
+    }
+
+    .logo {
+        margin-top: 100px;
+    }
 
     .navbar-collapse {
         background: none;
