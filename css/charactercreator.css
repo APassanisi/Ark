@@ -90,7 +90,6 @@ form {
 /******************* INFO
 ************************************************/
 .basic-info,.detail-info,.finalize-info {
-    overflow-y:scroll;
     height:auto
 }
 

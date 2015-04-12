@@ -1,11 +1,8 @@
 <?php include 'includes/header.php'; ?>
-<?php require_once('includes/connectvars.php'); ?>
-<?php require_once('includes/appvars.php'); ?>
-<?php require_once('includes/database.php'); ?>
 
 <?php 
 
-  if (isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
 
     //Grab form contents
     $username = trim($_POST['Username']);
@@ -18,118 +15,145 @@
 
     //Ensure contents aren't empty
     if (!empty($username) && (!empty($email)) && (!empty($password))) {
-      //Ensure email match
-      if ($email == $confirmemail) {
-        //Ensure passwords match
-        if ($password == $confirmpassword) {
-   
-          try {
-            //Query database
-            $query = "INSERT INTO ark3_user (id, username, password, email, avatar) 
-                      VALUES (0, '$username', '$password_hash', '$email', '$default_avatar')";
-            $stmt = $dbc->prepare( $query );
-            $stmt->execute();
+        //Ensure email match
+        if ($email == $confirmemail) {
+            //Ensure passwords match
+            if ($password == $confirmpassword) {
 
-            //Clear form after success
-            $username = "";
-            $email = "";
-            $password = "";
+                try {
+                    //Query database
+                    $query = "INSERT INTO ark3_user (id, username, password, email, avatar) 
+                              VALUES (0, '$username', '$password_hash', '$email', '$default_avatar')";
+                    $stmt = $dbc->prepare( $query );
+                    $stmt->execute();
 
-            //Close connection
-            $dbc->connection = null;
+                    //Clear form after success
+                    $username = "";
+                    $email = "";
+                    $password = "";
 
-            //Print success message
-            echo '<p class="col-md-6 col-md-offset-3 alert alert-success" role="alert">Thanks for signing up!</p>';
+                    //Close connection
+                    $dbc->connection = null;
 
-          } catch ( PDOException $e ) {
-            //Print error message
-            echo "Exception: " . $e->getMessage();
-          } 
+                    //Print success message
+                    echo '<p class="col-md-6 col-md-offset-3 alert alert-success" role="alert">Thanks for signing up!</p>';
+
+                } catch ( PDOException $e ) {
+                //Print error message
+                echo "Exception: " . $e->getMessage();
+                } 
+
+            } else {
+            echo '<p class="col-md-6 col-md-offset-3 alert alert-danger" role="alert">Your entered passwords must match.</p>';
+            }
 
         } else {
-          echo '<p class="col-md-6 col-md-offset-3 alert alert-danger" role="alert">Your entered passwords must match.</p>';
+        echo '<p class="col-md-6 col-md-offset-3 alert alert-danger" role="alert">Your entered email addresses must match.</p>';
         }
 
-      } else {
-        echo '<p class="col-md-6 col-md-offset-3 alert alert-danger" role="alert">Your entered email addresses must match.</p>';
-      }
-
     } else {
-      echo '<p class="col-md-6 col-md-offset-3 alert alert-danger" role="alert">You must fill out all fields.</p>';
+    echo '<p class="col-md-6 col-md-offset-3 alert alert-danger" role="alert">You must fill out all fields.</p>';
     }
 
-  }
+}
 
 ?>
 
 
 <div class="container">
-  <div class="row">
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-      <div class="col-md-6 col-md-offset-3">
-        <h1 class="sign-up-header center-text">Sign Up!</h1>
-        <div class="well well-sm">
-          <strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong>
-        </div>
 
-        <div class="form-group">
-          <label for="Username">Desired Username</label>
+    <div class="row">
 
-          <div class="input-group">
-            <input class="form-control" id="Username" name="Username"
-            placeholder="Desired Username" required="" type=
-            "text"><span class="input-group-addon"><span class=
-            "glyphicon glyphicon-asterisk"></span></span>
-          </div>
-        </div>
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 
-        <div class="form-group">
-          <label for="InputEmail">Enter Email</label>
+            <div class="col-md-6 col-md-offset-3">
 
-          <div class="input-group">
-            <input class="form-control" id="InputEmail" name="InputEmail"
-            placeholder="Enter Email" required="" type="email"><span class=
-            "input-group-addon"><span class=
-            "glyphicon glyphicon-asterisk"></span></span>
-          </div>
-        </div>
+                <h1 class="sign-up-header center-text">Sign Up!</h1>
 
-        <div class="form-group">
-          <label for="ConfirmEmail">Confirm Email</label>
+                <div class="well well-sm">
 
-          <div class="input-group">
-            <input class="form-control" id="ConfirmEmail" name="ConfirmEmail"
-            placeholder="Confirm Email" required="" type="email"><span class=
-            "input-group-addon"><span class=
-            "glyphicon glyphicon-asterisk"></span></span>
-          </div>
-        </div>
+                    <strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong>
 
-        <div class="form-group">
-          <label for="InputPassword">Enter Password</label>
+                </div>
 
-          <div class="input-group">
-            <input class="form-control" id="InputPassword" name=
-            "InputPassword" placeholder="Enter Password" required="" type=
-            "password"><span class="input-group-addon"><span class=
-            "glyphicon glyphicon-asterisk"></span></span>
-          </div>
-        </div>
+                <div class="form-group">
 
-        <div class="form-group">
-          <label for="ConfirmPassword">Confirm Password</label>
+                    <label for="Username">Desired Username</label>
 
-          <div class="input-group">
-            <input class="form-control" id="ConfirmPassword" name=
-            "ConfirmPassword" placeholder="Confirm Password" required=""
-            type="password"><span class="input-group-addon"><span class=
-            "glyphicon glyphicon-asterisk"></span></span>
-          </div>
-        </div><input class="btn btn-info pull-right" id="submit" name=
-        "submit" type="submit" value="Submit">
-      </div>
-    </form>
-  </div>
+                    <div class="input-group">
+
+                        <input class="form-control" id="Username" name="Username" placeholder="Desired Username" required="" type="text">
+
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="InputEmail">Enter Email</label>
+
+                    <div class="input-group">
+
+                        <input class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required="" type="email">
+
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="ConfirmEmail">Confirm Email</label>
+
+                    <div class="input-group">
+
+                        <input class="form-control" id="ConfirmEmail" name="ConfirmEmail"placeholder="Confirm Email" required="" type="email">
+
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="InputPassword">Enter Password</label>
+
+                    <div class="input-group">
+
+                        <input class="form-control" id="InputPassword" name="InputPassword" placeholder="Enter Password" required="" type="password">
+
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="ConfirmPassword">Confirm Password</label>
+
+                    <div class="input-group">
+
+                        <input class="form-control" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" required=""type="password">
+
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+
+                    </div>
+
+                </div>
+
+                <input class="btn btn-info pull-right" id="submit" name="submit" type="submit" value="Submit">
+
+            </div>
+
+        </form>
+
+    </div>
+
 </div>
 
 <?php include 'includes/footer.php'; ?>

@@ -18,14 +18,6 @@
 
     </div>
 
-    <div class="row">
-
-        <div class="about alert alert-info col-xs-12">
-
-        </div>
-
-    </div>
-
 </div>
 
 <?php include 'includes/footer.php'; ?>

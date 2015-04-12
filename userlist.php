@@ -7,60 +7,65 @@ if (!isset($_SESSION)) {
 ?>
 
 <?php include 'includes/header.php'; ?>
-<?php require_once('includes/connectvars.php'); ?>
-<?php require_once('includes/appvars.php'); ?>
-<?php require_once('includes/database.php'); ?>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h1 class="center-text">User List</h1>
-      <p>
-      <?php
 
-		try {
+	<div class="row">
 
-		  $stmt = $dbc->prepare( "SELECT * FROM ark3_user" );
-		  $stmt->execute();
+		<div class="col-md-8 col-md-offset-2">
 
-		  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			<h1 class="center-text">User List</h1>
 
-		  echo '<div class="userlist-table">';
-		  echo '<table class="table table-striped">';
-		  echo '<thead>';
-		  echo '<tr>';
-		  echo '<th>User Name</th>';
-		  echo '<th>Email</th>';
-		  echo '<th>Avatar</th>';
-		  echo '</tr>';
-		  echo '</thead>';
-		  echo '<tbody>';
-		  
+			<p>
+				<?php
 
-			foreach ($rows as $row) {
-			  $username = $row['username'];
-			  $email = $row['email'];
-			  $avatar = $row['avatar'];
-			  echo '<tr>';
-			  echo '<td>' . $username . '</td>';
-              echo '<td>' . $email . '</td>';
-              echo '<td> <img class="small-avatar" src=" ' . ARK3_UPLOADPATH . $avatar . ' " ></td>';
-              echo '</tr>';
-			}
+				try {
 
-		  
-          echo '</tbody>';
-          echo '</table>';
-          echo '</div>';
+					$stmt = $dbc->prepare( "SELECT * FROM ark3_user" );
 
-		} catch (PDOException $e) {
-				echo "Error: ";
-			echo $e->getMessage();
-		}
+					$stmt->execute();
 
-	  ?>
-	  </p>
-    </div>
-  </div>
+					$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+					echo '<div class="userlist-table">';
+					echo '<table class="table table-striped">';
+					echo '<thead>';
+					echo '<tr>';
+					echo '<th>User Name</th>';
+					echo '<th>Email</th>';
+					echo '<th>Avatar</th>';
+					echo '</tr>';
+					echo '</thead>';
+					echo '<tbody>';
+
+					foreach ($rows as $row) {
+						$username = $row['username'];
+						$email = $row['email'];
+						$avatar = $row['avatar'];
+						echo '<tr>';
+						echo '<td>' . $username . '</td>';
+						echo '<td>' . $email . '</td>';
+						echo '<td> <img class="small-avatar" src=" ' . ARK3_UPLOADPATH . $avatar . ' " ></td>';
+						echo '</tr>';
+					}
+
+					echo '</tbody>';
+					echo '</table>';
+					echo '</div>';
+
+				} catch (PDOException $e) {
+					echo "Error: ";
+					echo $e->getMessage();
+				}
+
+				?>
+
+			</p>
+
+		</div>
+
+	</div>
+
 </div>
+
 <?php include 'includes/footer.php'; ?>
