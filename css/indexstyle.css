@@ -1,12 +1,13 @@
 body {
-	padding-top: 0px;
+    padding-top:0px;
 }
 
 .footer {
-    position: initial;
-    bottom: initial;
+    top: 1675px;
 }
-
+.splash {
+/*	margin-top: 75px;*/
+}
 .tree {
 	position: absolute;
 	top: 0;
@@ -20,11 +21,12 @@ body {
 }
 
 .navbar {
-	top: 730px;
+	top: 728px;
+	margin-left: 21px;
 }
 
 .about {
 	background-color: red;
-	height: 800px;
-	top: 850px;
+	top: 800px;
+	height: 650px;
 }

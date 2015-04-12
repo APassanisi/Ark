@@ -87,7 +87,7 @@ if(isset($_COOKIE['username'])) {
   <div class="container">
 
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 splash">
 
         <div class="tree">
           <img src="img/arktree.jpg">

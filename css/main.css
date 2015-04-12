@@ -39,6 +39,12 @@ table {
 .navbar {
     max-height:50px;
     background: none;
+    margin-right: 21px;
+}
+
+.nav li {
+    color: #3E423A;
+    background-color: #EBEBC2;
 }
 
 .navbar-right > li > a {

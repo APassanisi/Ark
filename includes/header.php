@@ -75,7 +75,7 @@ if(isset($_COOKIE['username'])) {
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
         <button class="navbar-toggle collapsed" data-target="#navbar"
