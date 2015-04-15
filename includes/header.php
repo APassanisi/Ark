@@ -68,8 +68,8 @@ if(isset($_COOKIE['username'])) {
 </head>
 
 <body>
-<nav class="navbar navbar-default">
     <div class="container">
+<nav class="navbar navbar-default pull-right">
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
                 <span class="sr-only">Toggle navigation</span> 
@@ -94,5 +94,5 @@ if(isset($_COOKIE['username'])) {
                     <?php echo $displayed_menu; ?>
                 </ul>
         </div><!--/.nav-collapse -->
-    </div>
 </nav>
+    </div>
