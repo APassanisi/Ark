@@ -1,5 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
+<?php include 'includes/header.php'; ?>
+
 <?php
 if (!isset($_COOKIE)) {
   session_start();
