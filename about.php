@@ -1,3 +1,4 @@
+<?php $page = 'About' ?>
 <?php include 'includes/header.php'; ?>
 
 <div class="container">

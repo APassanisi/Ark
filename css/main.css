@@ -32,6 +32,14 @@ table {
     min-width:250px
 }
 
+ul.dropdown-menu {
+    background: #EBEBC2;
+}
+
+ul.dropdown-menu a:hover {
+    background-color: #EBEBC2;
+}
+
 .navbar {
     max-height:50px;
     background: none;

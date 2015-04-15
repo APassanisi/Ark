@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+<?php $page = 'Log In' ?>
 
 <?php include 'includes/header.php'; ?>
 

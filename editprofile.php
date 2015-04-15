@@ -1,3 +1,5 @@
+<?php $page = 'Edit Profile' ?>
+
 <?php include 'includes/header.php'; ?>
 
 <!-- Password PHP -->

@@ -1,3 +1,5 @@
+<?php $page = 'Create Your Character' ?>
+
 <?php include 'includes/header.php'; ?>
 
 <div class="container">

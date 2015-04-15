@@ -1,3 +1,5 @@
+<?php $page = 'Sign Up' ?>
+
 <?php include 'includes/header.php'; ?>
 
 <?php 

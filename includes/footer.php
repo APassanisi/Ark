@@ -21,9 +21,17 @@ if(isset($_COOKIE['username'])) {
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="js/jquery.powertip.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="js/Modules/Model.js"></script>
+
+<?php 
+
+$script_insert = '<script src="js/Modules/Model.js"></script>
 <script src="js/Modules/View.js"></script>
-<script src="js/Modules/Controller.js"></script>
+<script src="js/Modules/Controller.js"></script>';
+
+if ($page == 'Create Your Character')
+	echo $script_insert;
+
+?>
 
 </body>
 </html>

@@ -58,7 +58,7 @@ if(isset($_COOKIE['username'])) {
     <meta content="" name="description">
     <meta content="" name="author">
     <link href="favicon.ico" rel="icon">
-    <title>Ark3 Project</title>
+    <title><?php echo $page ?> | The Ark </title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/jquery.powertip.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
