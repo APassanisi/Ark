@@ -8,43 +8,40 @@ if (!isset($_COOKIE)) {
 }
 
 if(isset($_COOKIE['username'])) {
-  $log_display = 
-
-  '<li style="padding-top: 5px;">
+  $displayed_menu = 
+ '<li style="padding-top: 5px;">
       <a href="character.php">Character</a>
-  </li>' . 
+  </li>
 
-  '<li style="margin-left: 4px;" class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
-    <span class="caret"></span></a>
-
-  <ul class="dropdown-menu">
-
-    <li>
-      <a href="viewprofile.php">Your Profile</a>
-    </li>
-
-    <li>
-      <a href="editprofile.php">Edit Profile</a>
-    </li>
-
-    <li>
-      <a href="logout.php">Log Out</a>
-    </li>
-
-  </ul>
-</li>';
+  <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+      <span class="caret"></span></a>
+  
+      <ul class="dropdown-menu">
+  
+          <li>
+              <a href="viewprofile.php">Your Profile</a>
+          </li>
+  
+          <li>
+              <a href="editprofile.php">Edit Profile</a>
+          </li>
+  
+          <li>
+              <a href="logout.php">Log Out</a>
+          </li>
+  
+      </ul>
+  </li>';
 } else {
-  $log_display = 
+  $displayed_menu = 
+   '<li style="padding-top: 5px;">
+        <a href="loginpage.php">Log In</a>
+    </li>
 
-
-       '<li style="padding-top: 5px;">
-          <a href="loginpage.php">Log In</a>
-        </li>
-
-        <li style="padding-top: 5px;">
-          <a href="signup.php">Sign Up</a>
-        </li>'; 
+    <li style="padding-top: 5px;">
+        <a href="signup.php">Sign Up</a>
+    </li>'; 
 }
 
 ?>
@@ -94,7 +91,7 @@ if(isset($_COOKIE['username'])) {
                 <li>
                     <a href="index.php">Home</a>
                 </li>
-                    <?php echo $log_display; ?>
+                    <?php echo $displayed_menu; ?>
                 </ul>
         </div><!--/.nav-collapse -->
     </div>

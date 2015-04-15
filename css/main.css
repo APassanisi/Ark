@@ -6,8 +6,17 @@ html {
 }
 
 body {
-    padding-top:50px;
+    padding-top:20px;
     margin-bottom:60px;
+}
+
+.alert {
+    margin-bottom: 0px;
+}
+
+.row {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .footer {
@@ -43,7 +52,7 @@ ul.dropdown-menu a:hover {
 .navbar {
     max-height:50px;
     background: none;
-/*    margin-right: 21px;*/
+    margin-bottom: 0px;
 }
 
 .nav li {
@@ -52,7 +61,7 @@ ul.dropdown-menu a:hover {
 }
 
 .navbar-right > li > a {
-    padding:9px
+    padding:9px;
 }
 
 .navbar-right > li {
@@ -73,7 +82,14 @@ ul.dropdown-menu a:hover {
 
 /**** INDEX
 ********************************/
+body {
+    background-image: url('../img/arkbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: fixed
 
+}
 
 /**** USER LIST
 ********************************/
