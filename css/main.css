@@ -80,16 +80,23 @@ ul.dropdown-menu a:hover {
 }
 
 .navbar-right > li {
-    padding-top: 5px;
+    padding-top: 10px;
+    display: block;
+}
+
+.navbar-right > li:last-child {
+    padding-bottom: 10px;
 }
 
 .navbar-collapse {
     border: none;
     background: #EBEBC2;
+    margin-right: 15px;
 }
 
 .navbar-toggle {
     background-color: #EBEBC2;
+    width: 100px;
 }
 
 .navbar-toggle,
@@ -165,8 +172,27 @@ body {
         display: inline-block;
     }
 
+    .navbar-right > li {
+        padding-top: 5px;
+    }
+
+    .navbar-right > ul:nth-child(3) {
+        padding-bottom: 50px;
+    }
+
     .about-pointer,
     .character-pointer {
         margin-top: 53%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        float: right;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        margin: 0;
     }
 }

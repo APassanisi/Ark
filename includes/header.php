@@ -9,7 +9,7 @@ if (!isset($_COOKIE)) {
 
 if(isset($_COOKIE['username'])) {
   $displayed_menu = 
- '<li style="padding-top: 5px;">
+ '<li>
       <a href="character.php">Character</a>
   </li>
 
@@ -35,11 +35,11 @@ if(isset($_COOKIE['username'])) {
   </li>';
 } else {
   $displayed_menu = 
-   '<li style="padding-top: 5px;">
+   '<li>
         <a href="loginpage.php">Log In</a>
     </li>
 
-    <li style="padding-top: 5px;">
+    <li>
         <a href="signup.php">Sign Up</a>
     </li>';
 }
@@ -73,8 +73,7 @@ if(isset($_COOKIE['username'])) {
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
                 <span class="sr-only">Toggle navigation</span> 
-                <span class="icon-bar"></span> <span class="icon-bar"></span> 
-                <span class="icon-bar"></span>
+                <span class="glyphicon glyphicon-chevron-down"></span>
             </button>
         </div>
 
