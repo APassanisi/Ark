@@ -41,7 +41,7 @@ if(isset($_COOKIE['username'])) {
 
     <li style="padding-top: 5px;">
         <a href="signup.php">Sign Up</a>
-    </li>'; 
+    </li>';
 }
 
 ?>
@@ -69,7 +69,7 @@ if(isset($_COOKIE['username'])) {
 
 <body>
     <div class="container">
-<nav class="navbar navbar-default pull-right">
+      <nav class="navbar navbar-default">
         <div class="navbar-header">
             <button class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
                 <span class="sr-only">Toggle navigation</span> 
@@ -94,5 +94,5 @@ if(isset($_COOKIE['username'])) {
                     <?php echo $displayed_menu; ?>
                 </ul>
         </div><!--/.nav-collapse -->
-</nav>
+      </nav>
     </div>

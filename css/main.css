@@ -53,6 +53,18 @@ ul.dropdown-menu a:hover {
     max-height:50px;
     background: none;
     margin-bottom: 0px;
+    z-index: 9999;
+    border: none;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    float: none;
+    display :inline-block;
 }
 
 .nav li {
@@ -72,7 +84,17 @@ ul.dropdown-menu a:hover {
 }
 
 .navbar-collapse {
-    background: #eee;
+    border: none;
+    background: #EBEBC2;
+}
+
+.navbar-toggle {
+    background-color: #EBEBC2;
+}
+
+.navbar-toggle,
+.navbar-header {
+    border: none;
 }
 
 .jumbotron {
@@ -90,8 +112,13 @@ body {
     background-size: 100%;
 }
 
-.splash-info {
-    margin-top: 35%;
+.about-pointer {
+    margin-top: 55%;
+}
+
+.about-pointer,
+.character-pointer {
+    height: 150px;
 }
 
 /**** USER LIST
@@ -123,7 +150,7 @@ body {
     }
 
     .navbar-nav {
-        margin-right: -30px;
+        margin-right: 0;
     }
 
     .navbar-default {
@@ -137,11 +164,7 @@ body {
         float: none;
         display: inline-block;
     }
-}
-
-@media (max-width: 992px) {
-    .splash-info {
-        margin-top: 50%;
+    .character-pointer {
+        margin-top: 55%;
     }
-
 }
