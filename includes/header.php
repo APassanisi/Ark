@@ -91,7 +91,7 @@ if(isset($_COOKIE['username'])) {
                     <a href="index.php">Home</a>
                 </li>
                     <?php echo $displayed_menu; ?>
-                </ul>
-        </div><!--/.nav-collapse -->
+            </ul>
+        </div>
       </nav>
     </div>
