@@ -76,15 +76,19 @@
 
                 </div>
 
-                <div class="visit-about col-sm-6 alert alert-info">
+                <div class="visit-about col-sm-6">
 
                     <h3>Visit the About section</h3>
 
+                    <p>fillertext fillertext fillertext fillertext fillertext fillertext</p>
+
                 </div>
 
-                <div class="visit-creator col-sm-6 alert alert-info">
+                <div class="visit-creator col-sm-6">
 
                     <h3>Create a character!</h3>
+
+                    <p>fillertext fillertext fillertext fillertext fillertext fillertext fillertext</p>
 
                 </div>
 
