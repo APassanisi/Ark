@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar">
 
         <div class="container">
 
@@ -76,7 +76,7 @@
 
                 </div>
 
-                <div class="visit-about col-sm-6">
+                <div class="visit-about col-sm-5 col-sm-offset-1 alert alert-info">
 
                     <h3>Visit the About section</h3>
 
@@ -84,7 +84,7 @@
 
                 </div>
 
-                <div class="visit-creator col-sm-6">
+                <div class="visit-creator col-sm-5 alert alert-info">
 
                     <h3>Create a character!</h3>
 

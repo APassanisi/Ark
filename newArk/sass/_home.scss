@@ -3,12 +3,22 @@
 	height: 500px;
 }
 
+@mixin visit-style {
+	background: $black;
+	border: 2px solid $darkolive;
+	color: $lightolive;
+}
+
 .splash {
-	margin-top: 65px;
 	img {
 		width: 100%;
 		display: block;
 		margin: auto;
 		background-repeat: no-repeat;
 	}
+}
+
+.visit-about,
+.visit-creator {
+	@include visit-style;
 }
