@@ -72,7 +72,7 @@
 
                 <div class="splash">
 
-                    <!-- <img class="img-responsive splash-img" src="img/arkbackground.svg"> -->
+                    <img class="img-responsive splash-img" src="img/arkbackground.svg">
 
                 </div>
 
