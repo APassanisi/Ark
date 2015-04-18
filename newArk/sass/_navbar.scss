@@ -1,0 +1,21 @@
+/*Navbar*/
+.navbar {
+	background: transparent;
+	margin: 15px 0;
+}
+
+.navbar-brand {
+	color: $yellow;
+}
+
+.nav {
+	li {
+		a {
+			color: $yellow;
+		}
+		a:hover {
+			background: transparent;
+			color: $olive;
+		}
+	}
+}

@@ -1,1 +1,1 @@
-body{background-color:#151515}.navbar{background:transparent}.nav li a{color:red}
+body{color:#6a6a68}.navbar{background:transparent;margin:15px 0}.navbar-brand{color:#c3b050}.nav li a{color:#c3b050}.nav li a:hover{background:transparent;color:#8a8d48}body{background-color:#151515}#home{width:100%;height:500px;background-image:url("../img/arkbackground.svg");background-size:cover;background-position:center center;margin:0}

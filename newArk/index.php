@@ -64,25 +64,51 @@
 
     </nav>
 
-    <section id="home">
+    <div class="container">
 
-    </section>
+        <div class="row">
 
-    <section id="about">
+            <section id="home">
 
-    </section>
+                <div class="splash">
 
-    <section id="gameguide">
+                    <!-- <img class="img-responsive splash-img" src="img/arkbackground.svg"> -->
 
-    </section>
+                </div>
 
-    <section id="charactercreator">
+                <div class="visit-about col-sm-6 alert alert-info">
 
-    </section>
+                    <h3>Visit the About section</h3>
 
-    <section id="account">
+                </div>
 
-    </section>
+                <div class="visit-creator col-sm-6 alert alert-info">
+
+                    <h3>Create a character!</h3>
+
+                </div>
+
+            </section>
+
+            <section id="about">
+
+            </section>
+
+            <section id="gameguide">
+
+            </section>
+
+            <section id="charactercreator">
+
+            </section>
+
+            <section id="account">
+
+            </section>
+
+        </div> <!-- /.row -->
+
+    </div> <!-- /.container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

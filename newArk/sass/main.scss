@@ -1,25 +1,5 @@
-/*Colors*/
-$yellow: #87a85c;
-$olive: #43442b;
-$black: #151515;
-$grey: #6a6a68;
-$white: #ffffff;
-
-/*General*/
-body {
-	background-color: $black;
-}
-
-/*Navbar*/
-
-.navbar {
-	background: transparent;
-}
-
-.nav {
-	li {
-		a {
-			color: red;
-		}
-	}
-}
+@import '_colors';
+@import '_typography';
+@import '_navbar';
+@import '_general';
+@import '_home';

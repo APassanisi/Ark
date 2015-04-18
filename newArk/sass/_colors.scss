@@ -1,0 +1,14 @@
+/*Colors*/
+$black: #151515;
+$grey: #6a6a68;
+$white: #ffffff;
+
+/*Yellows*/
+$yellow: saturate(#b7a85c, 10%);
+$darkyellow: saturate(darken($yellow, 20%), 10%);
+$lightyellow: saturate(lighten($yellow, 20%), 10%);
+
+/*Olives*/
+$darkolive: saturate(#43442b, 10%);
+$olive: lighten($darkolive, 20%);
+$lightolive: saturate(lighten($darkolive, 40%), 10%);
