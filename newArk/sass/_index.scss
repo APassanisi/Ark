@@ -1,4 +1,4 @@
-#home {
+#index {
 	margin-top: 75px;
 	width: 100%;
 	height: 500px;
@@ -7,16 +7,17 @@
 @mixin visit-style {
 	background: $black;
 	border: 2px solid $darkolive;
-	color: $lightolive;
+	color: $yellow;
 }
 
 .splash {
 	img {
-		width: 100%;
+		width: 75%;
 		display: block;
 		margin: auto auto 0 auto;
 		background-repeat: no-repeat;
 	}
+	margin-bottom: 30px;
 }
 
 .visit-about,

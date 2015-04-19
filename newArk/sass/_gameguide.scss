@@ -1,0 +1,20 @@
+/*GAMEGUIDE*/
+
+.nav-tabs {
+	margin-top: 100px;
+	li>a {
+		border-bottom: transparent;
+		background-color: $yellow;
+		color: $darkyellow;
+	}
+	li>a:hover,
+	li.active>a,
+	li.active>a:focus,
+	li.active>a:hover {
+		border-bottom: transparent;
+		background-color: $darkyellow;
+		color: $olive;
+	}
+}
+
+

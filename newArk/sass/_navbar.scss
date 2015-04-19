@@ -1,21 +1,31 @@
 /*Navbar*/
 .navbar {
 	background: $black;
-	margin-top: 20px;
+	height: 75px;
 }
 
 .navbar-brand {
 	color: $yellow;
 }
 
+.navbar-brand:hover {
+	color: $olive;
+}
+
 .nav {
+	background: $black;
 	li {
 		a {
 			color: $yellow;
 		}
 		a:hover {
-			background: transparent;
+			background: $black;
 			color: $olive;
 		}
 	}
+}
+
+.navbar-header,
+.nav {
+	margin-top: 10px;
 }

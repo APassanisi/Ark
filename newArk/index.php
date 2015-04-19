@@ -1,125 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
+<?php include('header.php'); ?>
 
-    <nav class="navbar navbar-fixed-top">
+<section id="index">
 
-        <div class="container">
+    <div class="splash">
 
-            <div class="navbar-header">
+        <img class="img-responsive" src="img/arkbackground.svg">
 
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+    </div>
 
-                    <span class="glyphicon glyphicon-chevron-down"></span>
+    <a href="about.php">
+    <div class="visit-about col-sm-5 col-sm-offset-1 alert alert-info">
 
-                </button>
+        <h3>Visit the About section</h3>
 
-                <a class="navbar-brand" href="index.php">The Ark</a>
+        <p>fillertext fillertext fillertext fillertext fillertext fillertext</p>
 
-            </div>
+    </div>
+    </a>
 
-            <div class="collapse navbar-collapse" id="navbar-collapse">
+    <a href="charactercreator.php">
+    <div class="visit-creator col-sm-5 alert alert-info">
 
-                <ul class="nav navbar-nav navbar-right">
+        <h3>Create a character!</h3>
 
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
+        <p>fillertext fillertext fillertext fillertext fillertext fillertext fillertext</p>
 
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
+    </div>
+    </a>
 
-                    <li>
-                        <a href="#gameguide">Game Guide</a>
-                    </li>
+</section>
 
-                    <li>
-                        <a href="#charactercreator">Character Creator</a>
-                    </li>
-
-                    <li>
-                        <a href="#account">Account</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>  <!-- /.navbar container -->
-
-    </nav>
-
-    <div class="container">
-
-        <div class="row">
-
-            <section id="home">
-
-                <div class="splash">
-
-                    <img class="img-responsive" src="img/arkbackground.svg">
-
-                </div>
-
-                <a href="#about">
-                <div class="visit-about col-sm-5 col-sm-offset-1 alert alert-info">
-
-                    <h3>Visit the About section</h3>
-
-                    <p>fillertext fillertext fillertext fillertext fillertext fillertext</p>
-
-                </div>
-                </a>
-
-                <a href="#charactercreator">
-                <div class="visit-creator col-sm-5 alert alert-info">
-
-                    <h3>Create a character!</h3>
-
-                    <p>fillertext fillertext fillertext fillertext fillertext fillertext fillertext</p>
-
-                </div>
-                </a>
-
-            </section>
-
-            <section id="about">
-
-            </section>
-
-            <section id="gameguide">
-
-            </section>
-
-            <section id="charactercreator">
-
-            </section>
-
-            <section id="account">
-
-            </section>
-
-        </div> <!-- /.row -->
-
-    </div> <!-- /.container -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="app.js"></script>
-</body>
-</html>
+<?php include('footer.php'); ?>
