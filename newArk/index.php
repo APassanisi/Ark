@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar navbar-fixed-top">
 
         <div class="container">
 
@@ -72,10 +72,11 @@
 
                 <div class="splash">
 
-                    <img class="img-responsive splash-img" src="img/arkbackground.svg">
+                    <img class="img-responsive" src="img/arkbackground.svg">
 
                 </div>
 
+                <a href="#about">
                 <div class="visit-about col-sm-5 col-sm-offset-1 alert alert-info">
 
                     <h3>Visit the About section</h3>
@@ -83,7 +84,9 @@
                     <p>fillertext fillertext fillertext fillertext fillertext fillertext</p>
 
                 </div>
+                </a>
 
+                <a href="#charactercreator">
                 <div class="visit-creator col-sm-5 alert alert-info">
 
                     <h3>Create a character!</h3>
@@ -91,6 +94,7 @@
                     <p>fillertext fillertext fillertext fillertext fillertext fillertext fillertext</p>
 
                 </div>
+                </a>
 
             </section>
 
@@ -116,5 +120,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
