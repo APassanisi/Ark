@@ -18,7 +18,7 @@ $(document).ready(function () {
             .fadeIn();
     });
 
-    $('.gameguide').click(function (event) {
+    $('.gameguide').on('click', function (event) {
         event.preventDefault();
         $('.nav li').removeClass('active');
         $(this).addClass('active');
@@ -27,7 +27,7 @@ $(document).ready(function () {
             .fadeIn();
     });
 
-    $('.charactercreator').click(function (event) {
+    $('.charactercreator').on('click', function (event) {
         event.preventDefault();
         $('.nav li').removeClass('active');
         $(this).addClass('active');
@@ -36,28 +36,37 @@ $(document).ready(function () {
             .fadeIn();
     });
 
+
     //Game guide ajax calls for content.
-    $('.races').click(function () {
+    // var guideTab = function guideTab() {
+    //     $('.guide-topics li').removeClass('active');
+    //     $(this).addClass('active');
+    // };
+
+    $(document).on('click', '.races', function () {
+        // guideTab();
         $('.guide-topics li').removeClass('active');
         $(this).addClass('active');
         $('.guide-page').hide()
-            .load('/gameguidepages/races.html')
+            .load('includes/gameguidepages/races.html')
             .fadeIn();
     });
 
-    $('.professions').click(function () {
+    $(document).on('click', '.professions', function () {
+        // guideTab();
         $('.guide-topics li').removeClass('active');
         $(this).addClass('active');
         $('.guide-page').hide()
-            .load('/gameguidepages/professions.html')
+            .load('includes/gameguidepages/professions.html')
             .fadeIn();
     });
 
-    $('.game-mechanics').click(function () {
+    $(document).on('click', '.game-mechanics', function () {
+        // guideTab();
         $('.guide-topics li').removeClass('active');
         $(this).addClass('active');
         $('.guide-page').hide()
-            .load('/gameguidepages/gamemechanics.html')
+            .load('includes/gameguidepages/gamemechanics.html')
             .fadeIn();
     });
 

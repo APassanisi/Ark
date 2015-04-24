@@ -5,15 +5,15 @@ ARK3.Controller = (function($) {
     'use strict';
     var init = function() {
 
-        $('.button-basic').click(function() {
+        $(document).on('click', '.button-basic', function() {
             ARK3.View.hideProgressPanels();
             ARK3.View.showBasicPanels();
         });
-        $('.button-detail').click(function() {
+        $(document).on('click', '.button-detail', function() {
             ARK3.View.hideProgressPanels();
             ARK3.View.showDetailPanels();
         });
-        $('.button-finalize').click(function() {
+        $(document).on('click', '.button-finalize', function() {
             ARK3.View.hideProgressPanels();
             ARK3.View.showFinalizePanels();
         });
