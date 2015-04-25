@@ -28,9 +28,9 @@ $(document).ready(function () {
             .load('includes/gameguidepages/gamemechanics.html')
             .fadeIn();
     });
-
-    ARK3.Model.init();
-    ARK3.View.init();
-    ARK3.Controller.init();
     
 });
+
+ARK3.Model.init();
+ARK3.View.init();
+ARK3.Controller.init();

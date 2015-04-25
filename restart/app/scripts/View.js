@@ -281,7 +281,3 @@ ARK3.View = (function ($) {
     };
 
 }(jQuery));
-
-$(document).ready(function () {
-    ARK3.View.init();
-});

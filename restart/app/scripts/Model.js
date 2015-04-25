@@ -438,7 +438,3 @@ ARK3.Model = (function($) {
     };
 
 }(jQuery));
-
-$(document).ready(function() {
-    ARK3.Model.init();
-});

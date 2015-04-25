@@ -191,7 +191,3 @@ ARK3.Controller = (function($) {
     };
 
 }(jQuery));
-
-$(document).ready(function() {
-    ARK3.Controller.init();
-});
