@@ -1,6 +1,5 @@
 /******************* DETAIL-OPTIONS
 ************************************************/
-
 .nav {
     a {
         text-align: center;
@@ -38,7 +37,24 @@
 
 /******************* DETAIL-OPTIONS
 ************************************************/
-
+.detail-options {
+    nav-pills {
+        display: inline-block;
+    }
+    ul {
+        margin-top: 40%;
+        display: inline-block;
+    }
+    .left-cycle {
+        width: 20%;
+    }
+    .detail-option-buttons {
+        width: 55%;
+    }
+    .right-cycle {
+        width: 20%;
+    }
+}
 /******************* FINALIZE-OPTIONS
 ************************************************/
 
