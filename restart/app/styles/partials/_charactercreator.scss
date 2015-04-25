@@ -1,95 +1,53 @@
-/******************* HIDE FORM
+/******************* DETAIL-OPTIONS
 ************************************************/
-form {
-/*  display: none;*/
-}
 
-/******************* PROGRESSION BAR
-************************************************/
-.progression {
-    text-align:center
-}
-
-.progression img {
-    height:auto;
-    width:75px
+.nav {
+    a {
+        text-align: center;
+    }
 }
 
 /******************* PANEL HEIGHT
 ************************************************/
-.basic-options,.detail-options,.finalize-options,.character {
+.basic-options,
+.detail-options,
+.finalize-options,
+.character {
     height:375px
 }
 
-/******************* BUTTON STYLE/POSITION
+/******************* BASIC-OPTIONS
 ************************************************/
-.position-center {
-    position:absolute;
-    top:75px;
-    left:50%;
-    margin-top:-50px;
-    margin-left:-50px
+.race-options {
+    margin-top: 10px;
+    width: 50%;
+    display: inline-block;
 }
 
-.button-container img {
-    height:50px;
-    width:auto
+.profession-options {
+    margin-top: 10px;
+    width: 50%;
 }
 
-.gender-button-container {
-    margin-left:5px;
-    display:inline-block
+.gender-options {
+    margin-top: 40%;
+    li {
+        width: 49%;
+    }
 }
 
-.vertical-button-container div {
-    width:50px
-}
+/******************* DETAIL-OPTIONS
+************************************************/
 
-.race-button-container img,.profession-button-container img {
-    margin:2px
-}
+/******************* FINALIZE-OPTIONS
+************************************************/
 
-.race-button-container {
-    float:left
-}
-
-.race-button-container img {
-    float:right
-}
-
-.race-button-container img {
-    margin-left:auto;
-    margin-right:0
-}
-
-.profession-button-container {
-    float:right
-}
-
-/****** DETAIL OPTIONS
-***********************/
-.detail-options > .button-container > div {
-    text-align:center
-}
-
-.detail-options img {
-    margin-top:5px
-}
-
-.detail-options .button-cycle {
-    width:28px;
-    height:auto
-}
-
-.detail-options .button-container {
-    width:auto
-}
 
 /******************* INFO
 ************************************************/
-/******************* INFO
-************************************************/
-.basic-info,.detail-info,.finalize-info {
+.basic-info,
+.detail-info,
+.finalize-info {
     height:auto
 }
 

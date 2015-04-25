@@ -23,50 +23,74 @@ ARK3.Controller = (function ($) {
             $(this).addClass('active');
         });
         $('.button-male').click(function() {
+            $('.gender-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('male');
             ARK3.Model.genderSetter();
         });
         $('.button-female').click(function() {
+            $('.gender-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('female');
             ARK3.Model.genderSetter();
         });
         $('.button-human').click(function() {
+            $('.race-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('human');
             ARK3.Model.raceSetter();
         });
         $('.button-robot').click(function() {
+            $('.race-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('robot');
             ARK3.Model.raceSetter();
         });
         $('.button-barbarian').click(function() {
+            $('.race-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('barbarian');
             ARK3.Model.raceSetter();
         });
         $('.button-dwarf').click(function() {
+            $('.race-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('dwarf');
             ARK3.Model.raceSetter();
         });
         $('.button-elf').click(function() {
+            $('.race-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('elf');
             ARK3.Model.raceSetter();
         });
         $('.button-warrior').click(function() {
+            $('.profession-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('warrior');
             ARK3.Model.professionSetter();
         });
         $('.button-mage').click(function() {
+            $('.profession-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('mage');
             ARK3.Model.professionSetter();
         });
         $('.button-thief').click(function() {
+            $('.profession-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('thief');
             ARK3.Model.professionSetter();
         });
         $('.button-explorer').click(function() {
+            $('.profession-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('explorer');
             ARK3.Model.professionSetter();
         });
         $('.button-detective').click(function() {
+            $('.profession-options li').removeClass('active');
+            $(this).addClass('active');
             ARK3.View.changeFormOnClick('detective');
             ARK3.Model.professionSetter();
         });
@@ -118,7 +142,7 @@ ARK3.Controller = (function ($) {
             ARK3.View.changeWeaponOnCycle('right');
             ARK3.Model.weaponSetter();
         });
-        $('img').click(function() {
+        $('.nav').click(function() {
             var $this = this;
             ARK3.View.buttonClickEffect($this);
             ARK3.Model.setCharacter();
