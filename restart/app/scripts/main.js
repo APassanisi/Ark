@@ -1,5 +1,8 @@
 $(document).ready(function () {
-    'use strict';
+
+    ARK3.Model.init();
+    ARK3.View.init();
+    ARK3.Controller.init();
 
     //Ajax loader for game guide content
     $(document).on('click', '.races', function () {
@@ -28,9 +31,5 @@ $(document).ready(function () {
             .load('includes/gameguidepages/gamemechanics.html')
             .fadeIn();
     });
-    
-});
 
-ARK3.Model.init();
-ARK3.View.init();
-ARK3.Controller.init();
+});

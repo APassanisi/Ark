@@ -28,20 +28,20 @@ ARK3.View = (function ($) {
 
         showBasicPanels: function showBasicPanels() {
             this.hideProgressPanels();
-            $('.basic-options').show();
-            $('.basic-info').show();
+            $('.basic-options').fadeIn();
+            $('.basic-info').fadeIn();
         },
 
         showDetailPanels: function showDetailPanels() {
             this.hideProgressPanels();
-            $('.detail-options').show();
-            $('.detail-info').show();
+            $('.detail-options').fadeIn();
+            $('.detail-info').fadeIn();
         },
 
         showFinalizePanels: function showFinalizePanels() {
             this.hideProgressPanels();
-            $('.finalize-options').show();
-            $('.finalize-info').show();
+            $('.finalize-options').fadeIn();
+            $('.finalize-info').fadeIn();
         },
 
         changeFormOnClick: function changeFormOnClick(selection) {
@@ -281,3 +281,4 @@ ARK3.View = (function ($) {
     };
 
 }(jQuery));
+

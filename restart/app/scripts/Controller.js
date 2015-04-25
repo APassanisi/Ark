@@ -1,20 +1,26 @@
 var ARK3 = ARK3 || {};
 
-ARK3.Controller = (function($) {
+ARK3.Controller = (function ($) {
 
-    var init = function() {
+    var init = function () {
 
         $(document).on('click', '.button-basic', function() {
             ARK3.View.hideProgressPanels();
             ARK3.View.showBasicPanels();
+            $('.progression li').removeClass('active');
+            $(this).addClass('active');
         });
         $(document).on('click', '.button-detail', function() {
             ARK3.View.hideProgressPanels();
             ARK3.View.showDetailPanels();
+            $('.progression li').removeClass('active');
+            $(this).addClass('active');
         });
         $(document).on('click', '.button-finalize', function() {
             ARK3.View.hideProgressPanels();
             ARK3.View.showFinalizePanels();
+            $('.progression li').removeClass('active');
+            $(this).addClass('active');
         });
         $('.button-male').click(function() {
             ARK3.View.changeFormOnClick('male');

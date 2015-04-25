@@ -122,11 +122,15 @@
 
                     <section class="progression alert alert-info col-xs-12">
 
-                        <img class="button-basic" src="/images/gameicon/progress/progress-icons-basic.svg">
+                        <ul class="nav nav-pills nav-justified">
 
-                        <img class="button-detail" src="/images/gameicon/progress/progress-icons-detail.svg">
+                              <li role="presentation" class="button-basic active"><a href="#">Basic</a></li>
 
-                        <img class="button-finalize" src="/images/gameicon/progress/progress-icons-finalize.svg">
+                              <li role="presentation" class="button-detail"><a href="#">Detail</a></li>
+
+                              <li role="presentation" class="button-finalize"><a href="#">Finalize</a></li>
+
+                        </ul>
 
                     </section>
 
@@ -408,6 +412,154 @@
             </div>
             
         </div>
+
+        <form class="hidden" method="post" id="createcharacter" name="createcharacter" action="createcharacter2.php">
+
+            <label class="radio-inline gender-buttons">
+              <input type="radio" name="gender" id="button-male" value="male" checked="checked"> Male
+            </label>
+            <label class="radio-inline gender-buttons">
+              <input type="radio" name="gender" id="button-female" value="female"> Female
+            </label>
+
+            <br>
+
+            <label class="radio-inline race-buttons">
+              <input type="radio" name="race" id="button-human" value="human" checked="checked"> Human
+            </label>
+            <label class="radio-inline race-buttons">
+              <input type="radio" name="race" id="button-robot" value="robot"> Robot
+            </label>
+            <label class="radio-inline race-buttons">
+              <input type="radio" name="race" id="button-barbarian" value="barbarian"> Barbarian
+            </label>
+            <label class="radio-inline race-buttons">
+              <input type="radio" name="race" id="button-dwarf" value="dwarf"> Dwarf
+            </label>
+            <label class="radio-inline race-buttons">
+              <input type="radio" name="race" id="button-elf" value="elf"> Elf
+            </label>
+
+            <br>
+
+            <label class="radio-inline profession-buttons">
+              <input type="radio" name="profession" id="button-warrior" value="warrior" checked="checked"> Warrior
+            </label>
+            <label class="radio-inline profession-buttons">
+              <input type="radio" name="profession" id="button-mage" value="mage"> Mage
+            </label>
+            <label class="radio-inline profession-buttons">
+              <input type="radio" name="profession" id="button-thief" value="thief"> Thief
+            </label>
+            <label class="radio-inline profession-buttons">
+              <input type="radio" name="profession" id="button-explorer" value="explorer"> Explorer
+            </label>
+            <label class="radio-inline profession-buttons">
+              <input type="radio" name="profession" id="button-detective" value="detective"> Detective
+            </label>
+
+            <br>
+
+            <!-- Detail Options -->
+
+            <label class="radio-inline hairstyle-options-buttons">
+              <input type="radio" name="hairstyle-options" id="button-Normal" value="Normal" checked="checked"> Normal
+            </label>
+            <label class="radio-inline hairstyle-options-buttons">
+              <input type="radio" name="hairstyle-options" id="button-Messy" value="Messy"> Messy
+            </label>
+            <label class="radio-inline hairstyle-options-buttons">
+              <input type="radio" name="hairstyle-options" id="button-Long" value="Long"> Long
+            </label>
+            <label class="radio-inline hairstyle-options-buttons">
+              <input type="radio" name="hairstyle-options" id="button-Bald" value="Bald"> Bald
+            </label>
+            <label class="radio-inline hairstyle-options-buttons">
+              <input type="radio" name="hairstyle-options" id="button-Braid" value="Braid"> Braid
+            </label>
+
+            <br>
+
+            <label class="radio-inline haircolor-options-buttons">
+              <input type="radio" name="haircolor-options" id="button-Brown" value="Brown" checked="checked"> Brown
+            </label>
+            <label class="radio-inline haircolor-options-buttons">
+              <input type="radio" name="haircolor-options" id="button-Black" value="Black"> Black
+            </label>
+            <label class="radio-inline haircolor-options-buttons">
+              <input type="radio" name="haircolor-options" id="button-Ginger" value="Ginger"> Ginger
+            </label>
+            <label class="radio-inline haircolor-options-buttons">
+              <input type="radio" name="haircolor-options" id="button-Blonde" value="Blonde"> Blonde
+            </label>
+            <label class="radio-inline haircolor-options-buttons">
+              <input type="radio" name="haircolor-options" id="button-Gray" value="Gray"> Gray
+            </label>
+
+            <br>
+
+            <label class="radio-inline face-options-buttons">
+              <input type="radio" name="face-options" id="button-Passive" value="Passive" checked="checked"> Passive
+            </label>
+            <label class="radio-inline face-options-buttons">
+              <input type="radio" name="face-options" id="button-Excited" value="Excited"> Excited
+            </label>
+            <label class="radio-inline face-options-buttons">
+              <input type="radio" name="face-options" id="button-Angry" value="Angry"> Angry
+            </label>
+            <label class="radio-inline face-options-buttons">
+              <input type="radio" name="face-options" id="button-Happy" value="Happy"> Happy
+            </label>
+            <label class="radio-inline face-options-buttons">
+              <input type="radio" name="face-options" id="button-Tired" value="Tired"> Tired
+            </label>
+
+            <br>
+
+            <label class="radio-inline clothescolor-options-buttons">
+              <input type="radio" name="clothescolor-options" id="button-Blue" value="Blue" checked="checked"> Blue
+            </label>
+            <label class="radio-inline clothescolor-options-buttons">
+              <input type="radio" name="clothescolor-options" id="button-Green" value="Green"> Green
+            </label>
+            <label class="radio-inline clothescolor-options-buttons">
+              <input type="radio" name="clothescolor-options" id="button-Red" value="Red"> Red
+            </label>
+            <label class="radio-inline clothescolor-options-buttons">
+              <input type="radio" name="clothescolor-options" id="button-Yellow" value="Yellow"> Yellow
+            </label>
+            <label class="radio-inline clothescolor-options-buttons">
+              <input type="radio" name="clothescolor-options" id="button-Purple" value="Purple"> Purple
+            </label>
+
+            <br>
+
+            <label class="radio-inline skincolor-options-buttons">
+              <input type="radio" name="skincolor-options" id="button-Pale" value="Pale" checked="checked"> Pale
+            </label>
+            <label class="radio-inline skincolor-options-buttons">
+              <input type="radio" name="skincolor-options" id="button-Light" value="Light"> Light
+            </label>
+            <label class="radio-inline skincolor-options-buttons">
+              <input type="radio" name="skincolor-options" id="button-Medium" value="Medium"> Medium
+            </label>
+            <label class="radio-inline skincolor-options-buttons">
+              <input type="radio" name="skincolor-options" id="button-Tan" value="Tan"> Tan
+            </label>
+            <label class="radio-inline skincolor-options-buttons">
+              <input type="radio" name="skincolor-options" id="button-Dark" value="Dark"> Dark
+            </label>
+
+            <br>
+
+            <label class="radio-inline weapon-options-buttons">
+              <input type="radio" name="weapon-options" id="button-weapon-1" value="weapon-1" checked="checked"> Weapon 1
+            </label>
+            <label class="radio-inline weapon-options-buttons">
+              <input type="radio" name="weapon-options" id="button-weapon-2" value="weapon-2"> Weapon 2
+            </label>
+
+        </form>
 
        <footer class="footer">
    
