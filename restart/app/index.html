@@ -31,13 +31,13 @@
 
             <div class="header">
 
-                <ul class="nav nav-pills pull-right">
+                <ul class="nav nav-pills pull-right" data-toggle="tabs">
 
-                    <li class="home active"><a href="index.html">Home</a></li>
+                    <li class="home active"><a href="#home" data-toggle="tab">Home</a></li>
 
-                    <li class="gameguide"><a href="gameguide.html">Game Guide</a></li>
+                    <li class="gameguide"><a href="#gameguide" data-toggle="tab">Game Guide</a></li>
 
-                    <li class="charactercreator"><a href="charactercreator.html">Character Creator</a></li>
+                    <li class="charactercreator"><a href="#charactercreator" data-toggle="tab">Character Creator</a></li>
 
                 </ul>
 
@@ -47,37 +47,401 @@
 
         </div>
 
-        <div class="container app-container">
+        <div class="container tab-content">
 
-            <div class="row">
+            <div class="tab-pane in fade active" id="home">
 
-                <div class="col-xs-12 splash-img alert alert-info">
+                <div class="row">
 
-                </div>
+                    <div class="col-xs-12 splash-img alert alert-info">
 
-                <div class="col-xs-8 col-xs-offset-2 call-to-create alert alert-info">
+                    </div>
 
-                </div>
+                    <div class="col-xs-8 col-xs-offset-2 call-to-create alert alert-info">
 
-                <div class="col-xs-10 col-xs-offset-1 about alert alert-info">
+                    </div>
 
-                <h1>A Clockwork Origin</h1>
-                <p>Kif, I have mated with a woman. Inform the men. For one beautiful night I knew what it was like to be a grandmother. Subjugated, yet honored. I meant 'physically'. Look, perhaps you could let me work for a little food? I could clean the floors or paint a fence, or service you sexually? Yes, if you make it look like an electrical fire. When you do things right, people won't be sure you've done anything at all. No. We're on the top.</p>
-                <h2>A Taste of Freedom</h2>
-                <p>Shinier than yours, meatbag. You've killed me! Oh, you've killed me! You're going back for the Countess, aren't you? Moving along&hellip;</p>
-                <ul>
-                <li>My fellow Earthicans, as I have explained in my book 'Earth in the Balance'', and the much more popular ''Harry Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards.</li>
-                <li>Five hours? Aw, man! Couldn't you just get me the death penalty?</li>
-                <li>Ask her how her day was.</li>
-                <li>You've killed me! Oh, you've killed me!</li>
-                </ul>
-                <h3>Proposition Infinity</h3>
-                <p>You don't know how to do any of those. I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. Now 'I'' have to pay ''them'! Why yes! Thanks for noticing.</p>
+                    <div class="col-xs-10 col-xs-offset-1 about alert alert-info">
+
+                        <h1>A Clockwork Origin</h1>
+                        <p>Kif, I have mated with a woman. Inform the men. For one beautiful night I knew what it was like to be a grandmother. Subjugated, yet honored. I meant 'physically'. Look, perhaps you could let me work for a little food? I could clean the floors or paint a fence, or service you sexually? Yes, if you make it look like an electrical fire. When you do things right, people won't be sure you've done anything at all. No. We're on the top.</p>
+                        <h2>A Taste of Freedom</h2>
+                        <p>Shinier than yours, meatbag. You've killed me! Oh, you've killed me! You're going back for the Countess, aren't you? Moving along&hellip;</p>
+                        <ul>
+                        <li>My fellow Earthicans, as I have explained in my book 'Earth in the Balance'', and the much more popular ''Harry Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards.</li>
+                        <li>Five hours? Aw, man! Couldn't you just get me the death penalty?</li>
+                        <li>Ask her how her day was.</li>
+                        <li>You've killed me! Oh, you've killed me!</li>
+                        </ul>
+                        <h3>Proposition Infinity</h3>
+                        <p>You don't know how to do any of those. I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. Now 'I'' have to pay ''them'! Why yes! Thanks for noticing.</p>
+
+                    </div>
 
                 </div>
 
             </div>
 
+            <div class="tab-pane fade" id="gameguide">
+
+                <div class="row">
+
+                    <div class="col-xs-12 guide-container">
+
+                        <div class="col-xs-3 guide-topics">
+
+                            <ul class="nav nav-pills nav-stacked">
+
+                                <li class="races"><a href="#">Races</a></li>
+
+                                <li class="professions"><a href="#">Professions</a></li>
+
+                                <li class="game-mechanics"><a href="#">Game Mechanics</a></li>
+
+                                <li class="maps"><a href="#">Maps</a></li>
+
+                                <li class="lore"><a href="#">Lore</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="col-xs-9 guide-page">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="charactercreator">
+
+                <div class="row">
+
+                    <section class="progression alert alert-info col-xs-12">
+
+                        <img class="button-basic" src="img/gameicon/progress/progress-icons-basic.svg">
+
+                        <img class="button-detail" src="img/gameicon/progress/progress-icons-detail.svg">
+
+                        <img class="button-finalize" src="img/gameicon/progress/progress-icons-finalize.svg">
+
+                    </section>
+
+                    <section class="basic-options alert alert-info col-xs-6 col-sm-4 col-lg-3">
+
+                        <div class="button-container position-center">
+
+                            <div class="vertical-button-container">
+
+                                <div class="race-button-container">
+
+                                    <img class="button-male" src="img/gameicon/basic/male.png">
+
+                                    <img class="button-human" src="img/gameicon/basic/race/Race-Icons-Human.svg">
+
+                                    <img class="button-robot" src="img/gameicon/basic/race/Race-Icons-Robot.svg">
+
+                                    <img class="button-barbarian" src="img/gameicon/basic/race/Race-Icons-Barbarian.svg">
+
+                                    <img class="button-dwarf" src="img/gameicon/basic/race/Race-Icons-Dwarf.svg">
+
+                                    <img class="button-elf" src="img/gameicon/basic/race/Race-Icons-Elf.svg">
+
+                                </div>
+
+                                <div class="profession-button-container">
+
+                                    <img class="button-female" src="img/gameicon/basic/female.png">
+
+                                    <img class="button-warrior" src="img/gameicon/basic/profession/Profession-Icons-Warrior.svg">
+
+                                    <img class="button-mage" src="img/gameicon/basic/profession/Profession-Icons-Mage.svg">
+
+                                    <img class="button-thief" src="img/gameicon/basic/profession/Profession-Icons-Thief.svg">
+
+                                    <img class="button-explorer" src="img/gameicon/basic/profession/Profession-Icons-Explorer.svg">
+
+                                    <img class="button-detective" src="img/gameicon/basic/profession/Profession-Icons-Detective.svg">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="detail-options alert alert-info col-xs-6 col-sm-4 col-lg-3">
+
+                        <div class="button-container">
+
+                            <div class="hairstyle-container">
+
+                                <img class="button-hairstyle-left button-cycle" src="img/gameicon/left-arrow.svg">
+
+                                <img class="button-hairstyle" src="img/gameicon/detail/hairstyle.png">
+
+                                <img class="button-hairstyle-right button-cycle" src="img/gameicon/right-arrow.svg">
+
+                            </div>
+
+                            <div class="haircolor-container">
+
+                                <img class="button-haircolor-left button-cycle" src="img/gameicon/left-arrow.svg">
+
+                                <img class="button-haircolor" src="img/gameicon/detail/haircolor.png">
+
+                                <img class="button-haircolor-right button-cycle" src="img/gameicon/right-arrow.svg">
+
+                            </div>
+
+                            <div class="face-container">
+
+                                <img class="button-face-left button-cycle" src="img/gameicon/left-arrow.svg">
+
+                                <img class="button-face" src="img/gameicon/detail/face.png">
+
+                                <img class="button-face-right button-cycle" src="img/gameicon/right-arrow.svg">
+
+                            </div>
+
+                            <div class="clothescolor-container">
+
+                                <img class="button-clothescolor-left button-cycle" src="img/gameicon/left-arrow.svg">
+
+                                <img class="button-clothescolor" src="img/gameicon/detail/clothescolor.png">
+
+                                <img class="button-clothescolor-right button-cycle" src="img/gameicon/right-arrow.svg">
+
+                            </div>
+
+                            <div class="skincolor-container">
+
+                                <img class="button-skincolor-left button-cycle" src="img/gameicon/left-arrow.svg">
+
+                                <img class="button-skincolor" src="img/gameicon/detail/skincolor.png">
+
+                                <img class="button-skincolor-right button-cycle" src="img/gameicon/right-arrow.svg">
+
+                            </div>
+
+                            <div class="weapon-container">
+
+                                <img class="button-weapon-left button-cycle" src="img/gameicon/left-arrow.svg">
+
+                                <img class="button-weapon" src="img/gameicon/detail/weapon.png">
+
+                                <img class="button-weapon-right button-cycle" src="img/gameicon/right-arrow.svg">
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="finalize-options alert alert-info col-xs-6 col-sm-4 col-lg-3">
+
+                        <p>Finalize Options</p>
+
+                        <!--
+
+                        Name
+
+                        Bio
+
+                        Save
+
+                        -->
+
+                    </section>
+
+                    <section class="character alert alert-info col-xs-6 col-sm-4 col-lg-offset-1">
+
+                        <div class="svg-container hidden">
+
+                            <!-- Race (Body SVG) -->
+                            <div class="body-container">
+                                <?php include 'includes/svgrace.php'; ?>
+                            </div>
+
+                            <!-- Class (Clothes SVG) -->
+                            <!-- Warrior -->
+                            <div class="warrior-container">
+                                <?php include 'includes/svgwarrior.php'; ?>
+                            </div>
+
+                            <!-- Mage -->
+                            <div class="mage-container">
+                                <?php include 'includes/svgmage.php'; ?>
+                            </div>
+
+                            <!-- Thief -->
+                            <div class="thief-container">
+                                <?php include 'includes/svgthief.php'; ?>
+                            </div>
+
+                            <!-- Explorer -->
+                            <div class="explorer-container">
+                                <?php include 'includes/svgexplorer.php'; ?>
+                            </div>
+
+                            <!-- Detective -->
+                            <div class="detective-container">
+                                <?php include 'includes/svgdetective.php'; ?>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="basic-info alert alert-info col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
+
+                        <p class="raceDescription well well-sm"></p>
+
+                        <br>
+
+                        <p class="professionDescription well well-sm"></p>
+
+                    </section>
+
+                    <section class="detail-info alert alert-info col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
+
+                        <div class="mobile-view-inventory">
+
+                            <div class="selected-item panel panel-default">
+                                <div class="panel-body">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="inventory list-group">
+                                <div class="head head-name list-group-item"></div>
+                                <div class="chest chest-name list-group-item"></div>
+                                <div class="feet feet-name list-group-item"></div>
+                                <div class="weapon weapon-name list-group-item"></div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section class="finalize-info alert alert-info col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
+
+                        <div class="stat-container">
+
+                            <div class="hp-ac-container">
+
+                                    <img class="hp-img" src="img/gameicon/stats/hp.svg">
+
+                                    <img class="ac-img" src="img/gameicon/stats/ac.svg">
+
+                            </div>
+
+                            <div class="stat-table-small hidden-sm hidden-md hidden-lg">
+
+                                <div class="stat-display">
+
+                                    <img class="stat-str" src="img/gameicon/stats/str.jpg">
+
+                                    <img class="stat-sta" src="img/gameicon/stats/sta.jpg">
+
+                                    <img class="stat-agi" src="img/gameicon/stats/agi.jpg">
+
+                                    <img class="stat-wit" src="img/gameicon/stats/wit.jpg">
+
+                                    <img class="stat-per" src="img/gameicon/stats/per.jpg">
+
+                                    <img class="stat-lck" src="img/gameicon/stats/lck.jpg">
+
+                                </div>
+
+                                <div class="stat-value">
+
+                                    <img class="value-str" src="img/gameicon/stats/str.jpg">
+
+                                    <img class="value-sta" src="img/gameicon/stats/sta.jpg">
+
+                                    <img class="value-agi" src="img/gameicon/stats/agi.jpg">
+
+                                    <img class="value-wit" src="img/gameicon/stats/wit.jpg">
+
+                                    <img class="value-per" src="img/gameicon/stats/per.jpg">
+
+                                    <img class="value-lck" src="img/gameicon/stats/lck.jpg">
+
+                                </div>
+
+                                <div class="statmod-value">
+
+                                    <img class="value-strmod" src="img/gameicon/stats/str.jpg">
+
+                                    <img class="value-stamod" src="img/gameicon/stats/sta.jpg">
+
+                                    <img class="value-agimod" src="img/gameicon/stats/agi.jpg">
+
+                                    <img class="value-witmod" src="img/gameicon/stats/wit.jpg">
+
+                                    <img class="value-permod" src="img/gameicon/stats/per.jpg">
+
+                                    <img class="value-lckmod" src="img/gameicon/stats/lck.jpg">
+
+                                </div>
+
+                            </div>
+
+                            <div class="stat-table position-center hidden-xs">
+                                <table>
+                                    <tbody>
+                                        <thead>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </thead>
+                                        <tr>
+                                            <td><img class="stat-str" src="img/gameicon/stats/str.jpg"></td>
+                                            <td><img class="value-str" src="img/gameicon/stats/str.jpg"></td>
+                                            <td><img class="value-strmod" src="img/gameicon/stats/str.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="stat-sta" src="img/gameicon/stats/sta.jpg"></td>
+                                            <td><img class="value-sta" src="img/gameicon/stats/sta.jpg"></td>
+                                            <td><img class="value-stamod" src="img/gameicon/stats/sta.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="stat-agi" src="img/gameicon/stats/agi.jpg"></td>
+                                            <td><img class="value-agi" src="img/gameicon/stats/agi.jpg"></td>
+                                            <td><img class="value-agimod" src="img/gameicon/stats/agi.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="stat-wit" src="img/gameicon/stats/wit.jpg"></td>
+                                            <td><img class="value-wit" src="img/gameicon/stats/wit.jpg"></td>
+                                            <td><img class="value-witmod" src="img/gameicon/stats/wit.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="stat-per" src="img/gameicon/stats/per.jpg"></td>
+                                            <td><img class="value-per" src="img/gameicon/stats/per.jpg"></td>
+                                            <td><img class="value-permod" src="img/gameicon/stats/per.jpg"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="stat-lck" src="img/gameicon/stats/lck.jpg"></td>
+                                            <td><img class="value-lck" src="img/gameicon/stats/lck.jpg"></td>
+                                            <td><img class="value-lckmod" src="img/gameicon/stats/lck.jpg"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+            
         </div>
 
        <footer class="footer">
@@ -126,8 +490,8 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <script src="scripts/Model.js"></script>
-        <script src="scripts/View.js"></script>
         <script src="scripts/Controller.js"></script>
+        <script src="scripts/View.js"></script>
         <!-- endbuild -->
 </body>
 </html>
