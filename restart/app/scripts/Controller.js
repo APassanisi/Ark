@@ -2,7 +2,6 @@ var ARK3 = ARK3 || {};
 
 ARK3.Controller = (function($) {
 
-    'use strict';
     var init = function() {
 
         $(document).on('click', '.button-basic', function() {
@@ -194,6 +193,5 @@ ARK3.Controller = (function($) {
 }(jQuery));
 
 $(document).ready(function() {
-    'use strict';
     ARK3.Controller.init();
 });

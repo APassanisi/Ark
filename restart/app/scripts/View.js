@@ -1,7 +1,6 @@
 var ARK3 = ARK3 || {};
 
 ARK3.View = (function ($) {
-    'use strict';
 
     //Keep counters outside functions to save spot
     var hairstyleCounter = 0;
@@ -284,6 +283,5 @@ ARK3.View = (function ($) {
 }(jQuery));
 
 $(document).ready(function () {
-    'use strict';
     ARK3.View.init();
 });

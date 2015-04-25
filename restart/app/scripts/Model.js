@@ -2,7 +2,6 @@ var ARK3 = ARK3 || {};
 
 ARK3.Model = (function($) {
 
-    'use strict';
     var character = {};
 
     var Weapon = function Weapon(itemName, damage, ac, agiBonus, description, worth) {
@@ -441,6 +440,5 @@ ARK3.Model = (function($) {
 }(jQuery));
 
 $(document).ready(function() {
-    'use strict';
     ARK3.Model.init();
 });
