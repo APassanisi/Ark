@@ -232,8 +232,10 @@ ARK3.View = (function ($) {
                 characterString = characterString.replace(/\s+/g, '');
                 characterString = characterString.toLowerCase();
                 characterString = srcDirectory + characterString + extension;
-                $('.character-display').attr('src', characterString);
-
+                $('.svg-container').empty()
+                    .load(characterString)
+                    .hide()
+                    .fadeIn('fast');
         },
 
         renderCharacter: function renderCharacter() {
