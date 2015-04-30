@@ -171,7 +171,7 @@ ARK3.View = (function ($) {
             }
         },
 
-        displayStats: function displayStats() {
+        renderStats: function renderStats() {
             var i;
             for (i = 3; i <= 18; i++) {
                 if (ARK3.Model.character.str === i) {
@@ -195,7 +195,7 @@ ARK3.View = (function ($) {
             }
         },
 
-        displayMods: function displayMods() {
+        renderMods: function renderMods() {
             var i;
             for (i = -4; i <= 4; i++) {
                 if (ARK3.Model.character.strmod === i) {
@@ -219,9 +219,27 @@ ARK3.View = (function ($) {
             }
         },
 
-        displayCharacter: function displayCharacter() {
-            this.displayStats();
-            this.displayMods();
+        renderCharacterDisplay: function renderCharacterDisplay() {
+            var srcDirectory = 'includes/SVG/';
+            var extension = '.svg';
+            var characterString = '';
+                characterString += ARK3.Model.character.profession;
+                characterString += ARK3.Model.character.race;
+                if (ARK3.Model.character.race !== 'robot') {
+                    characterString += ARK3.Model.character.gender;
+                };
+                characterString += ARK3.Model.character.weapon.itemName;
+                characterString = characterString.replace(/\s+/g, '');
+                characterString = characterString.toLowerCase();
+                characterString = srcDirectory + characterString + extension;
+                $('.character-display').attr('src', characterString);
+
+        },
+
+        renderCharacter: function renderCharacter() {
+            this.renderStats();
+            this.renderMods();
+            this.renderCharacterDisplay();
             $('.panel-body').text('Click on an item to view details.');
             $('.inventory div').removeClass('active');
             $('.hp').text(ARK3.Model.character.hp);
@@ -243,30 +261,30 @@ ARK3.View = (function ($) {
             $('.weapon-agimod').text('AGI bonus: ' + ARK3.Model.character.weapon.agiBonus);
         },
 
-        mobileDisplayInventoryItem: function mobileDisplayInventoryItem(item) {
+        renderInventoryItem: function renderInventoryItem(item) {
             var accessItem = ARK3.Model.character[item];
-            var displayItemDetails;
-            displayItemDetails = '<b>' + accessItem.itemName + '</b>';
-            displayItemDetails += '<br>';
+            var renderItemDetails;
+            renderItemDetails = '<b>' + accessItem.itemName + '</b>';
+            renderItemDetails += '<br>';
             if (item === 'weapon') {
-                displayItemDetails += '<b>DMG: </b>' + accessItem.damage;
+                renderItemDetails += '<b>DMG: </b>' + accessItem.damage;
                 if (accessItem.ac !== 0) {
-                    displayItemDetails += '<br>';
-                    displayItemDetails += '<b>AC: </b>' + accessItem.ac;
+                    renderItemDetails += '<br>';
+                    renderItemDetails += '<b>AC: </b>' + accessItem.ac;
                 }
                 if (accessItem.agiBonus !== 0) {
-                    displayItemDetails += '<br>';
-                    displayItemDetails += '<b>AGI bonus: </b>' + accessItem.agiBonus;
+                    renderItemDetails += '<br>';
+                    renderItemDetails += '<b>AGI bonus: </b>' + accessItem.agiBonus;
                 }
             } else {
-                displayItemDetails += '<b>AC: </b>' + accessItem.ac;
-                displayItemDetails += '<br>';
-                displayItemDetails += '<b>AGI bonus: </b>' + accessItem.agiBonus;
+                renderItemDetails += '<b>AC: </b>' + accessItem.ac;
+                renderItemDetails += '<br>';
+                renderItemDetails += '<b>AGI bonus: </b>' + accessItem.agiBonus;
             }
             //Figure out better selector
             $('.head, .chest, .feet, .weapon').removeClass('active');
             $('.' + item).addClass('active');
-            $('.panel-body').html(displayItemDetails);
+            $('.panel-body').html(renderItemDetails);
         },
 
         init: function init() {
@@ -275,7 +293,7 @@ ARK3.View = (function ($) {
             $('.detail-info').hide();
             $('.finalize-options').hide();
             $('.finalize-info').hide();
-            this.displayCharacter();
+            this.renderCharacter();
         }
 
     };

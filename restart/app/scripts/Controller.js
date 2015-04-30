@@ -70,10 +70,10 @@ ARK3.Controller = (function ($) {
             ARK3.View.changeFormOnClick('warrior');
             ARK3.Model.professionSetter();
         });
-        $('.button-mage').click(function() {
+        $('.button-wizard').click(function() {
             $('.profession-options li').removeClass('active');
             $(this).addClass('active');
-            ARK3.View.changeFormOnClick('mage');
+            ARK3.View.changeFormOnClick('wizard');
             ARK3.Model.professionSetter();
         });
         $('.button-thief').click(function() {
@@ -170,21 +170,21 @@ ARK3.Controller = (function ($) {
             var $this = this;
             ARK3.View.buttonClickEffect($this);
             ARK3.Model.setCharacter();
-            ARK3.View.displayCharacter();
+            ARK3.View.renderCharacter();
         });
 
         //Inventory for mobile view click
         $('.head').click(function() {
-            ARK3.View.mobileDisplayInventoryItem('head');
+            ARK3.View.renderInventoryItem('head');
         });
         $('.chest').click(function() {
-            ARK3.View.mobileDisplayInventoryItem('chest');
+            ARK3.View.renderInventoryItem('chest');
         });
         $('.feet').click(function() {
-            ARK3.View.mobileDisplayInventoryItem('feet');
+            ARK3.View.renderInventoryItem('feet');
         });
         $('.weapon').click(function() {
-            ARK3.View.mobileDisplayInventoryItem('weapon');
+            ARK3.View.renderInventoryItem('weapon');
         });
 
 

@@ -12,11 +12,17 @@
 .detail-options,
 .finalize-options,
 .character {
-    height:375px
+    height: 285px
 }
 
 /******************* BASIC-OPTIONS
 ************************************************/
+.gender-options {
+    li {
+        width: 49%;
+    }
+}
+
 .race-options {
     margin-top: 10px;
     width: 50%;
@@ -28,13 +34,6 @@
     width: 50%;
 }
 
-.gender-options {
-    margin-top: 40%;
-    li {
-        width: 49%;
-    }
-}
-
 /******************* DETAIL-OPTIONS
 ************************************************/
 .detail-options {
@@ -42,7 +41,6 @@
         display: inline-block;
     }
     ul {
-        margin-top: 40%;
         display: inline-block;
     }
     .left-cycle {
@@ -58,6 +56,19 @@
 /******************* FINALIZE-OPTIONS
 ************************************************/
 
+/******************* SVG CHARACTER DISPLAY
+************************************************/
+.svg-container {
+    img {
+        display:block;
+        position: absolute;
+        left: 50%;  
+        margin-left: -35%;
+        width: 75%;
+        bottom: 10px;
+        max-height: 200px;
+    }
+}
 
 /******************* INFO
 ************************************************/
@@ -95,7 +106,8 @@
     margin-left:10px
 }
 
-.table>tbody>tr>td,.table>tbody>tr>th {
+.table>tbody>tr>td,
+.table>tbody>tr>th {
     padding:0
 }
 
@@ -134,8 +146,14 @@
 /******************* MEDIA QUERIES
 ************************************************/
 @media (min-width: 768px) {
-.basic-options,.detail-options,.finalize-options,.character,.basic-info,.detail-info,.finalize-info {
-    height:450px
+.basic-options,
+.detail-options,
+.finalize-options,
+.character,
+.basic-info,
+.detail-info,
+.finalize-info {
+    height:425px
 }
 
 .basic-options .button-container {
@@ -153,4 +171,11 @@
 .stat-table {
     margin-top:0
 }
+
+.svg-container {
+    img {
+        max-height: 375px;
+    }
+}
+
 }
