@@ -219,6 +219,11 @@ ARK3.View = (function ($) {
             }
         },
 
+        renderColors: function renderColors() {
+            // $('polygon [fill="#8C8C8C"]').attr('fill', '#990044');
+            $('polygon').css('display', 'none');
+        },
+
         renderCharacterDisplay: function renderCharacterDisplay() {
             //Load SVG
             var srcDirectory = 'includes/SVG/';
@@ -237,14 +242,13 @@ ARK3.View = (function ($) {
                     .load(characterString)
                     .hide()
                     .fadeIn('fast');
-            //Set colors
-            $('polygon[fill="#8C8C8C"]').attr('fill', '#990044');
         },
 
         renderCharacter: function renderCharacter() {
             this.renderStats();
             this.renderMods();
             this.renderCharacterDisplay();
+            this.renderColors();
             $('.panel-body').text('Click on an item to view details.');
             $('.inventory div').removeClass('active');
             $('.hp').text(ARK3.Model.character.hp);
