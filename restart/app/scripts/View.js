@@ -5,8 +5,8 @@ ARK3.View = (function ($) {
     //Keep counters outside functions to save spot
     var hairstyleCounter = 0;
     var haircolorCounter = 0;
-    var faceCounter = 0;
-    var clothescolorCounter = 0;
+    var clothescolor1Counter = 0;
+    var clothescolor2Counter = 0;
     var skincolorCounter = 0;
     var weaponCounter = 0;
 
@@ -90,8 +90,8 @@ ARK3.View = (function ($) {
             }
         },
 
-        changeFacesOnCycle: function changeFaceOnCycle(direction) {
-            var faces = [
+        changeClothesColor1OnCycle: function changeClothesColor1OnCycle(direction) {
+            var clothescolors1 = [
                 '#button-Passive',
                 '#button-Excited',
                 '#button-Angry',
@@ -100,35 +100,35 @@ ARK3.View = (function ($) {
             ];
 
             if (direction === 'right') {
-                faceCounter = (faceCounter + 1) % faces.length;
-                $(faces[faceCounter]).prop('checked', true);
+                clothescolor1Counter = (clothescolor1Counter + 1) % clothescolors1.length;
+                $(clothescolors1[clothescolor1Counter]).prop('checked', true);
             } else {
-                if (faceCounter === 0) {
-                    faceCounter = faces.length;
+                if (clothescolor1Counter === 0) {
+                    clothescolor1Counter = clothescolors2.length;
                 }
-                faceCounter = (faceCounter - 1) % faces.length;
-                $(faces[faceCounter]).prop('checked', true);
+                clothescolor1Counter = (clothescolor1Counter - 1) % clothescolors1.length;
+                $(clothescolors1[clothescolor1Counter]).prop('checked', true);
             }
         },
 
-        changeClothesColorOnCycle: function changeClothesColorOnCycle(direction) {
-            var clothescolors = [
-                '#button-Blue',
-                '#button-Green',
-                '#button-Red',
-                '#button-Yellow',
-                '#button-Purple'
+        changeClothesColor2OnCycle: function changeClothesColor2OnCycle(direction) {
+            var clothescolors2 = [
+                '#button-DarkBlue',
+                '#button-DarkGreen',
+                '#button-DarkRed',
+                '#button-DarkYellow',
+                '#button-DarkPurple'
             ];
 
             if (direction === 'right') {
-                clothescolorCounter = (clothescolorCounter + 1) % clothescolors.length;
-                $(clothescolors[clothescolorCounter]).prop('checked', true);
+                clothescolor2Counter = (clothescolor2Counter + 1) % clothescolors2.length;
+                $(clothescolors2[clothescolor2Counter]).prop('checked', true);
             } else {
-                if (clothescolorCounter === 0) {
-                    clothescolorCounter = clothescolors.length;
+                if (clothescolor2Counter === 0) {
+                    clothescolor2Counter = clothescolors2.length;
                 }
-                clothescolorCounter = (clothescolorCounter - 1) % clothescolors.length;
-                $(clothescolors[clothescolorCounter]).prop('checked', true);
+                clothescolor2Counter = (clothescolor2Counter - 1) % clothescolors2.length;
+                $(clothescolors2[clothescolor2Counter]).prop('checked', true);
             }
         },
 
@@ -220,6 +220,7 @@ ARK3.View = (function ($) {
         },
 
         renderCharacterDisplay: function renderCharacterDisplay() {
+            //Load SVG
             var srcDirectory = 'includes/SVG/';
             var extension = '.svg';
             var characterString = '';
@@ -236,6 +237,8 @@ ARK3.View = (function ($) {
                     .load(characterString)
                     .hide()
                     .fadeIn('fast');
+            //Set colors
+            $('polygon[fill="#8C8C8C"]').attr('fill', '#990044');
         },
 
         renderCharacter: function renderCharacter() {

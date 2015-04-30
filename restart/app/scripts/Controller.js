@@ -118,29 +118,29 @@ ARK3.Controller = (function ($) {
             ARK3.View.changeHaircolorOnCycle('right');
             ARK3.Model.hairColorSetter();
         });
-        $('.button-face-left').click(function() {
+        $('.button-clothescolor1-left').click(function() {
             $('.detail-options li').removeClass('active');
-            $('.button-face').addClass('active');
-            ARK3.View.changeFacesOnCycle('left');
-            ARK3.Model.faceSetter();
+            $('.button-clothescolor1').addClass('active');
+            ARK3.View.changeClothesColor1OnCycle('left');
+            ARK3.Model.clothesColor1Setter();
         });
-        $('.button-face-right').click(function() {
+        $('.button-clothescolor1-right').click(function() {
             $('.detail-options li').removeClass('active');
-            $('.button-face').addClass('active');
-            ARK3.View.changeFacesOnCycle('right');
-            ARK3.Model.faceSetter();
+            $('.button-clothescolor1').addClass('active');
+            ARK3.View.changeClothesColor1OnCycle('right');
+            ARK3.Model.clothesColor1Setter();
         });
-        $('.button-clothescolor-left').click(function() {
+        $('.button-clothescolor2-left').click(function() {
             $('.detail-options li').removeClass('active');
-            $('.button-clothescolor').addClass('active');
-            ARK3.View.changeClothesColorOnCycle('left');
-            ARK3.Model.clothesColorSetter();
+            $('.button-clothescolor2').addClass('active');
+            ARK3.View.changeClothesColor2OnCycle('left');
+            ARK3.Model.clothesColor2Setter();
         });
-        $('.button-clothescolor-right').click(function() {
+        $('.button-clothescolor2-right').click(function() {
             $('.detail-options li').removeClass('active');
-            $('.button-clothescolor').addClass('active');
-            ARK3.View.changeClothesColorOnCycle('right');
-            ARK3.Model.clothesColorSetter();
+            $('.button-clothescolor2').addClass('active');
+            ARK3.View.changeClothesColor2OnCycle('right');
+            ARK3.Model.clothesColor2Setter();
         });
         $('.button-skincolor-left').click(function() {
             $('.detail-options li').removeClass('active');

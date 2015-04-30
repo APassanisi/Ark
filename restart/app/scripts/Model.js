@@ -24,7 +24,7 @@ ARK3.Model = (function($) {
     //Warrior weapons
     var longsword = new Weapon('Longsword', '1D8', 0, 0);
     var swordAndShield = new Weapon('Sword and Shield', '1D6', 1, -1);
-    //Mage weapons
+    //wizard weapons
     var fire = new Weapon('Fire', '4D3', 0, 0);
     var ice = new Weapon('Ice', '4D3', 0, 0);
     //Thief weapons
@@ -128,7 +128,7 @@ ARK3.Model = (function($) {
             weapon: longsword,
             description: 'You are a warrior.'
         }, {
-            profession: 'mage',
+            profession: 'wizard',
             strBonus: 0,
             staBonus: 1,
             agiBonus: 0,
@@ -139,7 +139,7 @@ ARK3.Model = (function($) {
             chest: clothRobe,
             feet: clothSlippers,
             weapon: fire,
-            description: 'You are a mage.'
+            description: 'You are a wizard.'
         }, {
             profession: 'thief',
             strBonus: 0,
@@ -197,20 +197,20 @@ ARK3.Model = (function($) {
             'Gray'
         ],
 
-        faceArray: [
-            'Passive',
-            'Excited',
-            'Angry',
-            'Happy',
-            'Tired'
-        ],
-
-        clothesColorArray: [
+        clothesColor1Array: [
             'Blue',
             'Green',
             'Red',
             'Yellow',
             'Purple'
+        ],
+
+        clothesColor2Array: [
+            'Dark Blue',
+            'Dark Green',
+            'Dark Red',
+            'Dark Yellow',
+            'Dark Purple'
         ],
 
         skinColorArray: [
@@ -363,20 +363,20 @@ ARK3.Model = (function($) {
             }
         },
 
-        faceSetter: function faceSetter() {
+        clothesColor1Setter: function clothesColor1Setter() {
             var i;
-            for (i = 0; i < characterOptions.faceArray.length; i++) {
-                if ($('#button-' + characterOptions.faceArray[i]).is(':checked')) {
-                    character.face = characterOptions.faceArray[i];
+            for (i = 0; i < characterOptions.clothesColor1Array.length; i++) {
+                if ($('#button-' + characterOptions.clothesColor1Array[i]).is(':checked')) {
+                    character.clothesColor1 = characterOptions.clothesColor1Array[i];
                 }
             }
         },
 
-        clothesColorSetter: function clothesColorSetter() {
+        clothesColor2Setter: function clothesColor2Setter() {
             var i;
-            for (i = 0; i < characterOptions.clothesColorArray.length; i++) {
-                if ($('#button-' + characterOptions.clothesColorArray[i]).is(':checked')) {
-                    character.clothesColor = characterOptions.clothesColorArray[i];
+            for (i = 0; i < characterOptions.clothesColor2Array.length; i++) {
+                if ($('#button-' + characterOptions.clothesColor2Array[i]).is(':checked')) {
+                    character.clothesColor2 = characterOptions.clothesColor2Array[i];
                 }
             }
         },
@@ -397,7 +397,7 @@ ARK3.Model = (function($) {
             var i;
             if (character.profession === 'warrior') {
                 weaponOptions = characterOptions.weaponsArray[0];
-            } else if (character.profession === 'mage') {
+            } else if (character.profession === 'wizard') {
                 weaponOptions = characterOptions.weaponsArray[1];
             } else if (character.profession === 'thief') {
                 weaponOptions = characterOptions.weaponsArray[2];
@@ -423,8 +423,8 @@ ARK3.Model = (function($) {
             this.professionSetter();
             this.hairStyleSetter();
             this.hairColorSetter();
-            this.faceSetter();
-            this.clothesColorSetter();
+            this.clothesColor1Setter();
+            this.clothesColor2Setter();
             this.skinColorSetter();
             this.weaponSetter();
         },

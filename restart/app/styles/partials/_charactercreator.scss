@@ -59,14 +59,19 @@
 /******************* SVG CHARACTER DISPLAY
 ************************************************/
 .svg-container {
-    img {
-        display:block;
-        position: absolute;
-        left: 50%;  
-        margin-left: -35%;
-        width: 75%;
-        bottom: 10px;
-        max-height: 200px;
+    position: relative; 
+    height:0; 
+    width: 150%; 
+    padding: 0;
+    padding-bottom: 125%;
+    svg {
+        max-height: 250px;
+        position: absolute; 
+        height: 75%; 
+        width: 75%; 
+        left: 0; 
+        top: 10px;
+        overflow-y: hidden;
     }
 }
 
@@ -173,8 +178,17 @@
 }
 
 .svg-container {
-    img {
-        max-height: 375px;
+    position: relative; 
+    height:0; 
+    width: 100%; 
+    padding: 0;
+    padding-bottom: 100%;
+    svg {
+        position: absolute; 
+        height: 125%; 
+        width: 125%; 
+        left: -20px; 
+        top: 50px;
     }
 }
 
