@@ -237,8 +237,9 @@ ARK3.View = (function ($) {
             characterString = srcDirectory + characterString + extension;
             $('.svg-container').empty()
                 .load(characterString, null, function() {
-                    $('polygon[fill="#8C8C8C"]').attr('class', 'clothescolor2');
                     $('polygon[fill="#B3B3B3"]').attr('class', 'clothescolor1');
+                    $('polygon[fill="#8C8C8C"]').attr('class', 'clothescolor2');
+                    $('polygon[fill="#C7B570"]').attr('class', 'skincolor');
                 })
                 .hide()
                 .fadeIn('fast');
