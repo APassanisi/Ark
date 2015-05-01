@@ -14,7 +14,7 @@ ARK3.View = (function ($) {
 
     var getColorSelectionValue = function getColorSelectionValue(option) {
         var selection;
-        $('.' + option).each(function() {
+        $('.' + option).each(function () {
             var checked = $(this).find('input:radio:checked');
             if (checked.length !== 0) {
                 selection =  $(checked).val();
@@ -109,7 +109,7 @@ ARK3.View = (function ($) {
                 '#button-Green',
                 '#button-Red',
                 '#button-Yellow',
-                '#button-Brown'
+                '#button-LightBrown'
             ];
 
             if (direction === 'right') {
@@ -251,7 +251,7 @@ ARK3.View = (function ($) {
             characterString = characterString.toLowerCase();
             characterString = srcDirectory + characterString + extension;
             $('.svg-container').empty()
-                .load(characterString, null, function() {
+                .load(characterString, null, function () {
                     $('polygon[fill="#B3B3B3"], rect[fill="#B3B3B3"], path[fill="#B3B3B3"]').css('fill', $clothescolor1);
                     $('polygon[fill="#8C8C8C"], rect[fill="#8C8C8C"], path[fill="#8C8C8C"]').css('fill', $clothescolor2);
                     $('polygon[fill="#C7B570"], rect[fill="#C7B570"], path[fill="#C7B570"]').css('fill', $skincolor);

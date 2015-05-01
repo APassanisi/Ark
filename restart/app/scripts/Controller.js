@@ -6,169 +6,169 @@ ARK3.Controller = (function ($) {
 
     var init = function () {
 
-        $('.button-basic').click(function() {
+        $('.button-basic').click(function () {
             $('.progression li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.hideProgressPanels();
             ARK3.View.showBasicPanels();
         });
-        $('.button-detail').click(function() {
+        $('.button-detail').click(function () {
             $('.progression li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.hideProgressPanels();
             ARK3.View.showDetailPanels();
         });
-        $('.button-finalize').click(function() {
+        $('.button-finalize').click(function () {
             $('.progression li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.hideProgressPanels();
             ARK3.View.showFinalizePanels();
         });
-        $('.button-male').click(function() {
+        $('.button-male').click(function () {
             $('.gender-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('male');
             ARK3.Model.genderSetter();
         });
-        $('.button-female').click(function() {
+        $('.button-female').click(function () {
             $('.gender-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('female');
             ARK3.Model.genderSetter();
         });
-        $('.button-human').click(function() {
+        $('.button-human').click(function () {
             $('.race-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('human');
             ARK3.Model.raceSetter();
         });
-        $('.button-robot').click(function() {
+        $('.button-robot').click(function () {
             $('.race-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('robot');
             ARK3.Model.raceSetter();
         });
-        $('.button-barbarian').click(function() {
+        $('.button-barbarian').click(function () {
             $('.race-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('barbarian');
             ARK3.Model.raceSetter();
         });
-        $('.button-dwarf').click(function() {
+        $('.button-dwarf').click(function () {
             $('.race-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('dwarf');
             ARK3.Model.raceSetter();
         });
-        $('.button-elf').click(function() {
+        $('.button-elf').click(function () {
             $('.race-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('elf');
             ARK3.Model.raceSetter();
         });
-        $('.button-warrior').click(function() {
+        $('.button-warrior').click(function () {
             $('.profession-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('warrior');
             ARK3.Model.professionSetter();
         });
-        $('.button-wizard').click(function() {
+        $('.button-wizard').click(function () {
             $('.profession-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('wizard');
             ARK3.Model.professionSetter();
         });
-        $('.button-thief').click(function() {
+        $('.button-thief').click(function () {
             $('.profession-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('thief');
             ARK3.Model.professionSetter();
         });
-        $('.button-explorer').click(function() {
+        $('.button-explorer').click(function () {
             $('.profession-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('explorer');
             ARK3.Model.professionSetter();
         });
-        $('.button-detective').click(function() {
+        $('.button-detective').click(function () {
             $('.profession-options li').removeClass('active');
             $(this).addClass('active');
             ARK3.View.changeFormOnClick('detective');
             ARK3.Model.professionSetter();
         });
-        $('.button-hairstyle-left').click(function() {
+        $('.button-hairstyle-left').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-hairstyle').addClass('active');
             ARK3.View.changeHairstyleOnCycle('left');
             ARK3.Model.hairStyleSetter();
         });
-        $('.button-hairstyle-right').click(function() {
+        $('.button-hairstyle-right').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-hairstyle').addClass('active');
             ARK3.View.changeHairstyleOnCycle('right');
             ARK3.Model.hairStyleSetter();
         });
-        $('.button-haircolor-left').click(function() {
+        $('.button-haircolor-left').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-haircolor').addClass('active');
             ARK3.View.changeHaircolorOnCycle('left');
             ARK3.Model.hairColorSetter();
         });
-        $('.button-haircolor-right').click(function() {
+        $('.button-haircolor-right').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-haircolor').addClass('active');
             ARK3.View.changeHaircolorOnCycle('right');
             ARK3.Model.hairColorSetter();
         });
-        $('.button-clothescolor1-left').click(function() {
+        $('.button-clothescolor1-left').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-clothescolor1').addClass('active');
             ARK3.View.changeClothesColor1OnCycle('left');
             ARK3.Model.clothesColor1Setter();
         });
-        $('.button-clothescolor1-right').click(function() {
+        $('.button-clothescolor1-right').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-clothescolor1').addClass('active');
             ARK3.View.changeClothesColor1OnCycle('right');
             ARK3.Model.clothesColor1Setter();
         });
-        $('.button-clothescolor2-left').click(function() {
+        $('.button-clothescolor2-left').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-clothescolor2').addClass('active');
             ARK3.View.changeClothesColor2OnCycle('left');
             ARK3.Model.clothesColor2Setter();
         });
-        $('.button-clothescolor2-right').click(function() {
+        $('.button-clothescolor2-right').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-clothescolor2').addClass('active');
             ARK3.View.changeClothesColor2OnCycle('right');
             ARK3.Model.clothesColor2Setter();
         });
-        $('.button-skincolor-left').click(function() {
+        $('.button-skincolor-left').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-skincolor').addClass('active');
             ARK3.View.changeSkinColorOnCycle('left');
             ARK3.Model.skinColorSetter();
         });
-        $('.button-skincolor-right').click(function() {
+        $('.button-skincolor-right').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-skincolor').addClass('active');
             ARK3.View.changeSkinColorOnCycle('right');
             ARK3.Model.skinColorSetter();
         });
-        $('.button-weapon-left').click(function() {
+        $('.button-weapon-left').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-weapon').addClass('active');
             ARK3.View.changeWeaponOnCycle('left');
             ARK3.Model.weaponSetter();
         });
-        $('.button-weapon-right').click(function() {
+        $('.button-weapon-right').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-weapon').addClass('active');
             ARK3.View.changeWeaponOnCycle('right');
             ARK3.Model.weaponSetter();
         });
-        $('.nav').click(function() {
+        $('.nav').click(function () {
             var $this = this;
             ARK3.View.buttonClickEffect($this);
             ARK3.Model.setCharacter();
@@ -176,16 +176,16 @@ ARK3.Controller = (function ($) {
         });
 
         //Inventory for mobile view click
-        $('.head').click(function() {
+        $('.head').click(function () {
             ARK3.View.renderInventoryItem('head');
         });
-        $('.chest').click(function() {
+        $('.chest').click(function () {
             ARK3.View.renderInventoryItem('chest');
         });
-        $('.feet').click(function() {
+        $('.feet').click(function () {
             ARK3.View.renderInventoryItem('feet');
         });
-        $('.weapon').click(function() {
+        $('.weapon').click(function () {
             ARK3.View.renderInventoryItem('weapon');
         });
 

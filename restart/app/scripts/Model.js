@@ -1,6 +1,6 @@
 var ARK3 = ARK3 || {};
 
-ARK3.Model = (function($) {
+ARK3.Model = (function ($) {
 
     'use strict';
 
@@ -204,7 +204,7 @@ ARK3.Model = (function($) {
             'Green',
             'Red',
             'Yellow',
-            'Brown'
+            'Light Brown'
         ],
 
         clothesColor2Array: [
@@ -392,8 +392,6 @@ ARK3.Model = (function($) {
             }
         },
 
-        //TODO
-        //Fill out function
         weaponSetter: function weaponSetter() {
             var weaponOptions;
             var i;
