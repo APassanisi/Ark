@@ -105,11 +105,11 @@ ARK3.View = (function ($) {
 
         changeClothesColor1OnCycle: function changeClothesColor1OnCycle(direction) {
             var clothescolors1 = [
-                '#button-Passive',
-                '#button-Excited',
-                '#button-Angry',
-                '#button-Happy',
-                '#button-Tired'
+                '#button-Blue',
+                '#button-Green',
+                '#button-Red',
+                '#button-Yellow',
+                '#button-Brown'
             ];
 
             if (direction === 'right') {
@@ -130,7 +130,7 @@ ARK3.View = (function ($) {
                 '#button-DarkGreen',
                 '#button-DarkRed',
                 '#button-DarkYellow',
-                '#button-DarkPurple'
+                '#button-DarkBrown'
             ];
 
             if (direction === 'right') {
@@ -233,10 +233,10 @@ ARK3.View = (function ($) {
         },
 
         renderCharacterDisplay: function renderCharacterDisplay() {
-            var $clothescolor1 = getColorSelectionValue('clothescolor1-options-buttons').toLowerCase();
-            var $clothescolor2 = getColorSelectionValue('clothescolor2-options-buttons').toLowerCase();
-            var $skincolor = getColorSelectionValue('skincolor-options-buttons').toLowerCase();
-            var $haircolor = getColorSelectionValue('haircolor-options-buttons').toLowerCase();
+            var $clothescolor1 = getColorSelectionValue('clothescolor1-options-buttons');
+            var $clothescolor2 = getColorSelectionValue('clothescolor2-options-buttons');
+            var $skincolor = getColorSelectionValue('skincolor-options-buttons');
+            var $haircolor = getColorSelectionValue('haircolor-options-buttons');
             //Load SVG
             var srcDirectory = 'includes/SVG/';
             var extension = '.svg';

@@ -204,7 +204,7 @@ ARK3.Model = (function($) {
             'Green',
             'Red',
             'Yellow',
-            'Purple'
+            'Brown'
         ],
 
         clothesColor2Array: [
@@ -212,7 +212,7 @@ ARK3.Model = (function($) {
             'Dark Green',
             'Dark Red',
             'Dark Yellow',
-            'Dark Purple'
+            'Dark Brown'
         ],
 
         skinColorArray: [
