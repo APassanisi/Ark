@@ -1,5 +1,9 @@
-/******************* DETAIL-OPTIONS
+/******************* GENERAL
 ************************************************/
+#charactercreator {
+    font-size: 12px;
+}
+
 .nav {
     a {
         text-align: center;
@@ -73,6 +77,14 @@
         top: 10px;
         overflow-y: hidden;
     }
+}
+
+.clothescolor1 {
+    fill: red;
+}
+
+.clothescolor2 {
+    fill: blue;
 }
 
 /******************* INFO

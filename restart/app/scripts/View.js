@@ -2,6 +2,8 @@ var ARK3 = ARK3 || {};
 
 ARK3.View = (function ($) {
 
+    'use strict';
+
     //Keep counters outside functions to save spot
     var hairstyleCounter = 0;
     var haircolorCounter = 0;
@@ -104,7 +106,7 @@ ARK3.View = (function ($) {
                 $(clothescolors1[clothescolor1Counter]).prop('checked', true);
             } else {
                 if (clothescolor1Counter === 0) {
-                    clothescolor1Counter = clothescolors2.length;
+                    clothescolor1Counter = clothescolors1.length;
                 }
                 clothescolor1Counter = (clothescolor1Counter - 1) % clothescolors1.length;
                 $(clothescolors1[clothescolor1Counter]).prop('checked', true);
@@ -219,36 +221,33 @@ ARK3.View = (function ($) {
             }
         },
 
-        renderColors: function renderColors() {
-            // $('polygon [fill="#8C8C8C"]').attr('fill', '#990044');
-            $('polygon').css('display', 'none');
-        },
-
         renderCharacterDisplay: function renderCharacterDisplay() {
             //Load SVG
             var srcDirectory = 'includes/SVG/';
             var extension = '.svg';
             var characterString = '';
-                characterString += ARK3.Model.character.profession;
-                characterString += ARK3.Model.character.race;
-                if (ARK3.Model.character.race !== 'robot') {
-                    characterString += ARK3.Model.character.gender;
-                };
-                characterString += ARK3.Model.character.weapon.itemName;
-                characterString = characterString.replace(/\s+/g, '');
-                characterString = characterString.toLowerCase();
-                characterString = srcDirectory + characterString + extension;
-                $('.svg-container').empty()
-                    .load(characterString)
-                    .hide()
-                    .fadeIn('fast');
+            characterString += ARK3.Model.character.profession;
+            characterString += ARK3.Model.character.race;
+            if (ARK3.Model.character.race !== 'robot') {
+                characterString += ARK3.Model.character.gender;
+            }
+            characterString += ARK3.Model.character.weapon.itemName;
+            characterString = characterString.replace(/\s+/g, '');
+            characterString = characterString.toLowerCase();
+            characterString = srcDirectory + characterString + extension;
+            $('.svg-container').empty()
+                .load(characterString, null, function() {
+                    $('polygon[fill="#8C8C8C"]').attr('class', 'clothescolor2');
+                    $('polygon[fill="#B3B3B3"]').attr('class', 'clothescolor1');
+                })
+                .hide()
+                .fadeIn('fast');
         },
 
         renderCharacter: function renderCharacter() {
             this.renderStats();
             this.renderMods();
             this.renderCharacterDisplay();
-            this.renderColors();
             $('.panel-body').text('Click on an item to view details.');
             $('.inventory div').removeClass('active');
             $('.hp').text(ARK3.Model.character.hp);

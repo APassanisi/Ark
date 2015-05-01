@@ -2,6 +2,8 @@ var ARK3 = ARK3 || {};
 
 ARK3.Controller = (function ($) {
 
+    'use strict';
+
     var init = function () {
 
         $('.button-basic').click(function() {

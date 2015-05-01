@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    'use strict';
+
     ARK3.Model.init();
     ARK3.View.init();
     ARK3.Controller.init();
