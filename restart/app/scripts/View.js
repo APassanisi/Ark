@@ -238,7 +238,7 @@ ARK3.View = (function ($) {
             var $skincolor = getColorSelectionValue('skincolor-options-buttons');
             var $haircolor = getColorSelectionValue('haircolor-options-buttons');
             //Load SVG
-            var srcDirectory = 'includes/SVG/';
+            var srcDirectory = 'images/SVG/';
             var extension = '.svg';
             var characterString = '';
             characterString += ARK3.Model.character.profession;
