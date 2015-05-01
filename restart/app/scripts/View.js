@@ -12,6 +12,17 @@ ARK3.View = (function ($) {
     var skincolorCounter = 0;
     var weaponCounter = 0;
 
+    var getColorSelectionValue = function getColorSelectionValue(option) {
+        var selection;
+        $('.' + option).each(function() {
+            var checked = $(this).find('input:radio:checked');
+            if (checked.length !== 0) {
+                selection =  $(checked).val();
+            }
+        });
+        return selection;
+    };
+
     return {
 
         buttonClickEffect: function buttonClickEffect(el) {
@@ -222,6 +233,10 @@ ARK3.View = (function ($) {
         },
 
         renderCharacterDisplay: function renderCharacterDisplay() {
+            var $clothescolor1 = getColorSelectionValue('clothescolor1-options-buttons').toLowerCase();
+            var $clothescolor2 = getColorSelectionValue('clothescolor2-options-buttons').toLowerCase();
+            var $skincolor = getColorSelectionValue('skincolor-options-buttons').toLowerCase();
+            var $haircolor = getColorSelectionValue('haircolor-options-buttons').toLowerCase();
             //Load SVG
             var srcDirectory = 'includes/SVG/';
             var extension = '.svg';
@@ -237,9 +252,10 @@ ARK3.View = (function ($) {
             characterString = srcDirectory + characterString + extension;
             $('.svg-container').empty()
                 .load(characterString, null, function() {
-                    $('polygon[fill="#B3B3B3"]').attr('class', 'clothescolor1');
-                    $('polygon[fill="#8C8C8C"]').attr('class', 'clothescolor2');
-                    $('polygon[fill="#C7B570"]').attr('class', 'skincolor');
+                    $('polygon[fill="#B3B3B3"], rect[fill="#B3B3B3"], path[fill="#B3B3B3"]').css('fill', $clothescolor1);
+                    $('polygon[fill="#8C8C8C"], rect[fill="#8C8C8C"], path[fill="#8C8C8C"]').css('fill', $clothescolor2);
+                    $('polygon[fill="#C7B570"], rect[fill="#C7B570"], path[fill="#C7B570"]').css('fill', $skincolor);
+                    $('polygon[fill="#6D5217"], rect[fill="#6D5217"], path[fill="#6D5217"]').css('fill', $haircolor);
                 })
                 .hide()
                 .fadeIn('fast');
