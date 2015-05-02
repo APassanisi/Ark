@@ -224,11 +224,11 @@
 
                     </section>
 
-                    <section class="finalize-options alert alert-info col-xs-6 col-sm-4 col-lg-3">
+                    <section class="finalize-options alert alert-info col-xs-6 col-sm-4 col-lg-3"> 
 
                         <div class="finalize-options-wrapper">
 
-                            <ul class="finalize-options-buttons nav nav-pills nav-stacked">
+                            <ul class="finalize-options-buttons nav nav-pills nav-stacked"> 
 
                                 <li role="presentation" class="button-name active"><a href="#">Name</a></li>
 
@@ -238,7 +238,7 @@
 
                                 <textarea id="biography" type="text" placeholder="Give your character a back-story."></textarea>
 
-                                <li role="presentation" class="button-save"><a href="#">Save</a></li>
+                                <li role="presentation" class="button-save active"><a href="#">Save your character</a></li>
 
                             </ul>
 
@@ -289,111 +289,64 @@
 
                     <section class="finalize-info alert alert-info col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
 
-<!--                         <div class="stat-container">
+                        <div class="stat-wrapper">
 
-                            <div class="hp-ac-container">
+                            <ul class="stat-type nav nav-pills nav-stacked">
 
-                                    <img class="hp-img" src="/images/gameicon/stats/hp.svg">
+                                <li role="presentation" class="active"><a href="#">Stat</a></li>
 
-                                    <img class="ac-img" src="/images/gameicon/stats/ac.svg">
+                                <li role="presentation" class="stat-str active"><a href="#">STR</a></li>
 
-                            </div>
+                                <li role="presentation" class="stat-sta active"><a href="#">STA</a></li>
 
-                            <div class="stat-table-small hidden-sm hidden-md hidden-lg">
+                                <li role="presentation" class="stat-agi active"><a href="#">AGI</a></li>
 
-                                <div class="stat-display">
+                                <li role="presentation" class="stat-wit active"><a href="#">WIT</a></li>
 
-                                    <img class="stat-str" src="/images/gameicon/stats/str.jpg">
+                                <li role="presentation" class="stat-per active"><a href="#">PER</a></li>
 
-                                    <img class="stat-sta" src="/images/gameicon/stats/sta.jpg">
+                                <li role="presentation" class="stat-lck active"><a href="#">LCK</a></li>
 
-                                    <img class="stat-agi" src="/images/gameicon/stats/agi.jpg">
+                            </ul>
 
-                                    <img class="stat-wit" src="/images/gameicon/stats/wit.jpg">
+                            <ul class="stat-value nav nav-pills nav-stacked">
 
-                                    <img class="stat-per" src="/images/gameicon/stats/per.jpg">
+                                <li role="presentation" class="active"><a href="#">Value</a></li>
 
-                                    <img class="stat-lck" src="/images/gameicon/stats/lck.jpg">
+                                <li role="presentation" class="value-str active"><a href="#">STR</a></li>
 
-                                </div>
+                                <li role="presentation" class="value-sta active"><a href="#">STA</a></li>
 
-                                <div class="stat-value">
+                                <li role="presentation" class="value-agi active"><a href="#">AGI</a></li>
 
-                                    <img class="value-str" src="/images/gameicon/stats/str.jpg">
+                                <li role="presentation" class="value-wit active"><a href="#">WIT</a></li>
 
-                                    <img class="value-sta" src="/images/gameicon/stats/sta.jpg">
+                                <li role="presentation" class="value-per active"><a href="#">PER</a></li>
 
-                                    <img class="value-agi" src="/images/gameicon/stats/agi.jpg">
+                                <li role="presentation" class="value-lck active"><a href="#">LCK</a></li>
 
-                                    <img class="value-wit" src="/images/gameicon/stats/wit.jpg">
+                            </ul>
 
-                                    <img class="value-per" src="/images/gameicon/stats/per.jpg">
+                            <ul class="stat-mod nav nav-pills nav-stacked">
 
-                                    <img class="value-lck" src="/images/gameicon/stats/lck.jpg">
+                                <li role="presentation" class="active"><a href="#">Mod</a></li>
 
-                                </div>
+                                <li role="presentation" class="value-strmod active"><a href="#">STR</a></li>
 
-                                <div class="statmod-value">
+                                <li role="presentation" class="value-stamod active"><a href="#">STA</a></li>
 
-                                    <img class="value-strmod" src="/images/gameicon/stats/str.jpg">
+                                <li role="presentation" class="value-agimod active"><a href="#">AGI</a></li>
 
-                                    <img class="value-stamod" src="/images/gameicon/stats/sta.jpg">
+                                <li role="presentation" class="value-witmod active"><a href="#">WIT</a></li>
 
-                                    <img class="value-agimod" src="/images/gameicon/stats/agi.jpg">
+                                <li role="presentation" class="value-permod active"><a href="#">PER</a></li>
 
-                                    <img class="value-witmod" src="/images/gameicon/stats/wit.jpg">
+                                <li role="presentation" class="value-lckmod active"><a href="#">LCK</a></li>
 
-                                    <img class="value-permod" src="/images/gameicon/stats/per.jpg">
+                            </ul>
 
-                                    <img class="value-lckmod" src="/images/gameicon/stats/lck.jpg">
+                        </div>
 
-                                </div>
-
-                            </div>
-
-                            <div class="stat-table position-center hidden-xs">
-                                <table>
-                                    <tbody>
-                                        <thead>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </thead>
-                                        <t>R
-                                            <td><img class="stat-str" src="/images/gameicon/stats/str.jpg"></td>
-                                            <td><img class="value-str" src="/images/gameicon/stats/str.jpg"></td>
-                                            <td><img class="value-strmod" src="/images/gameicon/stats/str.jpg"></td>
-                                        </t>R
-                                        <t>R
-                                            <td><img class="stat-sta" src="/images/gameicon/stats/sta.jpg"></td>
-                                            <td><img class="value-sta" src="/images/gameicon/stats/sta.jpg"></td>
-                                            <td><img class="value-stamod" src="/images/gameicon/stats/sta.jpg"></td>
-                                        </t>R
-                                        <t>R
-                                            <td><img class="stat-agi" src="/images/gameicon/stats/agi.jpg"></td>
-                                            <td><img class="value-agi" src="/images/gameicon/stats/agi.jpg"></td>
-                                            <td><img class="value-agimod" src="/images/gameicon/stats/agi.jpg"></td>
-                                        </t>R
-                                        <t>R
-                                            <td><img class="stat-wit" src="/images/gameicon/stats/wit.jpg"></td>
-                                            <td><img class="value-wit" src="/images/gameicon/stats/wit.jpg"></td>
-                                            <td><img class="value-witmod" src="/images/gameicon/stats/wit.jpg"></td>
-                                        </t>R
-                                        <t>R
-                                            <td><img class="stat-per" src="/images/gameicon/stats/per.jpg"></td>
-                                            <td><img class="value-per" src="/images/gameicon/stats/per.jpg"></td>
-                                            <td><img class="value-permod" src="/images/gameicon/stats/per.jpg"></td>
-                                        </t>R
-                                        <t>R
-                                            <td><img class="stat-lck" src="/images/gameicon/stats/lck.jpg"></td>
-                                            <td><img class="value-lck" src="/images/gameicon/stats/lck.jpg"></td>
-                                            <td><img class="value-lckmod" src="/images/gameicon/stats/lck.jpg"></td>
-                                        </t>R
-                                    </tbody>
-                                </table>
-                            </div>
-
-                        </div> -->
 
                     </section>
 
@@ -559,7 +512,7 @@
 
            </div>
 
-       </foote>R
+       </footer>
 
 
         <!-- build:js scripts/vendor.js -->

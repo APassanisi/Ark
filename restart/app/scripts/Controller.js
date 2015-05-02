@@ -157,16 +157,15 @@ ARK3.Controller = (function ($) {
             ARK3.Model.weaponSetter();
         });
         $('.button-name, #name').click(function () {
-            $('.finalize-options li').removeClass('active');
+            $('.finalize-options li:not(.button-save').removeClass('active');
             $('.button-name').addClass('active');
         });
         $('.button-biography, #biography').click(function () {
-            $('.finalize-options li').removeClass('active');
+            $('.finalize-options li:not(.button-save').removeClass('active');
             $('.button-biography').addClass('active');
         });
         $('.button-save').click(function () {
-            $('.finalize-options li').removeClass('active');
-            $(this).addClass('active');
+
         });
         $('.nav').click(function () {
             var $this = this;
