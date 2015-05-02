@@ -56,6 +56,22 @@ ARK3.View = (function ($) {
             $('.finalize-info').fadeIn();
         },
 
+        hideNameField: function hideNameField() {
+            $('#name').hide();
+        },
+
+        hideBiography: function hideBiography() {
+            $('#biography').hide();
+        },
+
+        showNameField: function showNameField() {
+            $('#name').show();
+        },
+
+        showBiography: function showBiography() {
+            $('#biography').show();
+        },
+
         changeFormOnClick: function changeFormOnClick(selection) {
             $('#button-' + selection).prop('checked', true);
         },
