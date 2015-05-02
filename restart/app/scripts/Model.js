@@ -183,14 +183,6 @@ ARK3.Model = (function ($) {
             description: 'You are a detective.'
         }],
 
-        hairStyleArray: [
-            'Normal',
-            'Messy',
-            'Long',
-            'Bald',
-            'Braid'
-        ],
-
         hairColorArray: [
             'Brown',
             'Black',
@@ -347,15 +339,6 @@ ARK3.Model = (function ($) {
             statSetter();
         },
 
-        hairStyleSetter: function hairStyleSetter() {
-            var i;
-            for (i = 0; i < characterOptions.hairStyleArray.length; i++) {
-                if ($('#button-' + characterOptions.hairStyleArray[i]).is(':checked')) {
-                    character.hairStyle = characterOptions.hairStyleArray[i];
-                }
-            }
-        },
-
         hairColorSetter: function hairColorSetter() {
             var i;
             for (i = 0; i < characterOptions.hairColorArray.length; i++) {
@@ -421,7 +404,6 @@ ARK3.Model = (function ($) {
             this.genderSetter();
             this.raceSetter();
             this.professionSetter();
-            this.hairStyleSetter();
             this.hairColorSetter();
             this.clothesColor1Setter();
             this.clothesColor2Setter();

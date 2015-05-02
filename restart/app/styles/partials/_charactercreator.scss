@@ -1,5 +1,13 @@
 /******************* GENERAL
 ************************************************/
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 #charactercreator {
     font-size: 12px;
 }
@@ -21,6 +29,10 @@
 
 /******************* BASIC-OPTIONS
 ************************************************/
+.basic-options-wrapper {
+    @include vertical-align;
+}
+
 .gender-options {
     li {
         width: 49%;
@@ -45,6 +57,7 @@
         display: inline-block;
     }
     ul {
+        @include vertical-align;
         display: inline-block;
     }
     .left-cycle {
@@ -57,6 +70,11 @@
         width: 20%;
     }
 }
+
+.detail-option-buttons {
+    margin-left: 4px;
+}
+
 /******************* FINALIZE-OPTIONS
 ************************************************/
 
@@ -144,6 +162,10 @@
 
 /****** DETAIL INFO
 ***********************/
+.mobile-view-inventory {
+    @include vertical-align;
+}
+
 /****** FINALIZE INFO
 ***********************/
 /******************* ITEM AJAX STYLEs

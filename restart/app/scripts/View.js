@@ -5,7 +5,6 @@ ARK3.View = (function ($) {
     'use strict';
 
     //Keep counters outside functions to save spot
-    var hairstyleCounter = 0;
     var haircolorCounter = 0;
     var clothescolor1Counter = 0;
     var clothescolor2Counter = 0;
@@ -59,27 +58,6 @@ ARK3.View = (function ($) {
 
         changeFormOnClick: function changeFormOnClick(selection) {
             $('#button-' + selection).prop('checked', true);
-        },
-
-        changeHairstyleOnCycle: function changeHairstyleOnCycle(direction) {
-            var hairstyles = [
-                '#button-Normal',
-                '#button-Messy',
-                '#button-Long',
-                '#button-Bald',
-                '#button-Braid'
-            ];
-
-            if (direction === 'right') {
-                hairstyleCounter = (hairstyleCounter + 1) % hairstyles.length;
-                $(hairstyles[hairstyleCounter]).prop('checked', true);
-            } else {
-                if (hairstyleCounter === 0) {
-                    hairstyleCounter = hairstyles.length;
-                }
-                hairstyleCounter = (hairstyleCounter - 1) % hairstyles.length;
-                $(hairstyles[hairstyleCounter]).prop('checked', true);
-            }
         },
 
         changeHaircolorOnCycle: function changeHaircolorOnCycle(direction) {

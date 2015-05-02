@@ -96,18 +96,6 @@ ARK3.Controller = (function ($) {
             ARK3.View.changeFormOnClick('detective');
             ARK3.Model.professionSetter();
         });
-        $('.button-hairstyle-left').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-hairstyle').addClass('active');
-            ARK3.View.changeHairstyleOnCycle('left');
-            ARK3.Model.hairStyleSetter();
-        });
-        $('.button-hairstyle-right').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-hairstyle').addClass('active');
-            ARK3.View.changeHairstyleOnCycle('right');
-            ARK3.Model.hairStyleSetter();
-        });
         $('.button-haircolor-left').click(function () {
             $('.detail-options li').removeClass('active');
             $('.button-haircolor').addClass('active');
