@@ -56,22 +56,6 @@ ARK3.View = (function ($) {
             $('.finalize-info').fadeIn();
         },
 
-        hideNameField: function hideNameField() {
-            $('#name').hide();
-        },
-
-        hideBiography: function hideBiography() {
-            $('#biography').hide();
-        },
-
-        showNameField: function showNameField() {
-            $('#name').show();
-        },
-
-        showBiography: function showBiography() {
-            $('#biography').show();
-        },
-
         changeFormOnClick: function changeFormOnClick(selection) {
             $('#button-' + selection).prop('checked', true);
         },
@@ -261,20 +245,20 @@ ARK3.View = (function ($) {
             this.renderCharacterDisplay();
             $('.panel-body').text('Click on an item to view details.');
             $('.inventory div').removeClass('active');
-            $('.hp').text(ARK3.Model.character.hp);
-            $('.ac').text(ARK3.Model.character.ac);
+            $('.hp > a').text(ARK3.Model.character.hp);
+            $('.ac > a').text(ARK3.Model.character.ac);
             $('.raceDescription').text(ARK3.Model.character.raceDescription);
             $('.professionDescription').text(ARK3.Model.character.professionDescription);
-            $('.head-name').text('Head: ' + ARK3.Model.character.head.itemName);
+            $('.head-name > a').text('Head: ' + ARK3.Model.character.head.itemName);
             $('.head-ac').text('AC: ' + ARK3.Model.character.head.ac);
             $('.head-agimod').text('AGI bonus: ' + ARK3.Model.character.head.agiBonus);
-            $('.chest-name').text('Chest: ' + ARK3.Model.character.chest.itemName);
+            $('.chest-name > a').text('Chest: ' + ARK3.Model.character.chest.itemName);
             $('.chest-ac').text('AC: ' + ARK3.Model.character.chest.ac);
             $('.chest-agimod').text('AGI bonus: ' + ARK3.Model.character.chest.agiBonus);
-            $('.feet-name').text('Feet: ' + ARK3.Model.character.feet.itemName);
+            $('.feet-name > a').text('Feet: ' + ARK3.Model.character.feet.itemName);
             $('.feet-ac').text('AC: ' + ARK3.Model.character.feet.ac);
             $('.feet-agimod').text('AGI bonus: ' + ARK3.Model.character.feet.agiBonus);
-            $('.weapon-name').text('Weapon: ' + ARK3.Model.character.weapon.itemName);
+            $('.weapon-name > a').text('Weapon: ' + ARK3.Model.character.weapon.itemName);
             $('.weapon-dmg').text('Damage: ' + ARK3.Model.character.weapon.damage);
             $('.weapon-ac').text('AC: ' + ARK3.Model.character.weapon.ac);
             $('.weapon-agimod').text('AGI bonus: ' + ARK3.Model.character.weapon.agiBonus);

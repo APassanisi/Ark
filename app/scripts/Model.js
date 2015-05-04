@@ -26,7 +26,7 @@ ARK3.Model = (function ($) {
     //Warrior weapons
     var longsword = new Weapon('Longsword', '1D8', 0, 0);
     var swordAndShield = new Weapon('Sword and Shield', '1D6', 1, -1);
-    //wizard weapons
+    //Wizard weapons
     var fire = new Weapon('Fire', '4D3', 0, 0);
     var ice = new Weapon('Ice', '4D3', 0, 0);
     //Thief weapons

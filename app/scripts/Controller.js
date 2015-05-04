@@ -97,84 +97,64 @@ ARK3.Controller = (function ($) {
             ARK3.Model.professionSetter();
         });
         $('.button-haircolor-left').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-haircolor').addClass('active');
             ARK3.View.changeHaircolorOnCycle('left');
             ARK3.Model.hairColorSetter();
         });
         $('.button-haircolor-right').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-haircolor').addClass('active');
             ARK3.View.changeHaircolorOnCycle('right');
             ARK3.Model.hairColorSetter();
         });
         $('.button-clothescolor1-left').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-clothescolor1').addClass('active');
             ARK3.View.changeClothesColor1OnCycle('left');
             ARK3.Model.clothesColor1Setter();
         });
         $('.button-clothescolor1-right').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-clothescolor1').addClass('active');
             ARK3.View.changeClothesColor1OnCycle('right');
             ARK3.Model.clothesColor1Setter();
         });
         $('.button-clothescolor2-left').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-clothescolor2').addClass('active');
             ARK3.View.changeClothesColor2OnCycle('left');
             ARK3.Model.clothesColor2Setter();
         });
         $('.button-clothescolor2-right').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-clothescolor2').addClass('active');
             ARK3.View.changeClothesColor2OnCycle('right');
             ARK3.Model.clothesColor2Setter();
         });
         $('.button-skincolor-left').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-skincolor').addClass('active');
             ARK3.View.changeSkinColorOnCycle('left');
             ARK3.Model.skinColorSetter();
         });
         $('.button-skincolor-right').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-skincolor').addClass('active');
             ARK3.View.changeSkinColorOnCycle('right');
             ARK3.Model.skinColorSetter();
         });
         $('.button-weapon-left').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-weapon').addClass('active');
             ARK3.View.changeWeaponOnCycle('left');
             ARK3.Model.weaponSetter();
         });
         $('.button-weapon-right').click(function () {
-            $('.detail-options li').removeClass('active');
-            $('.button-weapon').addClass('active');
             ARK3.View.changeWeaponOnCycle('right');
             ARK3.Model.weaponSetter();
         });
-        $('.button-name, #name').click(function () {
-            $('.finalize-options li:not(.button-save').removeClass('active');
-            $('.button-name').addClass('active');
+
+        $('.inventory > div').click(function () {
+            console.log(this);
+            $('this').addClass('active');
         });
-        $('.button-biography, #biography').click(function () {
-            $('.finalize-options li:not(.button-save').removeClass('active');
-            $('.button-biography').addClass('active');
-        });
+
+
         $('.button-save').click(function () {
 
         });
-        $('.nav').click(function () {
+        //selector string for character render
+        var $renderString = '.gender-options li, .race-options li, .profession-options li, .left-cycle li, .right-cycle li'
+        $($renderString).click(function () {
             var $this = this;
             ARK3.View.buttonClickEffect($this);
             ARK3.Model.setCharacter();
             ARK3.View.renderCharacter();
         });
-
-        //Inventory for mobile view click
+        //Inventory
         $('.head').click(function () {
             ARK3.View.renderInventoryItem('head');
         });
@@ -189,7 +169,7 @@ ARK3.Controller = (function ($) {
         });
 
 
-        //Tooltip stuff
+        //Tooltip things
         $('img, div').powerTip({
             followMouse: true
         });

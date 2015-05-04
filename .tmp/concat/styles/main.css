@@ -9833,13 +9833,12 @@ body {
 .finalize-options-wrapper textarea {
   height: 75px;
   resize: none;
-  overflow-y: scroll;
 }
 
 /******************* SVG CHARACTER DISPLAY
 ************************************************/
 
-/* line 97, ../../app/styles/partials/_charactercreator.scss */
+/* line 96, ../../app/styles/partials/_charactercreator.scss */
 
 .svg-container {
   position: relative;
@@ -9849,7 +9848,7 @@ body {
   padding-bottom: 125%;
 }
 
-/* line 103, ../../app/styles/partials/_charactercreator.scss */
+/* line 102, ../../app/styles/partials/_charactercreator.scss */
 
 .svg-container svg {
   max-height: 250px;
@@ -9864,7 +9863,7 @@ body {
 /******************* INFO
 ************************************************/
 
-/* line 116, ../../app/styles/partials/_charactercreator.scss */
+/* line 115, ../../app/styles/partials/_charactercreator.scss */
 
 .basic-info,
 .detail-info,
@@ -9872,101 +9871,31 @@ body {
   height: auto;
 }
 
-/****** BASIC INFO
-***********************/
+/******************* BASIC INFO
+************************************************/
 
-/* line 124, ../../app/styles/partials/_charactercreator.scss */
+/******************* DETAIL INFO
+************************************************/
 
-.stat-container > div {
-  text-align: center;
-}
+/* line 126, ../../app/styles/partials/_charactercreator.scss */
 
-/* line 128, ../../app/styles/partials/_charactercreator.scss */
-
-.stat-table-small {
-  margin-left: 20px;
-  top: 150px;
-}
-
-/* line 133, ../../app/styles/partials/_charactercreator.scss */
-
-.stat-table-small div {
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* line 138, ../../app/styles/partials/_charactercreator.scss */
-
-.stat-table-small div > img {
-  height: 29px;
-  width: auto;
-}
-
-/* line 143, ../../app/styles/partials/_charactercreator.scss */
-
-.stat-table img {
-  height: 30px;
-  width: auto;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-/* line 150, ../../app/styles/partials/_charactercreator.scss */
-
-.table > tbody > tr > td,
-.table > tbody > tr > th {
-  padding: 0;
-}
-
-/* line 155, ../../app/styles/partials/_charactercreator.scss */
-
-.stat-table {
-  top: 125px;
-}
-
-/* line 159, ../../app/styles/partials/_charactercreator.scss */
-
-.stat-table > table {
-  border: 0;
-  margin-left: -5px;
-}
-
-/* line 164, ../../app/styles/partials/_charactercreator.scss */
-
-.hp-ac-container img {
-  height: 45px;
-  width: 45px;
-}
-
-/* line 169, ../../app/styles/partials/_charactercreator.scss */
-
-.hp-ac-container {
-  margin-left: 20px;
-}
-
-/* line 173, ../../app/styles/partials/_charactercreator.scss */
-
-.hp-img,
-.ac-img {
-  display: inline;
-}
-
-/****** DETAIL INFO
-***********************/
-
-/* line 179, ../../app/styles/partials/_charactercreator.scss */
-
-.mobile-view-inventory {
+.inventory-item {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-/****** FINALIZE INFO
-***********************/
+/* line 130, ../../app/styles/partials/_charactercreator.scss */
 
-/* line 185, ../../app/styles/partials/_charactercreator.scss */
+.selected-item {
+  height: 110px;
+}
+
+/******************* FINALIZE INFO
+************************************************/
+
+/* line 136, ../../app/styles/partials/_charactercreator.scss */
 
 .stat-wrapper {
   position: relative;
@@ -9976,13 +9905,13 @@ body {
   text-align: center;
 }
 
-/* line 188, ../../app/styles/partials/_charactercreator.scss */
+/* line 139, ../../app/styles/partials/_charactercreator.scss */
 
 .stat-wrapper ul {
   display: inline-block;
 }
 
-/* line 190, ../../app/styles/partials/_charactercreator.scss */
+/* line 141, ../../app/styles/partials/_charactercreator.scss */
 
 .stat-wrapper ul a {
   width: 37px;
@@ -9991,20 +9920,11 @@ body {
   padding: 10px 0;
 }
 
-/******************* ITEM AJAX STYLEs
-************************************************/
-
-/* line 200, ../../app/styles/partials/_charactercreator.scss */
-
-.selected-item {
-  height: 110px;
-}
-
 /******************* MEDIA QUERIES
 ************************************************/
 
 @media (min-width: 768px) {
-  /* line 207, ../../app/styles/partials/_charactercreator.scss */
+  /* line 153, ../../app/styles/partials/_charactercreator.scss */
 
   .basic-options,
   .detail-options,
@@ -10016,31 +9936,7 @@ body {
     height: 425px;
   }
 
-  /* line 217, ../../app/styles/partials/_charactercreator.scss */
-
-  .basic-options .button-container {
-    margin-top: -15px;
-  }
-
-  /* line 221, ../../app/styles/partials/_charactercreator.scss */
-
-  .detail-options .button-container {
-    margin-top: 35px;
-  }
-
-  /* line 225, ../../app/styles/partials/_charactercreator.scss */
-
-  .hp-ac-container {
-    margin-top: 50px;
-  }
-
-  /* line 229, ../../app/styles/partials/_charactercreator.scss */
-
-  .stat-table {
-    margin-top: 0;
-  }
-
-  /* line 233, ../../app/styles/partials/_charactercreator.scss */
+  /* line 163, ../../app/styles/partials/_charactercreator.scss */
 
   .svg-container {
     position: relative;
@@ -10050,7 +9946,7 @@ body {
     padding-bottom: 100%;
   }
 
-  /* line 239, ../../app/styles/partials/_charactercreator.scss */
+  /* line 169, ../../app/styles/partials/_charactercreator.scss */
 
   .svg-container svg {
     position: absolute;
@@ -10061,7 +9957,7 @@ body {
   }
 }
 
-/* line 10, ../../app/styles/main.scss */
+/* line 12, ../../app/styles/main.scss */
 
 .browsehappy {
   margin: 0.2em 0;
@@ -10072,7 +9968,7 @@ body {
 
 /* Space out content a bit */
 
-/* line 18, ../../app/styles/main.scss */
+/* line 20, ../../app/styles/main.scss */
 
 body {
   padding-top: 20px;
@@ -10081,7 +9977,7 @@ body {
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
-/* line 24, ../../app/styles/main.scss */
+/* line 26, ../../app/styles/main.scss */
 
 .header,
 .marketing,
@@ -10092,14 +9988,14 @@ body {
 
 /* Custom page header */
 
-/* line 32, ../../app/styles/main.scss */
+/* line 34, ../../app/styles/main.scss */
 
 .header {
   border-bottom: 1px solid #e5e5e5;
   /* Make the masthead heading the same height as the navigation */
 }
 
-/* line 36, ../../app/styles/main.scss */
+/* line 38, ../../app/styles/main.scss */
 
 .header h3 {
   margin-top: 0;
@@ -10110,7 +10006,7 @@ body {
 
 /* Custom page footer */
 
-/* line 45, ../../app/styles/main.scss */
+/* line 47, ../../app/styles/main.scss */
 
 .footer {
   padding-top: 19px;
@@ -10118,7 +10014,7 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 51, ../../app/styles/main.scss */
+/* line 53, ../../app/styles/main.scss */
 
 .container-narrow > hr {
   margin: 30px 0;
@@ -10126,14 +10022,14 @@ body {
 
 /* Main marketing message and sign up button */
 
-/* line 56, ../../app/styles/main.scss */
+/* line 58, ../../app/styles/main.scss */
 
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 59, ../../app/styles/main.scss */
+/* line 61, ../../app/styles/main.scss */
 
 .jumbotron .btn {
   font-size: 21px;
@@ -10142,13 +10038,13 @@ body {
 
 /* Supporting marketing content */
 
-/* line 66, ../../app/styles/main.scss */
+/* line 68, ../../app/styles/main.scss */
 
 .marketing {
   margin: 40px 0;
 }
 
-/* line 68, ../../app/styles/main.scss */
+/* line 70, ../../app/styles/main.scss */
 
 .marketing p + h4 {
   margin-top: 28px;
@@ -10157,7 +10053,7 @@ body {
 /* Responsive: Portrait tablets and up */
 
 @media screen and (min-width: 768px) {
-  /* line 75, ../../app/styles/main.scss */
+  /* line 77, ../../app/styles/main.scss */
 
   .container {
     max-width: 730px;
@@ -10165,7 +10061,7 @@ body {
 
   /* Remove the padding we set earlier */
 
-  /* line 80, ../../app/styles/main.scss */
+  /* line 82, ../../app/styles/main.scss */
 
   .header,
   .marketing,
@@ -10176,7 +10072,7 @@ body {
 
   /* Space out the masthead */
 
-  /* line 88, ../../app/styles/main.scss */
+  /* line 90, ../../app/styles/main.scss */
 
   .header {
     margin-bottom: 30px;
@@ -10184,7 +10080,7 @@ body {
 
   /* Remove the bottom border on the jumbotron for visual effect */
 
-  /* line 93, ../../app/styles/main.scss */
+  /* line 95, ../../app/styles/main.scss */
 
   .jumbotron {
     border-bottom: 0;

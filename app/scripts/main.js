@@ -8,7 +8,6 @@ $(document).ready(function () {
 
     //Ajax loader for game guide content
     $(document).on('click', '.races', function () {
-        // guideTab();
         $('.guide-topics li').removeClass('active');
         $(this).addClass('active');
         $('.guide-page').hide()
@@ -17,7 +16,6 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '.professions', function () {
-        // guideTab();
         $('.guide-topics li').removeClass('active');
         $(this).addClass('active');
         $('.guide-page').hide()
@@ -26,7 +24,6 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '.game-mechanics', function () {
-        // guideTab();
         $('.guide-topics li').removeClass('active');
         $(this).addClass('active');
         $('.guide-page').hide()
