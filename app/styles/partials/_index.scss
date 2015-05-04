@@ -1,5 +1,9 @@
 .splash-img {
-	height: 500px;
+	img {
+		margin-top: 15px;
+		width: 100%;
+		height: auto;
+	}
 }
 
 .about {
@@ -8,5 +12,6 @@
 
 .call-to-create {
 	text-align: center;
+	margin-top: 25px;
 	height: 50px;
 }

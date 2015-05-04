@@ -1,0 +1,59 @@
+$dark: #385000;
+$mediumDark: #5A7814;
+$medium: #80A035;
+$mediumLight: #AAC864;
+$light: #D8F0A0;
+
+@mixin pillstyle {
+	color: $light;
+	border: 1px solid $mediumLight;
+	border-radius: 5px;
+}
+
+body {
+	background: #181818;
+	color: $light;
+}
+
+.nav {
+	a {
+		color: $light;
+	}
+}
+
+input:focus {
+    border-color: #cfdc00;
+    box-shadow: 0 0 5px rgba(207, 220, 0, 0.4);
+}
+
+.panel,
+textarea,
+input,
+.well {
+	@include pillstyle;
+	background: $dark;
+}
+
+.alert {
+	background: #181818;
+	@include pillstyle;
+}
+
+.nav-pills {
+	li {
+		@include pillstyle;
+		a, 
+		a:hover, 
+		a:focus {
+			background: $dark;
+		}
+	}
+	li.active {
+		@include pillstyle;
+		a, 
+		a:hover, 
+		a:focus {
+			background: $mediumDark;
+		}
+	}
+}
