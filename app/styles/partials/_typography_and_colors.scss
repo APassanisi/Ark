@@ -1,17 +1,18 @@
-$dark: #385000;
-$mediumDark: #5A7814;
-$medium: #80A035;
-$mediumLight: #AAC864;
-$light: #D8F0A0;
+$dark: #666F28;
+$mediumDark: #7F8748;
+$medium: #A1A968;
+$mediumLight: #C4CB94;
+$light: #F0F5CF;
+$black: #181818;
 
 @mixin pillstyle {
 	color: $light;
-	border: 1px solid $mediumLight;
-	border-radius: 5px;
+	border: 2px solid $mediumDark;
+	border-radius: 15px 10px;
 }
 
 body {
-	background: #181818;
+	background: $black;
 	color: $light;
 }
 
@@ -21,39 +22,135 @@ body {
 	}
 }
 
-input:focus {
-    border-color: #cfdc00;
-    box-shadow: 0 0 5px rgba(207, 220, 0, 0.4);
-}
-
 .panel,
 textarea,
 input,
 .well {
 	@include pillstyle;
-	background: $dark;
+	background: $black;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+	border-color: $black;
 }
 
 .alert {
-	background: #181818;
+	background: $black;
 	@include pillstyle;
+}
+
+.guide-page {
+	.tab-content {
+		div {
+			@include pillstyle;
+		}
+	}
+}
+
+.progression {
+	.nav-pills {
+		li {
+			a {
+				margin: 0 10px;	
+			}
+		}
+	}
+}
+
+.gender-options {
+	li:first-child {
+		a {
+			margin-right: 5px;
+		}
+	}
+}
+
+.gender-options {
+	li:nth-child(2) {
+		a {
+			margin-left: 5px;
+		}
+	}
+}
+
+.race-options {
+	li {
+		a {
+			margin: 10px 0;
+			margin-right: 5px;
+		}
+	}
+}
+
+.profession-options {
+	li {
+		a {
+			margin: 10px 0;
+			margin-left: 5px;
+		}
+	}
+}
+
+.detail-options {
+	ul {
+		li {
+			a {
+				margin: 10px 0;
+			}
+		}
+	}
+}
+
+.inventory {
+	li {
+		a {
+			margin: 10px 0;
+		}
+	}
 }
 
 .nav-pills {
 	li {
-		@include pillstyle;
 		a, 
 		a:hover, 
 		a:focus {
-			background: $dark;
+			@include pillstyle;
+			background: $black;
 		}
 	}
 	li.active {
-		@include pillstyle;
 		a, 
 		a:hover, 
 		a:focus {
+			@include pillstyle;
+			color: #fff;
+			border-color: $medium;
 			background: $mediumDark;
 		}
 	}
+}
+
+.stat-type > li,
+.stat-value > li,
+.stat-mod > li {
+	margin-bottom: 8px;
+}
+
+.stat-type > li:first-child,
+.stat-value > li:first-child,
+.stat-mod > li:first-child {
+	margin-bottom: 13px;
+}
+
+.stat-type.nav.nav-pills.nav-stacked > li > a {
+	border-radius: 15px 5px 5px 15px;
+}
+
+.stat-value.nav.nav-pills.nav-stacked > li > a {
+	border-radius: 5px
+}
+
+.stat-mod.nav.nav-pills.nav-stacked > li > a {
+	border-radius: 5px 15px 15px 5px;
 }

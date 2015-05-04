@@ -136,16 +136,12 @@ ARK3.Controller = (function ($) {
             ARK3.View.changeWeaponOnCycle('right');
             ARK3.Model.weaponSetter();
         });
-
         $('.right-cycle > li > a, .left-cycle > li > a').click(function () {
             $(this).blur();
         });
-
         $('.inventory > div').click(function () {
             $('this').addClass('active');
         });
-
-
         $('.button-save').click(function () {
 
         });

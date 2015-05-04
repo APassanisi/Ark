@@ -19941,7 +19941,7 @@ body {
 .detail-options,
 .finalize-options,
 .character {
-  height: 285px;
+  height: 350px;
 }
 
 /******************* BASIC-OPTIONS
@@ -20455,13 +20455,13 @@ body {
   }
 
   line {
-    font-family: \0000313;
+    font-family: \0000314;
   }
 }
 
 body {
   background: #181818;
-  color: #D8F0A0;
+  color: #F0F5CF;
 }
 
 @media -sass-debug-info {
@@ -20470,12 +20470,12 @@ body {
   }
 
   line {
-    font-family: \0000319;
+    font-family: \0000320;
   }
 }
 
 .nav a {
-  color: #D8F0A0;
+  color: #F0F5CF;
 }
 
 @media -sass-debug-info {
@@ -20484,22 +20484,7 @@ body {
   }
 
   line {
-    font-family: \0000324;
-  }
-}
-
-input:focus {
-  border-color: #cfdc00;
-  box-shadow: 0 0 5px rgba(207, 220, 0, 0.4);
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
-  }
-
-  line {
-    font-family: \0000329;
+    font-family: \0000325;
   }
 }
 
@@ -20507,10 +20492,10 @@ input:focus {
 textarea,
 input,
 .well {
-  color: #D8F0A0;
-  border: 1px solid #AAC864;
-  border-radius: 5px;
-  background: #385000;
+  color: #F0F5CF;
+  border: 2px solid #7F8748;
+  border-radius: 15px 10px;
+  background: #181818;
 }
 
 @media -sass-debug-info {
@@ -20519,31 +20504,30 @@ input,
   }
 
   line {
-    font-family: \0000337;
+    font-family: \0000333;
+  }
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #181818;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \0000338;
   }
 }
 
 .alert {
   background: #181818;
-  color: #D8F0A0;
-  border: 1px solid #AAC864;
-  border-radius: 5px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
-  }
-
-  line {
-    font-family: \0000343;
-  }
-}
-
-.nav-pills li {
-  color: #D8F0A0;
-  border: 1px solid #AAC864;
-  border-radius: 5px;
+  color: #F0F5CF;
+  border: 2px solid #7F8748;
+  border-radius: 15px 10px;
 }
 
 @media -sass-debug-info {
@@ -20556,10 +20540,10 @@ input,
   }
 }
 
-.nav-pills li a,
-.nav-pills li a:hover,
-.nav-pills li a:focus {
-  background: #385000;
+.guide-page .tab-content div {
+  color: #F0F5CF;
+  border: 2px solid #7F8748;
+  border-radius: 15px 10px;
 }
 
 @media -sass-debug-info {
@@ -20568,13 +20552,197 @@ input,
   }
 
   line {
-    font-family: \0000351;
+    font-family: \0000354;
   }
 }
 
-.nav-pills li.active {
-  color: #D8F0A0;
-  border: 1px solid #AAC864;
+.progression .nav-pills li a {
+  margin: 0 10px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \0000363;
+  }
+}
+
+.gender-options li:first-child a {
+  margin-right: 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \0000371;
+  }
+}
+
+.gender-options li:nth-child(2) a {
+  margin-left: 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \0000379;
+  }
+}
+
+.race-options li a {
+  margin: 10px 0;
+  margin-right: 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \0000388;
+  }
+}
+
+.profession-options li a {
+  margin: 10px 0;
+  margin-left: 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \0000398;
+  }
+}
+
+.detail-options ul li a {
+  margin: 10px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \00003107;
+  }
+}
+
+.inventory li a {
+  margin: 10px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \00003115;
+  }
+}
+
+.nav-pills li a,
+.nav-pills li a:hover,
+.nav-pills li a:focus {
+  color: #F0F5CF;
+  border: 2px solid #7F8748;
+  border-radius: 15px 10px;
+  background: #181818;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \00003123;
+  }
+}
+
+.nav-pills li.active a,
+.nav-pills li.active a:hover,
+.nav-pills li.active a:focus {
+  color: #F0F5CF;
+  border: 2px solid #7F8748;
+  border-radius: 15px 10px;
+  color: #fff;
+  border-color: #A1A968;
+  background: #7F8748;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \00003134;
+  }
+}
+
+.stat-type > li,
+.stat-value > li,
+.stat-mod > li {
+  margin-bottom: 8px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \00003140;
+  }
+}
+
+.stat-type > li:first-child,
+.stat-value > li:first-child,
+.stat-mod > li:first-child {
+  margin-bottom: 13px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \00003146;
+  }
+}
+
+.stat-type.nav.nav-pills.nav-stacked > li > a {
+  border-radius: 15px 5px 5px 15px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+  }
+
+  line {
+    font-family: \00003150;
+  }
+}
+
+.stat-value.nav.nav-pills.nav-stacked > li > a {
   border-radius: 5px;
 }
 
@@ -20584,14 +20752,12 @@ input,
   }
 
   line {
-    font-family: \0000353;
+    font-family: \00003154;
   }
 }
 
-.nav-pills li.active a,
-.nav-pills li.active a:hover,
-.nav-pills li.active a:focus {
-  background: #5A7814;
+.stat-mod.nav.nav-pills.nav-stacked > li > a {
+  border-radius: 5px 15px 15px 5px;
 }
 
 @media -sass-debug-info {
