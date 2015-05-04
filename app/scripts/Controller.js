@@ -150,7 +150,7 @@ ARK3.Controller = (function ($) {
 
         });
         //selector string for character render
-        var $renderString = '.gender-options li, .race-options li, .profession-options li, .left-cycle li, .right-cycle li'
+        var $renderString = '.gender-options li, .race-options li, .profession-options li, .left-cycle li, .right-cycle li';
         $($renderString).click(function () {
             var $this = this;
             ARK3.View.buttonClickEffect($this);
@@ -170,8 +170,7 @@ ARK3.Controller = (function ($) {
         $('.weapon').click(function () {
             ARK3.View.renderInventoryItem('weapon');
         });
-
-
+        
         //Tooltip things
         $('img, div').powerTip({
             followMouse: true
