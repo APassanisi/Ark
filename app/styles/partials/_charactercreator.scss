@@ -1,11 +1,15 @@
 /******************* GENERAL
 ************************************************/
+body{
+    overflow-x: hidden;
+}
+
 @mixin vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #charactercreator {
@@ -124,7 +128,8 @@
 /******************* DETAIL INFO
 ************************************************/
 .inventory-item {
-    @include vertical-align;
+    position: relative;
+    text-align: center;
 }
 
 .selected-item {
@@ -134,7 +139,7 @@
 /******************* FINALIZE INFO
 ************************************************/
 .stat-wrapper {
-    @include vertical-align;
+    position: relative;
     text-align: center;
     ul {
         display: inline-block;
@@ -150,6 +155,9 @@
 /******************* MEDIA QUERIES
 ************************************************/
 @media (min-width: 768px) {
+
+/******************* GENERAL
+************************************************/
 .basic-options,
 .detail-options,
 .finalize-options,
@@ -159,6 +167,9 @@
 .finalize-info {
     height:425px
 }
+
+/******************* SVG CHARACTER DISPLAY
+************************************************/
 
 .svg-container {
     position: relative; 
@@ -173,6 +184,20 @@
         left: -20px; 
         top: 50px;
     }
+}
+
+/******************* DETAIL INFO
+************************************************/
+
+.inventory-item {
+    @include vertical-align;
+}
+
+/******************* FINALIZE INFO
+************************************************/
+
+.stat-wrapper {
+    @include vertical-align;
 }
 
 

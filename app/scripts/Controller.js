@@ -137,8 +137,11 @@ ARK3.Controller = (function ($) {
             ARK3.Model.weaponSetter();
         });
 
+        $('.right-cycle > li > a, .left-cycle > li > a').click(function () {
+            $(this).blur();
+        });
+
         $('.inventory > div').click(function () {
-            console.log(this);
             $('this').addClass('active');
         });
 

@@ -310,6 +310,7 @@ module.exports = function (grunt) {
                         'images/{,*/}*.svg',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
+                        'bower_components/sass-bootstrap/fonts/{,*/}*.*',
                         'bower_components/' + (this.includeCompass ? 'sass-' : '') + 'bootstrap/' + (this.includeCompass ? 'fonts/' : 'dist/fonts/') +'*.*'
                     ]
                 }]
