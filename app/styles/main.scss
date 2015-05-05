@@ -1,12 +1,12 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
-@import '../styles/partials/_footer';
+@import '../styles/partials/_typography_and_colors';
 @import '../styles/partials/_general';
+@import '../styles/partials/_index';
+@import '../styles/partials/_footer';
 @import '../styles/partials/_gameguide';
 @import '../styles/partials/_charactercreator';
-@import '../styles/partials/_index';
-@import '../styles/partials/_typography_and_colors';
 
 .browsehappy {
     margin: 0.2em 0;

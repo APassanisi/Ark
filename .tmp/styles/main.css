@@ -19835,48 +19835,17 @@ td.visible-print {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_footer\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
   }
 
   line {
-    font-family: \000031;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_footer\.scss;
-  }
-
-  line {
-    font-family: \000036;
+    font-family: \0000314;
   }
 }
 
 body {
-  margin-bottom: 60px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_footer\.scss;
-  }
-
-  line {
-    font-family: \0000310;
-  }
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
+  background: #181818;
+  color: #F0F5CF;
 }
 
 @media -sass-debug-info {
@@ -19893,514 +19862,75 @@ body {
   max-width: 1200px !important;
 }
 
-/******************* GENERAL
-************************************************/
-
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_general\.scss;
   }
 
   line {
-    font-family: \0000312;
+    font-family: \000035;
   }
 }
 
-#charactercreator {
-  font-size: 12px;
+.alert {
+  background: #181818;
+  color: #F0F5CF;
+  border: 2px solid #7F8748;
+  border-radius: 10px;
 }
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_general\.scss;
   }
 
   line {
-    font-family: \0000317;
+    font-family: \0000311;
   }
 }
 
 .nav a {
-  text-align: center;
-}
-
-/******************* PANEL HEIGHT
-************************************************/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000324;
-  }
-}
-
-.basic-options,
-.detail-options,
-.finalize-options,
-.character {
-  height: 350px;
-}
-
-/******************* BASIC-OPTIONS
-************************************************/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000333;
-  }
-}
-
-.basic-options-wrapper {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  color: #F0F5CF;
 }
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_general\.scss;
   }
 
   line {
-    font-family: \0000338;
+    font-family: \0000318;
   }
 }
 
-.gender-options li {
-  width: 49%;
+.nav-pills li a,
+.nav-pills li a:hover,
+.nav-pills li a:focus {
+  color: #F0F5CF;
+  border: 2px solid #7F8748;
+  border-radius: 10px;
+  background: #181818;
 }
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_general\.scss;
   }
 
   line {
-    font-family: \0000343;
+    font-family: \0000326;
   }
 }
 
-.race-options {
-  margin-top: 10px;
-  width: 50%;
-  display: inline-block;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000349;
-  }
-}
-
-.profession-options {
-  margin-top: 10px;
-  width: 50%;
-}
-
-/******************* DETAIL-OPTIONS
-************************************************/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000357;
-  }
-}
-
-.detail-options nav-pills {
-  display: inline-block;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000360;
-  }
-}
-
-.detail-options ul {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  display: inline-block;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000364;
-  }
-}
-
-.detail-options .left-cycle {
-  width: 20%;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000367;
-  }
-}
-
-.detail-options .detail-option-buttons {
-  width: 55%;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000370;
-  }
-}
-
-.detail-options .right-cycle {
-  width: 20%;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000375;
-  }
-}
-
-.detail-option-buttons {
-  margin-left: 4px;
-}
-
-/******************* FINALIZE-OPTIONS
-************************************************/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000381;
-  }
-}
-
-.finalize-options-wrapper {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000383;
-  }
-}
-
-.finalize-options-wrapper input,
-.finalize-options-wrapper textarea {
-  margin-top: 5px;
-  margin-bottom: 15px;
-  width: 100%;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000389;
-  }
-}
-
-.finalize-options-wrapper textarea {
-  height: 75px;
-  resize: none;
-}
-
-/******************* SVG CHARACTER DISPLAY
-************************************************/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \0000397;
-  }
-}
-
-.svg-container {
-  position: relative;
-  height: 0;
-  width: 150%;
-  padding: 0;
-  padding-bottom: 125%;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \00003103;
-  }
-}
-
-.svg-container svg {
-  max-height: 250px;
-  position: absolute;
-  height: 75%;
-  width: 75%;
-  left: 0;
-  top: 10px;
-  overflow-y: hidden;
-}
-
-/******************* INFO
-************************************************/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \00003116;
-  }
-}
-
-.basic-info,
-.detail-info,
-.finalize-info {
-  height: auto;
-}
-
-/******************* BASIC INFO
-************************************************/
-
-/******************* DETAIL INFO
-************************************************/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \00003127;
-  }
-}
-
-.inventory-item {
-  position: relative;
-  text-align: center;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \00003132;
-  }
-}
-
-.selected-item {
-  height: 110px;
-}
-
-/******************* FINALIZE INFO
-************************************************/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \00003138;
-  }
-}
-
-.stat-wrapper {
-  position: relative;
-  text-align: center;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \00003141;
-  }
-}
-
-.stat-wrapper ul {
-  display: inline-block;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-  }
-
-  line {
-    font-family: \00003143;
-  }
-}
-
-.stat-wrapper ul a {
-  width: 37px;
-  height: 37px;
-  border: 1px solid black;
-  padding: 10px 0;
-}
-
-/******************* MEDIA QUERIES
-************************************************/
-
-@media (min-width: 768px) {
-  /******************* GENERAL
-  ************************************************/
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-    }
-
-    line {
-      font-family: \00003158;
-    }
-}
-
-  .basic-options,
-  .detail-options,
-  .finalize-options,
-  .character,
-  .basic-info,
-  .detail-info,
-  .finalize-info {
-    height: 425px;
-  }
-
-  /******************* SVG CHARACTER DISPLAY
-  ************************************************/
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-    }
-
-    line {
-      font-family: \00003171;
-    }
-}
-
-  .svg-container {
-    position: relative;
-    height: 0;
-    width: 100%;
-    padding: 0;
-    padding-bottom: 100%;
-  }
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-    }
-
-    line {
-      font-family: \00003177;
-    }
-}
-
-  .svg-container svg {
-    position: absolute;
-    height: 125%;
-    width: 125%;
-    left: -20px;
-    top: 50px;
-  }
-
-  /******************* DETAIL INFO
-  ************************************************/
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-    }
-
-    line {
-      font-family: \00003189;
-    }
-}
-
-  .inventory-item {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-  /******************* FINALIZE INFO
-  ************************************************/
-
-@media -sass-debug-info {
-    filename {
-      font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
-    }
-
-    line {
-      font-family: \00003196;
-    }
-}
-
-  .stat-wrapper {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
+.nav-pills li.active a,
+.nav-pills li.active a:hover,
+.nav-pills li.active a:focus {
+  color: #F0F5CF;
+  border: 2px solid #7F8748;
+  border-radius: 10px;
+  color: #fff;
+  border-color: #A1A968;
+  background: #7F8748;
 }
 
 @media -sass-debug-info {
@@ -20451,7 +19981,67 @@ body {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_footer\.scss;
+  }
+
+  line {
+    font-family: \000031;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_footer\.scss;
+  }
+
+  line {
+    font-family: \000036;
+  }
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_footer\.scss;
+  }
+
+  line {
+    font-family: \0000310;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_gameguide\.scss;
+  }
+
+  line {
+    font-family: \000034;
+  }
+}
+
+.header ul li a {
+  margin: 0 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_gameguide\.scss;
   }
 
   line {
@@ -20459,28 +20049,116 @@ body {
   }
 }
 
-body {
-  background: #181818;
-  color: #F0F5CF;
+.guide-topics ul li a {
+  margin: 10px 0;
 }
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_gameguide\.scss;
   }
 
   line {
-    font-family: \0000320;
+    font-family: \0000319;
+  }
+}
+
+.guide-topics ul li:first-child a {
+  margin: 0 0 5px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_gameguide\.scss;
+  }
+
+  line {
+    font-family: \0000329;
+  }
+}
+
+.guide-page ul li a {
+  margin: 0 5px 10px 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_gameguide\.scss;
+  }
+
+  line {
+    font-family: \0000334;
+  }
+}
+
+.guide-page ul li:first-child a {
+  margin: 0 5px 10px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_gameguide\.scss;
+  }
+
+  line {
+    font-family: \0000339;
+  }
+}
+
+.guide-page ul li:last-child a {
+  margin: 0 0 10px 5px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_gameguide\.scss;
+  }
+
+  line {
+    font-family: \0000348;
+  }
+}
+
+.guide-page .tab-content div {
+  color: #F0F5CF;
+  border: 2px solid #7F8748;
+  border-radius: 10px;
+}
+
+/******************* GENERAL
+************************************************/
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \0000312;
+  }
+}
+
+#charactercreator {
+  font-size: 12px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \0000317;
   }
 }
 
 .nav a {
-  color: #F0F5CF;
+  text-align: center;
 }
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
@@ -20488,85 +20166,102 @@ body {
   }
 }
 
-.panel,
-textarea,
-input,
-.well {
-  color: #F0F5CF;
-  border: 2px solid #7F8748;
-  border-radius: 15px 10px;
-  background: #181818;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
-  }
-
-  line {
-    font-family: \0000333;
-  }
-}
-
-input[type="text"]:focus,
-textarea:focus {
-  border-color: #181818;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
-  }
-
-  line {
-    font-family: \0000338;
-  }
-}
-
-.alert {
-  background: #181818;
-  color: #F0F5CF;
-  border: 2px solid #7F8748;
-  border-radius: 15px 10px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
-  }
-
-  line {
-    font-family: \0000345;
-  }
-}
-
-.guide-page .tab-content div {
-  color: #F0F5CF;
-  border: 2px solid #7F8748;
-  border-radius: 15px 10px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
-  }
-
-  line {
-    font-family: \0000354;
-  }
-}
-
 .progression .nav-pills li a {
   margin: 0 10px;
 }
 
+/******************* PANEL HEIGHT
+************************************************/
+
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \0000363;
+    font-family: \0000334;
+  }
+}
+
+.basic-options,
+.detail-options,
+.finalize-options,
+.character {
+  height: 350px;
+}
+
+/******************* BASIC-OPTIONS
+************************************************/
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \0000343;
+  }
+}
+
+.basic-options-wrapper {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \0000348;
+  }
+}
+
+.gender-options li {
+  width: 49%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \0000353;
+  }
+}
+
+.race-options {
+  margin-top: 10px;
+  width: 50%;
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \0000359;
+  }
+}
+
+.profession-options {
+  margin-top: 10px;
+  width: 50%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \0000366;
   }
 }
 
@@ -20576,11 +20271,11 @@ textarea:focus {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \0000371;
+    font-family: \0000374;
   }
 }
 
@@ -20590,11 +20285,11 @@ textarea:focus {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \0000379;
+    font-family: \0000382;
   }
 }
 
@@ -20605,11 +20300,11 @@ textarea:focus {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \0000388;
+    font-family: \0000391;
   }
 }
 
@@ -20618,13 +20313,104 @@ textarea:focus {
   margin-left: 5px;
 }
 
+/******************* DETAIL-OPTIONS
+************************************************/
+
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \0000398;
+    font-family: \00003101;
+  }
+}
+
+.detail-options nav-pills {
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003104;
+  }
+}
+
+.detail-options ul {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003108;
+  }
+}
+
+.detail-options .left-cycle {
+  width: 20%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003111;
+  }
+}
+
+.detail-options .detail-option-buttons {
+  width: 55%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003114;
+  }
+}
+
+.detail-options .right-cycle {
+  width: 20%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003119;
+  }
+}
+
+.detail-option-buttons {
+  margin-left: 4px;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003126;
   }
 }
 
@@ -20634,11 +20420,11 @@ textarea:focus {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \00003107;
+    font-family: \00003135;
   }
 }
 
@@ -20646,53 +20432,244 @@ textarea:focus {
   margin: 10px 0;
 }
 
+/******************* FINALIZE-OPTIONS
+************************************************/
+
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \00003115;
+    font-family: \00003143;
   }
 }
 
-.nav-pills li a,
-.nav-pills li a:hover,
-.nav-pills li a:focus {
+.finalize-options-wrapper {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003145;
+  }
+}
+
+.finalize-options-wrapper input,
+.finalize-options-wrapper textarea {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003151;
+  }
+}
+
+.finalize-options-wrapper textarea {
+  height: 75px;
+  resize: none;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003157;
+  }
+}
+
+.panel,
+textarea,
+input,
+.well {
   color: #F0F5CF;
   border: 2px solid #7F8748;
-  border-radius: 15px 10px;
+  border-radius: 10px;
   background: #181818;
 }
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \00003123;
+    font-family: \00003165;
   }
 }
 
-.nav-pills li.active a,
-.nav-pills li.active a:hover,
-.nav-pills li.active a:focus {
-  color: #F0F5CF;
-  border: 2px solid #7F8748;
-  border-radius: 15px 10px;
-  color: #fff;
-  border-color: #A1A968;
-  background: #7F8748;
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #181818;
+}
+
+/******************* SVG CHARACTER DISPLAY
+************************************************/
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003172;
+  }
+}
+
+.svg-container {
+  position: relative;
+  height: 0;
+  width: 150%;
+  padding: 0;
+  padding-bottom: 125%;
 }
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \00003134;
+    font-family: \00003178;
+  }
+}
+
+.svg-container svg {
+  max-height: 250px;
+  position: absolute;
+  height: 75%;
+  width: 75%;
+  left: 0;
+  top: 10px;
+  overflow-y: hidden;
+}
+
+/******************* INFO
+************************************************/
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003191;
+  }
+}
+
+.basic-info,
+.detail-info,
+.finalize-info {
+  height: auto;
+}
+
+/******************* BASIC INFO
+************************************************/
+
+/******************* DETAIL INFO
+************************************************/
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003202;
+  }
+}
+
+.inventory-item {
+  position: relative;
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003207;
+  }
+}
+
+.selected-item {
+  height: 110px;
+}
+
+/******************* FINALIZE INFO
+************************************************/
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003213;
+  }
+}
+
+.stat-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003216;
+  }
+}
+
+.stat-wrapper ul {
+  display: inline-block;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003218;
+  }
+}
+
+.stat-wrapper ul a {
+  width: 37px;
+  height: 37px;
+  border: 1px solid black;
+  padding: 10px 0;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+  }
+
+  line {
+    font-family: \00003227;
   }
 }
 
@@ -20704,11 +20681,11 @@ textarea:focus {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \00003140;
+    font-family: \00003233;
   }
 }
 
@@ -20720,11 +20697,11 @@ textarea:focus {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \00003146;
+    font-family: \00003239;
   }
 }
 
@@ -20734,11 +20711,11 @@ textarea:focus {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \00003150;
+    font-family: \00003243;
   }
 }
 
@@ -20748,16 +20725,123 @@ textarea:focus {
 
 @media -sass-debug-info {
   filename {
-    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_typography_and_colors\.scss;
+    font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
   }
 
   line {
-    font-family: \00003154;
+    font-family: \00003247;
   }
 }
 
 .stat-mod.nav.nav-pills.nav-stacked > li > a {
   border-radius: 5px 15px 15px 5px;
+}
+
+/******************* MEDIA QUERIES
+************************************************/
+
+@media (min-width: 768px) {
+  /******************* GENERAL
+  ************************************************/
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+    }
+
+    line {
+      font-family: \00003258;
+    }
+}
+
+  .basic-options,
+  .detail-options,
+  .finalize-options,
+  .character,
+  .basic-info,
+  .detail-info,
+  .finalize-info {
+    height: 425px;
+  }
+
+  /******************* SVG CHARACTER DISPLAY
+  ************************************************/
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+    }
+
+    line {
+      font-family: \00003271;
+    }
+}
+
+  .svg-container {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 100%;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+    }
+
+    line {
+      font-family: \00003277;
+    }
+}
+
+  .svg-container svg {
+    position: absolute;
+    height: 125%;
+    width: 125%;
+    left: -20px;
+    top: 50px;
+  }
+
+  /******************* DETAIL INFO
+  ************************************************/
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+    }
+
+    line {
+      font-family: \00003289;
+    }
+}
+
+  .inventory-item {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /******************* FINALIZE INFO
+  ************************************************/
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/home\/andrew\/Code\/Ark\/app\/styles\/partials\/_charactercreator\.scss;
+    }
+
+    line {
+      font-family: \00003296;
+    }
+}
+
+  .stat-wrapper {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
 
 @media -sass-debug-info {
