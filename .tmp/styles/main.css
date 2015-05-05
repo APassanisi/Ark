@@ -1,89 +1,45 @@
 /*
-Error: Expected a color. Got: url("../images/rockywall.png")
-        on line 25 of /var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/css3/_images.scss, in `background-image'
-        from line 9 of /home/andrew/Code/Ark/app/styles/partials/_general.scss
+Error: Invalid CSS after "		box-shadow": expected comma, was ": inset 0 0 0 1..."
+        on line 15 of /home/andrew/Code/Ark/app/styles/partials/_general.scss
         from line 6 of /home/andrew/Code/Ark/app/styles/main.scss
 
-20: body {
-21:     padding-top: 20px;
-22:     padding-bottom: 20px;
-23: }
-24: 
-25: /* Everything but the jumbotron gets side spacing for mobile first views *\/
-26: .header,
-27: .marketing,
-28: .footer {
-29:     padding-left: 15px;
-30:     padding-right: 15px;
+10: 		linear-gradient(left top, 
+11: 			rgba($dark, .7) 0%,
+12: 			rgba($dark, .3) 100%
+13: 		),
+14: 		url('../images/rockywall.png'),
+15: 		box-shadow: inset 0 0 0 1000px rgba($black, .5)
+16: 	);
+17: }
+18: 
+19: .nav {
+20: 	a {
 
 Backtrace:
-/var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/css3/_images.scss:25:in `background-image'
-/home/andrew/Code/Ark/app/styles/partials/_general.scss:9
+/home/andrew/Code/Ark/app/styles/partials/_general.scss:15
 /home/andrew/Code/Ark/app/styles/main.scss:6
-/var/lib/gems/1.9.1/gems/compass-core-1.0.3/lib/compass/core/sass_extensions/functions/gradient_support.rb:166:in `assert_legal_color!'
-/var/lib/gems/1.9.1/gems/compass-core-1.0.3/lib/compass/core/sass_extensions/functions/gradient_support.rb:153:in `initialize'
-/var/lib/gems/1.9.1/gems/compass-core-1.0.3/lib/compass/core/sass_extensions/functions/gradient_support.rb:549:in `new'
-/var/lib/gems/1.9.1/gems/compass-core-1.0.3/lib/compass/core/sass_extensions/functions/gradient_support.rb:549:in `block in color_stops'
-/var/lib/gems/1.9.1/gems/compass-core-1.0.3/lib/compass/core/sass_extensions/functions/gradient_support.rb:543:in `map'
-/var/lib/gems/1.9.1/gems/compass-core-1.0.3/lib/compass/core/sass_extensions/functions/gradient_support.rb:543:in `color_stops'
-/var/lib/gems/1.9.1/gems/compass-core-1.0.3/lib/compass/core/sass_extensions/functions/gradient_support.rb:619:in `_linear_gradient_legacy'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/tree/funcall.rb:139:in `_perform'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:402:in `visit_return'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:299:in `block (2 levels) in visit_if'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:299:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:299:in `block in visit_if'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:298:in `visit_if'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/tree/funcall.rb:248:in `block (3 levels) in perform_sass_fn'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/tree/funcall.rb:248:in `each'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/tree/funcall.rb:248:in `block (2 levels) in perform_sass_fn'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/tree/funcall.rb:247:in `catch'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/tree/funcall.rb:247:in `block in perform_sass_fn'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:84:in `perform_arguments'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/tree/funcall.rb:244:in `perform_sass_fn'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/tree/funcall.rb:131:in `_perform'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:354:in `block (2 levels) in visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:354:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:354:in `block in visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:98:in `block in with_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:1167:in `expected'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/lexer.rb:221:in `expected!'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/parser.rb:463:in `block in arglist'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/parser.rb:460:in `loop'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/parser.rb:460:in `arglist'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/parser.rb:449:in `mixin_arglist'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/script/parser.rb:100:in `parse_mixin_include_arglist'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:1027:in `sass_script'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:236:in `include_directive'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:219:in `special_directive'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:194:in `directive'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:661:in `block_child'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:642:in `block'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:636:in `ruleset'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:660:in `block_child'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:653:in `block_contents'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:117:in `stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/scss/parser.rb:42:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/engine.rb:393:in `_to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/engine.rb:299:in `to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
 /var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:88:in `block in with_import'
 /var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
 /var/lib/gems/1.9.1/gems/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
@@ -127,4 +83,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Expected a color. Got: url(\"../images/rockywall.png\")\A         on line 25 of /var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/css3/_images.scss, in `background-image'\A         from line 9 of /home/andrew/Code/Ark/app/styles/partials/_general.scss\A         from line 6 of /home/andrew/Code/Ark/app/styles/main.scss\A \A 20: body {\A 21:     padding-top: 20px;\A 22:     padding-bottom: 20px;\A 23: }\A 24: \A 25: /* Everything but the jumbotron gets side spacing for mobile first views */\A 26: .header,\A 27: .marketing,\A 28: .footer {\A 29:     padding-left: 15px;\A 30:     padding-right: 15px;"; }
+  content: "Error: Invalid CSS after \"		box-shadow\": expected comma, was \": inset 0 0 0 1...\"\A         on line 15 of /home/andrew/Code/Ark/app/styles/partials/_general.scss\A         from line 6 of /home/andrew/Code/Ark/app/styles/main.scss\A \A 10: 		linear-gradient(left top, \A 11: 			rgba($dark, .7) 0%,\A 12: 			rgba($dark, .3) 100%\A 13: 		),\A 14: 		url('../images/rockywall.png'),\A 15: 		box-shadow: inset 0 0 0 1000px rgba($black, .5)\A 16: 	);\A 17: }\A 18: \A 19: .nav {\A 20: 	a {"; }
