@@ -11,9 +11,16 @@
 			rgba($dark, .7) 0%,
 			rgba($dark, .3) 100%
 		),
-		url('../images/rockywall.png'),
-		box-shadow: inset 0 0 0 1000px rgba($black, .5)
+		url('../images/rockywall.png')
 	);
+	box-shadow: inset 0 0 0 1000px rgba($black, .5);
+
+	border: 2px solid transparent;
+	-moz-border-image: -moz-linear-gradient(top left, rgba($mediumDark, 1) 0%, rgba($dark, 0) 100%);
+	-webkit-border-image: -webkit-linear-gradient(top left, rgba($mediumDark, 1) 0%, rgba($dark, 0) 100%);
+	border-image: linear-gradient(to bottom right, rgba($mediumDark, 1) 0%, rgba($dark, 0) 100%);
+
+	border-image-slice: 1;
 }
 
 .nav {
