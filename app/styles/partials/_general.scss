@@ -3,8 +3,15 @@
 }
 
 .alert {
-	background: $black;
 	@include pillstyle;
+/*	background: url('../images/rockywall.png');*/
+	/*	box-shadow: inset 0 0 0 1000px rgba($black, .5);*/
+	@include background-image(
+			linear-gradient(left top, 
+				rgba($dark, 0.6) 0%,
+				rgba($dark, 0) 89%,
+				url('../images/rockywall.png') 100%)
+		);
 }
 
 .nav {
@@ -19,7 +26,21 @@
 		a:hover, 
 		a:focus {
 			@include pillstyle;
-			background: $black;
+			background: url('../images/rockywall.png');
+			box-shadow: inset 0 0 0 1000px rgba($dark, .3);
+		}
+		a {
+			-webkit-transition: transform 0.1s ease-in-out;
+		    -moz-transition: transform 0.1s ease-in-out;
+		    transition: transform 0.1s ease-in-out;
+		}
+		a:hover {
+			-moz-transform: scale(1.05);
+		    -webkit-transform: scale(1.05);
+		    -o-transform: scale(1.05);
+		    -ms-transform: scale(1.05);
+		    -webkit-transform: scale(1.05);
+		    transform: scale(1.05);
 		}
 	}
 	li.active {
@@ -28,8 +49,9 @@
 		a:focus {
 			@include pillstyle;
 			color: #fff;
-			border-color: $medium;
-			background: $mediumDark;
+			border-color: $dark;
+			background: url('../images/rockywall.png');
+			box-shadow: inset 0 0 0 1000px rgba($medium, .8);
 		}
 	}
 }

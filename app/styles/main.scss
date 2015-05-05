@@ -1,6 +1,7 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
+@import "compass";
 @import '../styles/partials/_typography_and_colors';
 @import '../styles/partials/_general';
 @import '../styles/partials/_index';
