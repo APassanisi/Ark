@@ -182,22 +182,22 @@ ARK3.View = (function ($) {
             var i;
             for (i = 3; i <= 18; i++) {
                 if (ARK3.Model.character.str === i) {
-                    $('.value-str').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-str > a').text(i);
                 }
                 if (ARK3.Model.character.sta === i) {
-                    $('.value-sta').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-sta > a').text(i);
                 }
                 if (ARK3.Model.character.agi === i) {
-                    $('.value-agi').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-agi > a').text(i);
                 }
                 if (ARK3.Model.character.wit === i) {
-                    $('.value-wit').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-wit > a').text(i);
                 }
                 if (ARK3.Model.character.per === i) {
-                    $('.value-per').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-per > a').text(i);
                 }
                 if (ARK3.Model.character.lck === i) {
-                    $('.value-lck').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-lck > a').text(i);
                 }
             }
         },
@@ -206,22 +206,22 @@ ARK3.View = (function ($) {
             var i;
             for (i = -4; i <= 4; i++) {
                 if (ARK3.Model.character.strmod === i) {
-                    $('.value-strmod').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-strmod > a').text(i);
                 }
                 if (ARK3.Model.character.stamod === i) {
-                    $('.value-stamod').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-stamod > a').text(i);
                 }
                 if (ARK3.Model.character.agimod === i) {
-                    $('.value-agimod').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-agimod > a').text(i);
                 }
                 if (ARK3.Model.character.witmod === i) {
-                    $('.value-witmod').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-witmod > a').text(i);
                 }
                 if (ARK3.Model.character.permod === i) {
-                    $('.value-permod').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-permod > a').text(i);
                 }
                 if (ARK3.Model.character.lckmod === i) {
-                    $('.value-lckmod').attr('src', 'img/gameicon/numbers/NumberIcons' + i + '.svg');
+                    $('.value-lckmod > a').text(i);
                 }
             }
         },

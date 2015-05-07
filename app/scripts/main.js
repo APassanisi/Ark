@@ -12,7 +12,7 @@ $(document).ready(function () {
         $('.guide-topics li').removeClass('active');
         $(this).addClass('active');
         $('.guide-page').hide()
-            .load('includes/gameguidepages/races.html')
+            .load('races.html')
             .fadeIn();
     });
 
@@ -21,7 +21,7 @@ $(document).ready(function () {
         $('.guide-topics li').removeClass('active');
         $(this).addClass('active');
         $('.guide-page').hide()
-            .load('includes/gameguidepages/professions.html')
+            .load('professions.html')
             .fadeIn();
     });
 
@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('.guide-topics li').removeClass('active');
         $(this).addClass('active');
         $('.guide-page').hide()
-            .load('includes/gameguidepages/gamemechanics.html')
+            .load('gamemechanics.html')
             .fadeIn();
     });
 
