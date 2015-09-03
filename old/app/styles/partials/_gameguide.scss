@@ -1,0 +1,52 @@
+.header {
+	ul {
+		li {
+			a {
+				margin: 0 5px;
+			}
+		}
+	}
+}
+
+.guide-topics,{
+	ul {
+		li {
+			a {
+				margin: 10px 0;
+			}
+		}
+		li:first-child {
+			a {
+				margin: 0 0 5px 0;
+			}
+		}
+	}
+}
+
+.guide-page {
+	ul {
+		li {
+			a {
+				margin: 0 5px 10px 5px;
+			}
+		}
+		li:first-child {
+			a {
+				margin: 0 5px 10px 0;
+			}
+		}
+		li:last-child {
+			a {
+				margin: 0 0 10px 5px;
+			}
+		}
+	}
+}
+
+.guide-page {
+	.tab-content {
+		div {
+			@include pillstyle;
+		}
+	}
+}

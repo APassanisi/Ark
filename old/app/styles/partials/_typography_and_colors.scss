@@ -1,0 +1,17 @@
+$dark: #666F28;
+$mediumDark: #7F8748;
+$medium: #A1A968;
+$mediumLight: #C4CB94;
+$light: #F0F5CF;
+$black: #181818;
+
+@mixin pillstyle {
+	color: $light;
+	border: 2px solid $mediumDark;
+	border-radius: 7px;
+}
+
+body {
+	background: $black;
+	color: $light;
+}

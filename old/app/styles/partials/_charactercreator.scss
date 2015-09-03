@@ -1,0 +1,301 @@
+/******************* GENERAL
+************************************************/
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#charactercreator {
+    font-size: 12px;
+}
+
+.nav {
+    a {
+        text-align: center;
+    }
+}
+
+.progression {
+    .nav-pills {
+        li {
+            a {
+                margin: 0 10px; 
+            }
+        }
+    }
+}
+
+/******************* PANEL HEIGHT
+************************************************/
+.basic-options,
+.detail-options,
+.finalize-options,
+.character {
+    height: 350px
+}
+
+/******************* BASIC-OPTIONS
+************************************************/
+.basic-options-wrapper {
+    @include vertical-align;
+}
+
+.gender-options {
+    li {
+        width: 49%;
+    }
+}
+
+.race-options {
+    margin-top: 10px;
+    width: 50%;
+    display: inline-block;
+}
+
+.profession-options {
+    margin-top: 10px;
+    width: 50%;
+}
+
+.gender-options {
+    li:first-child {
+        a {
+            margin-right: 5px;
+        }
+    }
+}
+
+.gender-options {
+    li:nth-child(2) {
+        a {
+            margin-left: 5px;
+        }
+    }
+}
+
+.race-options {
+    li {
+        a {
+            margin: 10px 0;
+            margin-right: 5px;
+        }
+    }
+}
+
+.profession-options {
+    li {
+        a {
+            margin: 10px 0;
+            margin-left: 5px;
+        }
+    }
+}
+
+/******************* DETAIL-OPTIONS
+************************************************/
+.detail-options {
+    nav-pills {
+        display: inline-block;
+    }
+    ul {
+        @include vertical-align;
+        display: inline-block;
+    }
+    .left-cycle {
+        width: 20%;
+    }
+    .detail-option-buttons {
+        width: 55%;
+    }
+    .right-cycle {
+        width: 20%;
+    }
+}
+
+.detail-option-buttons {
+    margin-left: 4px;
+}
+
+.detail-options {
+    ul {
+        li {
+            a {
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+.inventory {
+    li {
+        a {
+            margin: 10px 0;
+        }
+    }
+}
+
+/******************* FINALIZE-OPTIONS
+************************************************/
+.finalize-options-wrapper {
+    @include vertical-align;
+    input,
+    textarea {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    textarea {
+        height: 75px;
+        resize: none;
+    }
+}
+
+.panel,
+textarea,
+input,
+.well {
+    @include pillstyle;
+    background: $black;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: $black;
+}
+
+/******************* SVG CHARACTER DISPLAY
+************************************************/
+.svg-container {
+    position: relative; 
+    height:0; 
+    width: 150%; 
+    padding: 0;
+    padding-bottom: 125%;
+    svg {
+        max-height: 250px;
+        position: absolute; 
+        height: 75%; 
+        width: 75%; 
+        left: 0; 
+        top: 10px;
+        overflow-y: hidden;
+    }
+}
+
+/******************* INFO
+************************************************/
+.basic-info,
+.detail-info,
+.finalize-info {
+    height:auto
+}
+
+/******************* BASIC INFO
+************************************************/
+
+/******************* DETAIL INFO
+************************************************/
+.inventory-item {
+    position: relative;
+    text-align: center;
+}
+
+.selected-item {
+    height:110px
+}
+
+/******************* FINALIZE INFO
+************************************************/
+.stat-wrapper {
+    position: relative;
+    text-align: center;
+    ul {
+        display: inline-block;
+        a {
+            width: 37px;
+            height: 37px;
+            border: 1px solid black;
+            padding: 10px 0;
+        }
+    }
+}
+
+.stat-type > li,
+.stat-value > li,
+.stat-mod > li {
+    margin-bottom: 8px;
+}
+
+.stat-type > li:first-child,
+.stat-value > li:first-child,
+.stat-mod > li:first-child {
+    margin-bottom: 13px;
+}
+
+.stat-type.nav.nav-pills.nav-stacked > li > a {
+    border-radius: 15px 5px 5px 15px;
+}
+
+.stat-value.nav.nav-pills.nav-stacked > li > a {
+    border-radius: 5px
+}
+
+.stat-mod.nav.nav-pills.nav-stacked > li > a {
+    border-radius: 5px 15px 15px 5px;
+}
+
+
+/******************* MEDIA QUERIES
+************************************************/
+@media (min-width: 768px) {
+
+/******************* GENERAL
+************************************************/
+.basic-options,
+.detail-options,
+.finalize-options,
+.character,
+.basic-info,
+.detail-info,
+.finalize-info {
+    height:425px
+}
+
+/******************* SVG CHARACTER DISPLAY
+************************************************/
+
+.svg-container {
+    position: relative; 
+    height:0; 
+    width: 100%; 
+    padding: 0;
+    padding-bottom: 100%;
+    svg {
+        position: absolute; 
+        height: 125%; 
+        width: 125%; 
+        left: -20px; 
+        top: 50px;
+    }
+}
+
+/******************* DETAIL INFO
+************************************************/
+
+.inventory-item {
+    @include vertical-align;
+}
+
+/******************* FINALIZE INFO
+************************************************/
+
+.stat-wrapper {
+    @include vertical-align;
+}
+
+
+}
