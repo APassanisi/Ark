@@ -1,0 +1,4 @@
+.sass-cache
+dist/
+test
+app/bower_components

@@ -29,8 +29,17 @@
     }
 }
 
+.button-biography,
+.button-name,
+.detail-option-buttons {
+    a {
+        cursor: default;
+    }
+}
+
 /******************* PANEL HEIGHT
 ************************************************/
+
 .basic-options,
 .detail-options,
 .finalize-options,
@@ -38,8 +47,10 @@
     height: 350px
 }
 
+
 /******************* BASIC-OPTIONS
 ************************************************/
+
 .basic-options-wrapper {
     @include vertical-align;
 }
@@ -95,8 +106,10 @@
     }
 }
 
+
 /******************* DETAIL-OPTIONS
 ************************************************/
+
 .detail-options {
     nav-pills {
         display: inline-block;
@@ -138,8 +151,10 @@
     }
 }
 
+
 /******************* FINALIZE-OPTIONS
 ************************************************/
+
 .finalize-options-wrapper {
     @include vertical-align;
     input,
@@ -167,11 +182,13 @@ textarea:focus {
     border-color: $black;
 }
 
+
 /******************* SVG CHARACTER DISPLAY
 ************************************************/
+
 .svg-container {
     position: relative;
-    height:0;
+    height: 0;
     width: 150%;
     padding: 0;
     padding-bottom: 125%;
@@ -186,32 +203,39 @@ textarea:focus {
     }
 }
 
+
 /******************* INFO
 ************************************************/
+
 .basic-info,
 .detail-info,
 .finalize-info {
-    height:auto;
+    height: auto;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
+
 /******************* BASIC INFO
 ************************************************/
 
+
 /******************* DETAIL INFO
 ************************************************/
+
 .inventory-item {
     position: relative;
     text-align: center;
 }
 
 .selected-item {
-    height:110px
+    height: 110px
 }
+
 
 /******************* FINALIZE INFO
 ************************************************/
+
 .stat-wrapper {
     position: relative;
     text-align: center;
@@ -256,53 +280,46 @@ textarea:focus {
     }
 }
 
+
 /******************* MEDIA QUERIES
 ************************************************/
+
 @media (min-width: 768px) {
-
-/******************* GENERAL
+    /******************* GENERAL
 ************************************************/
-.basic-options,
-.detail-options,
-.finalize-options,
-.character,
-.basic-info,
-.detail-info,
-.finalize-info {
-    height:425px
-}
-
-/******************* SVG CHARACTER DISPLAY
-************************************************/
-
-.svg-container {
-    position: relative;
-    height:0;
-    width: 100%;
-    padding: 0;
-    padding-bottom: 100%;
-    svg {
-        position: absolute;
-        height: 125%;
-        width: 125%;
-        left: -20px;
-        top: 50px;
+    .basic-options,
+    .detail-options,
+    .finalize-options,
+    .character,
+    .basic-info,
+    .detail-info,
+    .finalize-info {
+        height: 425px
     }
-}
-
-/******************* DETAIL INFO
+    /******************* SVG CHARACTER DISPLAY
 ************************************************/
-
-.inventory-item {
-    @include vertical-align;
-}
-
-/******************* FINALIZE INFO
+    .svg-container {
+        position: relative;
+        height: 0;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 100%;
+        svg {
+            position: absolute;
+            height: 125%;
+            width: 125%;
+            left: -20px;
+            top: 50px;
+        }
+    }
+    /******************* DETAIL INFO
 ************************************************/
-
-.stat-wrapper {
-    @include vertical-align;
-}
-
-
+    .inventory-item {
+        @include vertical-align;
+    }
+    /******************* FINALIZE INFO
+************************************************/
+    .stat-wrapper {
+        @include vertical-align;
+    }
 }

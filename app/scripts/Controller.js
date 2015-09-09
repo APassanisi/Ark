@@ -166,54 +166,6 @@ ARK3.Controller = (function ($) {
         $('.weapon').click(function () {
             ARK3.View.renderInventoryItem('weapon');
         });
-        
-        //Tooltip things
-        $('img, div').powerTip({
-            followMouse: true
-        });
-
-        $('.hp-img').data('powertip', '<b>This is how many hit points you have.</b><br>' +
-            'Your Stamina modifier increases your hit points.');
-
-        $('.ac-img').data('powertip', '<b>This is your armor class.</b><br>' +
-            'Your AC is calculated from your armor quality and AGI modifier.');
-
-        $('.stat-str, .value-str').data('powertip', '<b>This is your Strength attribute.</b>');
-
-        $('.stat-sta, .value-sta').data('powertip', '<b>This is your Stamina attribute.</b>');
-
-        $('.stat-agi, .value-agi').data('powertip', '<b>This is your Agility attribute.</b>');
-
-        $('.stat-wit, .value-wit').data('powertip', '<b>This is your Strength attribute.</b>');
-
-        $('.stat-per, .value-per').data('powertip', '<b>This is your Personality attribute.</b>');
-
-        $('.stat-lck, .value-lck').data('powertip', '<b>This is your Luck attribute.</b>');
-
-
-        $('.value-strmod').data('powertip', '<b>This is your Strength modifier.</b><br>' +
-            'Your modifier determines how well you perform<br>' +
-            'in skill-checks based on that stat');
-
-        $('.value-stamod').data('powertip', '<b>This is your Stamina modifier.</b><br>' +
-            'Your modifier determines how well you perform<br>' +
-            'in skill-checks based on that stat');
-
-        $('.value-agimod').data('powertip', '<b>This is your Agility modifier.</b><br>' +
-            'Your modifier determines how well you perform<br>' +
-            'in skill-checks based on that stat');
-
-        $('.value-witmod').data('powertip', '<b>This is your Strength modifier.</b><br>' +
-            'Your modifier determines how well you perform<br>' +
-            'in skill-checks based on that stat');
-
-        $('.value-permod').data('powertip', '<b>This is your Personality modifier.</b><br>' +
-            'Your modifier determines how well you perform<br>' +
-            'in skill-checks based on that stat');
-
-        $('.value-lckmod').data('powertip', '<b>This is your Luck modifier.</b><br>' +
-            'Your modifier determines how well you perform<br>' +
-            'in skill-checks based on that stat');
 
     };
 

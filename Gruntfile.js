@@ -126,7 +126,6 @@ module.exports = function (grunt) {
             ]
         },
 
-
         // Mocha testing framework configuration options
         mocha: {
             all: {
@@ -136,9 +135,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-
-
-
 
         // Compiles Sass to CSS and generates necessary files if requested
         compass: {
@@ -253,12 +249,13 @@ module.exports = function (grunt) {
                 options: {
                     collapseBooleanAttributes: true,
                     collapseWhitespace: true,
-                    removeAttributeQuotes: true,
+                    removeAttributeQuotes: false,
                     removeCommentsFromCDATA: true,
                     removeEmptyAttributes: true,
-                    removeOptionalTags: true,
-                    removeRedundantAttributes: true,
-                    useShortDoctype: true
+                    removeOptionalTags: false,
+                    removeRedundantAttributes: false,
+                    useShortDoctype: true,
+                    keepClosingSlash: true
                 },
                 files: [{
                     expand: true,
@@ -311,7 +308,7 @@ module.exports = function (grunt) {
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
                         'bower_components/sass-bootstrap/fonts/{,*/}*.*',
-                        'bower_components/' + (this.includeCompass ? 'sass-' : '') + 'bootstrap/' + (this.includeCompass ? 'fonts/' : 'dist/fonts/') +'*.*'
+                        'bower_components/' + (this.includeCompass ? 'sass-' : '') + 'bootstrap/' + (this.includeCompass ? 'fonts/' : 'dist/fonts/') + '*.*'
                     ]
                 }]
             },
@@ -323,7 +320,6 @@ module.exports = function (grunt) {
                 src: '{,*/}*.css'
             }
         },
-
 
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
@@ -354,7 +350,6 @@ module.exports = function (grunt) {
             ]
         }
     });
-
 
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
@@ -400,7 +395,7 @@ module.exports = function (grunt) {
         'uglify',
         'copy:dist',
         'modernizr',
-        'rev',
+        // 'rev',
         'usemin',
         'htmlmin'
     ]);
