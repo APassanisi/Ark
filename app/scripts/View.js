@@ -16,7 +16,7 @@ ARK3.View = (function ($) {
         $('.' + option).each(function () {
             var checked = $(this).find('input:radio:checked');
             if (checked.length !== 0) {
-                selection =  $(checked).val();
+                selection = $(checked).val();
             }
         });
         return selection;
@@ -228,6 +228,7 @@ ARK3.View = (function ($) {
             characterString = characterString.replace(/\s+/g, '');
             characterString = characterString.toLowerCase();
             characterString = srcDirectory + characterString + extension;
+            console.log(characterString)
             $('.svg-container').empty()
                 .load(characterString, null, function () {
                     $('polygon[fill="#B3B3B3"], rect[fill="#B3B3B3"], path[fill="#B3B3B3"]').css('fill', $clothescolor1);

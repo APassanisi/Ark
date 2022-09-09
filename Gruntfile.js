@@ -29,7 +29,7 @@ module.exports = function (grunt) {
         watch: {
             js: {
                 files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
-                tasks: ['jshint'],
+                tasks: [],
                 options: {
                     livereload: true
                 }
@@ -112,30 +112,6 @@ module.exports = function (grunt) {
             server: '.tmp'
         },
 
-        // Make sure code styles are up to par and there are no obvious mistakes
-        jshint: {
-            options: {
-                jshintrc: '.jshintrc',
-                reporter: require('jshint-stylish')
-            },
-            all: [
-                'Gruntfile.js',
-                '<%= yeoman.app %>/scripts/{,*/}*.js',
-                '!<%= yeoman.app %>/scripts/vendor/*',
-                'test/spec/{,*/}*.js'
-            ]
-        },
-
-        // Mocha testing framework configuration options
-        mocha: {
-            all: {
-                options: {
-                    run: true,
-                    urls: ['http://<%= connect.test.options.hostname %>:<%= connect.test.options.port %>/index.html']
-                }
-            }
-        },
-
         // Compiles Sass to CSS and generates necessary files if requested
         compass: {
             options: {
@@ -209,9 +185,9 @@ module.exports = function (grunt) {
                 dest: '<%= yeoman.dist %>'
             },
             html: ['<%= yeoman.app %>/index.html',
-                  '<%= yeoman.app %>/gameguide.html',
-                  '<%= yeoman.app %>/charactercreator.html'
-                  ]
+                '<%= yeoman.app %>/gameguide.html',
+                '<%= yeoman.app %>/charactercreator.html'
+            ]
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -370,7 +346,7 @@ module.exports = function (grunt) {
         grunt.task.run(['serve']);
     });
 
-    grunt.registerTask('test', function(target) {
+    grunt.registerTask('test', function (target) {
         if (target !== 'watch') {
             grunt.task.run([
                 'clean:server',
@@ -378,11 +354,6 @@ module.exports = function (grunt) {
                 'autoprefixer',
             ]);
         }
-
-        grunt.task.run([
-            'connect:test',
-            'mocha'
-        ]);
     });
 
     grunt.registerTask('build', [
@@ -401,7 +372,6 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('default', [
-        'newer:jshint',
         'test',
         'build'
     ]);
