@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  RUBY_VERSION = "2.7.2"
+
+[context.production.environment]
+  RUBY_VERSION = "2.7.2"
+
+[context.deploy-preview.environment]
+  RUBY_VERSION = "2.7.2"
+
+[context.branch-deploy.environment]
+  RUBY_VERSION = "2.7.2"
+
+[context.next.environment]
+  RUBY_VERSION = "2.7.2"
