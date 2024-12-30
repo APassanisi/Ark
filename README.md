@@ -17,7 +17,7 @@ My first completed project.
 
 4. **Install Ruby and Compass**: Since this project uses Compass, you need to have Ruby and Compass installed:
     - **Install Ruby**:
-        - **macOS**: Ruby is pre-installed on macOS. You can check the sversion by running:
+        - **macOS**: Ruby is pre-installed on macOS. You can check the version by running:
             ```sh
             ruby -v
             ```
@@ -31,27 +31,38 @@ My first completed project.
         gem install compass
         ```
 
-5. **Navigate to the project directory**: Open your terminal and navigate to the project directory:
+5. **Install image optimization binaries**: Ensure you have the necessary binaries for image optimization:
+    - **macOS**: You can use Homebrew to install the binaries:
+        ```sh
+        brew install jpegoptim optipng
+        ```
+    - **Windows**: You can download and install the binaries from their respective websites.
+    - **Linux**: Use your package manager to install the binaries. For example, on Ubuntu:
+        ```sh
+        sudo apt-get install jpegoptim optipng
+        ```
+
+6. **Navigate to the project directory**: Open your terminal and navigate to the project directory:
     ```sh
     cd /Users/andy/Documents/Code/character-creator
     ```
 
-6. **Install npm dependencies**: Run the following command to install the necessary npm dependencies:
+7. **Install npm dependencies**: Run the following command to install the necessary npm dependencies:
     ```sh
     npm install
     ```
 
-7. **Install Bower dependencies**: Run the following command to install the necessary Bower dependencies:
+8. **Install Bower dependencies**: Run the following command to install the necessary Bower dependencies:
     ```sh
     bower install
     ```
 
-8. **Run the Grunt server**: Start the Grunt server to serve the application:
+9. **Run the Grunt server**: Start the Grunt server to serve the application:
     ```sh
     grunt serve
     ```
 
-9. **Open the app in your browser**: The app should automatically open in your default web browser. If it doesn't, open your browser and navigate to `http://localhost:9000`.
+10. **Open the app in your browser**: The app should automatically open in your default web browser. If it doesn't, open your browser and navigate to `http://localhost:9000`.
 
 ## Troubleshooting
 
@@ -68,4 +79,20 @@ My first completed project.
 - **Missing lodash module**: Ensure lodash is installed as a dependency:
     ```sh
     npm install lodash
+    ```
+
+- **Image optimization binaries not found**: Ensure the necessary binaries for image optimization are installed:
+    - **macOS**:
+        ```sh
+        brew install jpegoptim optipng
+        ```
+    - **Windows**: Download and install the binaries from their respective websites.
+    - **Linux**:
+        ```sh
+        sudo apt-get install jpegoptim optipng
+        ```
+
+- **Imagemin task errors**: If you encounter errors with the `imagemin` task, you can use the `--force` flag to continue the build process:
+    ```sh
+    grunt build --force
     ```
