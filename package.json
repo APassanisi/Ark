@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "grunt serve",
-    "build": "gem update --system && gem install ffi -v 1.17.1 && gem install compass && grunt build",
+    "build": "gem update --system 3.2.3 && gem install ffi -v 1.17.1 && gem install compass && grunt build",
     "test": "grunt test",
     "clean": "grunt clean",
     "lint": "grunt jshint"
